@@ -1,0 +1,3289 @@
+{
+  "version": "v2.0",
+  "data": [
+    {
+      "title": "SEMI E15-0698",
+      "paragraphs": [
+        {
+          "context": "semr SEMI E15-0698E2 (Reapproved 1016) SPECIFICATION FOR TOOL LOAD PORT This Standard was technically approved by the Physical Interfaces & Carriers Global Technical Committee. This edition was approved for publication by the global Audits and Reviews Subcommittee on May 11, 2016. Available at www.semiviews.org and www.semi.org in October 2016; originally published in 1990; previously published March 2010. OTICE: This Standard or Safety Guideline has an Inactive Status because the conditions to maintain Current Status have not been met. Inactive Standards or Safety Guidelines are available from SEMI and continue to be valid for use. OTICE: This Document was reapproved with minor editorial changes. 1 Purpose 1.1 This Standard is intended to unify the interface between process/inspection tools and automated wafer carrier transport systems while maintaining compatibility with human transport. 2 Scope 2.1 This Specification deals with the mechanical interface (load port) for wafer carrier transfer between wafer carrier material transport systems, including humans, and wafer fabrication/inspection equipment (tools). The concept defines the placement and orientation of a wafer carrier on a tool to allow reasonable interfacing with mechanized material movement systems without compromising human access to perform the material exchange function. OTICE: SEMI Standards and Safety Guidelines do not purport to address all safety issues associated with their use. It is the responsibility of the users of the Documents to establish appropriate safety and health practices, and determine the applicability of regulatory or other limitations prior to use. 3 Impact 3.1 Compliance with this Specification requires the placement of load",
+          "qas": [
+            {
+              "id": "691630f3-9b3f-4682-9d74-6c39ee007b1c",
+              "question": "What is the specification title and number?",
+              "answers": [
+                {
+                  "text": "SEMI E15-0698E2 (Reapproved 1016) SPECIFICATION FOR TOOL LOAD PORT",
+                  "answer_start": 5
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d3aff4da-51cd-4f8d-874c-f42cdb9c37f0",
+              "question": "What is the purpose of this Standard?",
+              "answers": [
+                {
+                  "text": "This Standard is intended to unify the interface between process/inspection tools and automated wafer carrier transport systems while maintaining compatibility with human transport.",
+                  "answer_start": 721
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "393099d4-ff11-4194-84e2-ef960d74fcd4",
+              "question": "What does this Specification deal with?",
+              "answers": [
+                {
+                  "text": "the mechanical interface (load port) for wafer carrier transfer between wafer carrier material transport systems, including humans, and wafer fabrication/inspection equipment (tools).",
+                  "answer_start": 945
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "0bc314b5-84d4-43f0-9da0-78ba1e61a77a",
+              "question": "What does the concept define regarding wafer carriers on a tool?",
+              "answers": [
+                {
+                  "text": "the placement and orientation of a wafer carrier on a tool to allow reasonable interfacing with mechanized material movement systems without compromising human access to perform the material exchange function.",
+                  "answer_start": 1149
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "6ae8d6ba-fed7-4bb4-af69-0eb1f0ab751b",
+              "question": "What is the current status of this Standard or Safety Guideline?",
+              "answers": [
+                {
+                  "text": "Inactive Status",
+                  "answer_start": 458
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "to address all safety issues associated with their use. It is the responsibility of the users of the Documents to establish appropriate safety and health practices, and determine the applicability of regulatory or other limitations prior to use. 3 Impact 3.1 Compliance with this Specification requires the placement of load ports on tools to specific heights, orientations, and load depths. Restrictions are also placed on clearances to obstructions which may be adjacent to such ports. 4 Referenced Standards and Documents 4.1 SEMI Standards and Safety Guidelines I SEMI El - Specification for Open Plastic and Metal Wafer Carriers SEMI E 19 - Standard Mechanical Interface (SMIF) OTICE: Unless otherwise indicated, all documents cited shall be the latest published versions. 5 Terminology 5.1 Definitions 5.1.1 box - a protective portable carrier for a cassette and/or substrate(s). 5.1.2 cassette - an open structure that holds one or more substrates. 5.1.3 cassette centroid- a datum representing the theoretical center of a stack of wafers in a cassette formed by the pocket centerline and the 'center' pocket as defined by the location associated with dividing dimension B3 by two (see SEMI EI, Figure I). 5.1.4 cassette envelope - a rectangular volume with vertical sides which completely contains a cassette, even if the cassette is tilted (see Figure l ). 5.1.5 enclosed load port - a load port with overhead clearance obstructed by the tool. 5.1.6 global orientation - the general orientation of a wafer carrier in a tool; may be vertical or horizontal. 5.1.7",
+          "qas": [
+            {
+              "id": "8204d2c2-6485-4edc-83b1-1f8e228e1a4b",
+              "question": "What is defined as a 'box'?",
+              "answers": [
+                {
+                  "text": "a protective portable carrier for a cassette and/or substrate(s).",
+                  "answer_start": 820
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "9c2d689b-c864-4aff-a685-2cd1c5893f67",
+              "question": "What is the definition of a 'cassette'?",
+              "answers": [
+                {
+                  "text": "an open structure that holds one or more substrates.",
+                  "answer_start": 903
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "ae1d36d3-b376-4f38-b3c3-fb689706e15b",
+              "question": "How is the 'cassette centroid' defined?",
+              "answers": [
+                {
+                  "text": "a datum representing the theoretical center of a stack of wafers in a cassette formed by the pocket centerline and the 'center' pocket as defined by the location associated with dividing dimension B3 by two (see SEMI EI, Figure I).",
+                  "answer_start": 981
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "49326eac-fbbf-4041-9b5c-2e4557829d49",
+              "question": "What constitutes a 'cassette envelope'?",
+              "answers": [
+                {
+                  "text": "a rectangular volume with vertical sides which completely contains a cassette, even if the cassette is tilted (see Figure l ).",
+                  "answer_start": 1239
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "3fff09ed-8cb9-4018-9c6c-c4c410e4b289",
+              "question": "What is an 'enclosed load port'?",
+              "answers": [
+                {
+                  "text": "a load port with overhead clearance obstructed by the tool.",
+                  "answer_start": 1393
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "8f76297b-2906-417d-a81c-4fb63c33f182",
+              "question": "What must compliance with this Specification require regarding load ports?",
+              "answers": [
+                {
+                  "text": "the placement of load ports on tools to specific heights, orientations, and load depths.",
+                  "answer_start": 303
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "8394197a-ac90-4791-b620-b28386456d09",
+              "question": "What does 'global orientation' refer to in the context of a wafer carrier?",
+              "answers": [
+                {
+                  "text": "the general orientation of a wafer carrier in a tool; may be vertical or horizontal.",
+                  "answer_start": 1480
+                }
+              ],
+              "type": "definition"
+            }
+          ]
+        },
+        {
+          "context": "which completely contains a cassette, even if the cassette is tilted (see Figure l ). 5.1.5 enclosed load port - a load port with overhead clearance obstructed by the tool. 5.1.6 global orientation - the general orientation of a wafer carrier in a tool; may be vertical or horizontal. 5.1.7 load depth- the horizontal distance from the load face plane to cassette centroid or carrier centroid (see Figures 2 and 3 [D]). SEMI E15-0698E2 (Reapproved 1016) SEMI 1990, 2016 semr 5 .1.8 load face plane - the furthest physical vertical boundary plane from cassette centroid or carrier centroid on the side (or sides) of the tool where loading of the tool is intended (see Figures 2 and 3). 5.1.9 load height - the distance from the bottom of the cassette or carrier to the floor at the load face plane (see Figure 3 [H]). 5.1.10 Load port - the interface location on a tool where wafer carriers are delivered. It is possible that wafers are not removed from, or inserted into, the carrier at thjs location. 5.1.11 open Load port - a load port with overhead clearance unobstructed by the tool. 5.1. I 2 pod - a box having a Standard Mechanical Interface (SMIF) per SEMI El 9. 5.1.13 spacing - the mjnimum spacing between centroids (see Figure 2, S). 5.1.14 tool - any piece of semjconductor fabrication or inspection equipment designed to process wafers delivered in wafer carriers. 5.1.15 tilt - a small angle of offset from the normal",
+          "qas": [
+            {
+              "id": "1c1c2ca4-be9b-4876-b036-70e738e45c17",
+              "question": "What is an enclosed load port?",
+              "answers": [
+                {
+                  "text": "a load port with overhead clearance obstructed by the tool",
+                  "answer_start": 113
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "b87ba3d6-f0ae-49f3-ac69-581eed585587",
+              "question": "What does global orientation refer to?",
+              "answers": [
+                {
+                  "text": "the general orientation of a wafer carrier in a tool; may be vertical or horizontal",
+                  "answer_start": 200
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "32616abe-de18-428a-9273-0d2f5254670d",
+              "question": "How is load depth measured?",
+              "answers": [
+                {
+                  "text": "the horizontal distance from the load face plane to cassette centroid or carrier centroid (see Figures 2 and 3 [D])",
+                  "answer_start": 303
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "8699d10a-981f-473c-8cc6-502d9fd47767",
+              "question": "What is the load face plane?",
+              "answers": [
+                {
+                  "text": "the furthest physical vertical boundary plane from cassette centroid or carrier centroid on the side (or sides) of the tool where loading of the tool is intended (see Figures 2 and 3)",
+                  "answer_start": 500
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "13c2ad9e-1d4b-4dba-b232-fb6848af98dd",
+              "question": "What is the purpose of a load port?",
+              "answers": [
+                {
+                  "text": "the interface location on a tool where wafer carriers are delivered",
+                  "answer_start": 836
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "c2f96237-358b-4668-8b5b-3efcc0773e78",
+              "question": "What defines an open Load port?",
+              "answers": [
+                {
+                  "text": "a load port with overhead clearance unobstructed by the tool",
+                  "answer_start": 1026
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "a8925ecc-758b-479e-ab45-391db9b1f8e3",
+              "question": "What is a pod?",
+              "answers": [
+                {
+                  "text": "a box having a Standard Mechanical Interface (SMIF) per SEMI El",
+                  "answer_start": 1103
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "3ab1c946-e45f-4dfa-8ef8-0477b9dfdd4f",
+              "question": "What equipment is defined as a tool?",
+              "answers": [
+                {
+                  "text": "any piece of semjconductor fabrication or inspection equipment designed to process wafers delivered in wafer carriers",
+                  "answer_start": 1258
+                }
+              ],
+              "type": "definition"
+            }
+          ]
+        },
+        {
+          "context": "Standard Mechanical Interface (SMIF) per SEMI El 9. 5.1.13 spacing - the mjnimum spacing between centroids (see Figure 2, S). 5.1.14 tool - any piece of semjconductor fabrication or inspection equipment designed to process wafers delivered in wafer carriers. 5.1.15 tilt - a small angle of offset from the normal horizontal or vertical orientation of a cassette or wafer carrier designed to preferentially align or keep wafers in their intended place within the carrier/cassette (see Figure I, T). 5.1.16 wafer carrier- any cassette, box, pod, or boat that contains wafers. 5.1.17 wafer carrier centroid- a datum representing the theoretical location of the center of a stack of wafers in the carrier. 5.1.18 wafer carrier envelope - a rectangular volume with vertical sides which completely contains a carrier, even if the carrier is tilted (see Figure I). 5.2 Description of Tenns Specific to this Standard 5.2.1 carrier- wafer carrier. 6 Ordering Information 6.1 The following items require communication between the tool supplier and user and shall be included in any request for quotation, quotation, or purchase order: 6.1.1 If the tool has multiple load ports, provide the spacing, S, between carrier centroids (see 7 .8). 6.1.2 Specify what carrier ( e.g., SEMI Standard cassette, pod) is to be accommodated by the load port. 6.1.3 Specify whether the load port is open or enclosed. 6.1.4 Specify whether the wafer orientation is horizontal (per 7.3.1) or vertical (per 7.3.2). 7 Requirements 7 .1 The dimensions for the placement of a wafer carrier on",
+          "qas": [
+            {
+              "id": "37e18d8f-b5aa-4d2c-af9e-0cfbab9d2549",
+              "question": "According to the standard, what is defined as a wafer carrier?",
+              "answers": [
+                {
+                  "text": "any cassette, box, pod, or boat that contains wafers",
+                  "answer_start": 520
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "f3ac558a-aabf-44cd-bc50-b4e0ad5dbc79",
+              "question": "What is the wafer carrier envelope?",
+              "answers": [
+                {
+                  "text": "a rectangular volume with vertical sides which completely contains a carrier, even if the carrier is tilted",
+                  "answer_start": 734
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "b27d14fa-f9c5-4809-9633-a2741b0f4ad6",
+              "question": "What does the wafer carrier centroid represent?",
+              "answers": [
+                {
+                  "text": "a datum representing the theoretical location of the center of a stack of wafers in the carrier",
+                  "answer_start": 605
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "9858989b-5ed2-45ab-b573-208083a1821a",
+              "question": "What must be provided if the tool has multiple load ports?",
+              "answers": [
+                {
+                  "text": "the spacing, S, between carrier centroids",
+                  "answer_start": 1176
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "0c4b7e9d-4f99-4371-a726-b016ec42d4b1",
+              "question": "When requesting a quotation, what must be specified about the load port?",
+              "answers": [
+                {
+                  "text": "whether the load port is open or enclosed",
+                  "answer_start": 1348
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "3593da35-c5bc-4b72-8564-58ae866f08f5",
+              "question": "What must be specified regarding the wafer orientation when communicating with the tool supplier?",
+              "answers": [
+                {
+                  "text": "whether the wafer orientation is horizontal (per 7.3.1) or vertical (per 7.3.2)",
+                  "answer_start": 1405
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "SEMI Standard cassette, pod) is to be accommodated by the load port. 6.1.3 Specify whether the load port is open or enclosed. 6.1.4 Specify whether the wafer orientation is horizontal (per 7.3.1) or vertical (per 7.3.2). 7 Requirements 7 .1 The dimensions for the placement of a wafer carrier on the load port of a tool are given in Table 1. I 7.2 This Standard is based upon the concept that any wafer carrier can be used. Dimensions are usually specified as clearances to wafer carrier envelopes (see envelope concept in Figure 1 ). 7 .3 The global orientation of the cassette or wafer carrier is constrained to be parallel or perpendicular to the load face plane. Allowable cassette orientations are: 7.3.1 For wafers horizontal, the opening of the cassette must be opposite the load face plane, and the front surface of the wafer must face up (see Figure 4); 7.3.2 For wafers vertical, the opening of the cassette must face up, and the front surface of the wafer must face the load face plane (see Figure 5). 7.3.3 This requirement also applies to cassettes in pods. 7.4 The maximum tilt is IO degrees. 7.5 The load height is specified as follows (see Figure 3): 7.5.1 Dimension His 900 mm (-35.4 in.), fully adjustable over 10 mm (-0.4 in.). SEMI E15-0698E2 (Reapproved 1016) SEMI 1990, 2016 semr 7 .6 The maximum height above H of an obstruction between the load face plane and the carrier envelope (such as for an",
+          "qas": [
+            {
+              "id": "3bd2c0ff-131a-4e09-bc84-3e23ea104e4e",
+              "question": "What must be specified regarding the load port?",
+              "answers": [
+                {
+                  "text": "whether the load port is open or enclosed.",
+                  "answer_start": 83
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "418d85f4-add0-4007-8d69-8899a583d234",
+              "question": "What wafer orientation must be specified?",
+              "answers": [
+                {
+                  "text": "whether the wafer orientation is horizontal (per 7.3.1) or vertical (per 7.3.2).",
+                  "answer_start": 140
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "470f9446-a0ed-4cff-863f-88b40eefae5c",
+              "question": "How are dimensions usually specified for wafer carriers?",
+              "answers": [
+                {
+                  "text": "as clearances to wafer carrier envelopes (see envelope concept in Figure 1 ).",
+                  "answer_start": 457
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "2392860e-c91b-4663-bfff-1c788faa1a9b",
+              "question": "What must the global orientation of the cassette or wafer carrier be constrained to?",
+              "answers": [
+                {
+                  "text": "parallel or perpendicular to the load face plane.",
+                  "answer_start": 617
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "b04fb688-0e38-4009-ab68-fbec9fb6b0bc",
+              "question": "What are the requirements for wafers horizontal?",
+              "answers": [
+                {
+                  "text": "the opening of the cassette must be opposite the load face plane, and the front surface of the wafer must face up",
+                  "answer_start": 733
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "8dcc9013-15b2-43f9-a436-ed71d3199f23",
+              "question": "What are the requirements for wafers vertical?",
+              "answers": [
+                {
+                  "text": "the opening of the cassette must face up, and the front surface of the wafer must face the load face plane",
+                  "answer_start": 890
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "2e72ea15-22c4-4ac1-bc0c-0cadd9b9e793",
+              "question": "What is the maximum allowable tilt?",
+              "answers": [
+                {
+                  "text": "IO degrees.",
+                  "answer_start": 1095
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "77650547-cce2-4a36-bae0-65fea3e4473d",
+              "question": "What are the specifications for the load height?",
+              "answers": [
+                {
+                  "text": "Dimension His 900 mm (-35.4 in.), fully adjustable over 10 mm (-0.4 in.).",
+                  "answer_start": 1173
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "as follows (see Figure 3): 7.5.1 Dimension His 900 mm (-35.4 in.), fully adjustable over 10 mm (-0.4 in.). SEMI E15-0698E2 (Reapproved 1016) SEMI 1990, 2016 semr 7 .6 The maximum height above H of an obstruction between the load face plane and the carrier envelope (such as for an alignment device or identification tag reader) is 50 mm (~2 in.) (see Dimension HI in Figure 3). 7.7 Clearances (Cl, C2, and C3) are defined with respect to the largest carrier envelope required. For cassettes, envelopes are defined using cassette dimensions from SEMI EI. For pods or other wafer carriers, envelopes are defined using the carrier standard (if any) or the carrier manufacturer's specifications (see Figure J for concept and Figures 2 and 3 for use). 7.8 Dimension S specifies the recommended minimum spacing between cassette/wafer carrier centroids. In any case, if S violates clearance CJ in any application, then CJ prevails (see Figure 2). 7.9 Tools with enclosed load ports shall have a minimum vertical clearance, C3, above the cassette or carrier at the load port. Open load ports shall have a vertical clearance above the load port which is unrestricted by the tool. Table 1 Dimension Requirements, mm (in.) Dimension Application Value, mm (in.) Notes Cl . . 75 (3) mm1mum C2 mm1mum 30 (1.2) C3 . . 225 (9) #I mm1mum D maximum 250 (9.8) H range 900 (35.4) 10 (0.4) #2 HI maximum 50 (2.0) s :;SI 50 mm carriers 350 (13.8) See 7.8. 200 mm",
+          "qas": [
+            {
+              "id": "4d8cc3aa-2d60-48af-aeac-99e69dd5f56c",
+              "question": "What is the maximum height above H of an obstruction?",
+              "answers": [
+                {
+                  "text": "50 mm (~2 in.)",
+                  "answer_start": 331
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "f6ca1092-801b-4c06-8cdc-fb04e85216cb",
+              "question": "How are envelopes defined for pods or other wafer carriers?",
+              "answers": [
+                {
+                  "text": "using the carrier standard (if any) or the carrier manufacturer's specifications",
+                  "answer_start": 610
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "be3b1391-4bf1-48e4-a477-16f73a626e2e",
+              "question": "What does Dimension S specify?",
+              "answers": [
+                {
+                  "text": "the recommended minimum spacing between cassette/wafer carrier centroids",
+                  "answer_start": 773
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "bc842603-4ee6-446c-b272-64eaff552c92",
+              "question": "What is the required clearance value for Cl?",
+              "answers": [
+                {
+                  "text": "75 (3) mm1mum",
+                  "answer_start": 1263
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "30f1057b-a9c4-4ce8-b7df-b7ce42749562",
+              "question": "What is the required clearance value for C2?",
+              "answers": [
+                {
+                  "text": "30 (1.2)",
+                  "answer_start": 1287
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "23017378-02bc-4dd3-9c56-c80bb62dac48",
+              "question": "What is the required vertical clearance for C3?",
+              "answers": [
+                {
+                  "text": "225 (9) #I mm1mum",
+                  "answer_start": 1303
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "706e0895-19a3-4cf3-9a18-efa5a91bd936",
+              "question": "What is the range specified for dimension H?",
+              "answers": [
+                {
+                  "text": "900 (35.4) 10 (0.4) #2",
+                  "answer_start": 1349
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "(in.) Dimension Application Value, mm (in.) Notes Cl . . 75 (3) mm1mum C2 mm1mum 30 (1.2) C3 . . 225 (9) #I mm1mum D maximum 250 (9.8) H range 900 (35.4) 10 (0.4) #2 HI maximum 50 (2.0) s :;SI 50 mm carriers 350 (13.8) See 7.8. 200 mm carriers 400 (15.7) T maximum 10 degrees # I Applies to tools with enclosed port; otherwise, clearance above the port must be unrestricted by the tool (see 5.8). #2 Fully adjustable overIO mm (---0.4 in.) range. Table 2 Dimension Definitions Dimension Cl C2 C3 D H HI s T Description Minimum side clearance between one carrier envelope and another, or to vertical obstruction. Minimum rear clearance from carrier envelope to vertical obstruction. Minimum clearance above carrier envelope to horizontal obstruction on the tool. Maximum load depth to carrier centroid. Allowable load height to bottom of carrier envelope. Maximum height of horizontal obstruction above load height between load face plane and carrier envelope. Recommended minimum spacing between carrier centroids. Maximum cassette or wafer carrier tilt. SEMI E15-0698E2 (Reapproved 1016) SEMI 1990, 2016 semr CASSETTE CONTAINER ,w-: VIEW 'ENVELOPE 9 \"\\ # I Envelope is fonned by planes which are parallel or perpendicular to load face place independent of tilt (T). LOAD FACE _,.J PLAN! -1 Figure 1 Envelope Concept EQUFllll!.NT' BOUNDA CENT110E #I Envelope must be parallel to load face plane. Figure 2 Load Port Requirements, Plan View LOAD FACE Pl.ANE HORIZONTAL OBSTRUCTIO Hl H D Figure 3 EOUIPMEN1 BOUNOAAY CENTROID",
+          "qas": [
+            {
+              "id": "d0716057-9fbf-4974-82f9-31a7692cfc88",
+              "question": "According to Table 2, what does Cl represent?",
+              "answers": [
+                {
+                  "text": "Minimum side clearance between one carrier envelope and another, or to vertical obstruction.",
+                  "answer_start": 519
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "266224f4-8086-441d-a20b-ed3693011779",
+              "question": "What does C2 measure?",
+              "answers": [
+                {
+                  "text": "Minimum rear clearance from carrier envelope to vertical obstruction.",
+                  "answer_start": 612
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "7a0efb97-5980-4009-bba7-a0a99d02194f",
+              "question": "What is the definition of 's' in the dimension table?",
+              "answers": [
+                {
+                  "text": "Recommended minimum spacing between carrier centroids.",
+                  "answer_start": 960
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "1fab6948-ca53-41e7-878a-4d3b537f1ec5",
+              "question": "What does D represent in the dimension definitions?",
+              "answers": [
+                {
+                  "text": "Maximum load depth to carrier centroid.",
+                  "answer_start": 762
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "0584de4c-98ef-4fa2-ace0-397650ba3588",
+              "question": "What is the maximum cassette or wafer carrier tilt?",
+              "answers": [
+                {
+                  "text": "Maximum cassette or wafer carrier tilt.",
+                  "answer_start": 1015
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "perpendicular to load face place independent of tilt (T). LOAD FACE _,.J PLAN! -1 Figure 1 Envelope Concept EQUFllll!.NT' BOUNDA CENT110E #I Envelope must be parallel to load face plane. Figure 2 Load Port Requirements, Plan View LOAD FACE Pl.ANE HORIZONTAL OBSTRUCTIO Hl H D Figure 3 EOUIPMEN1 BOUNOAAY CENTROID FLOOR Load Port Requirements, Elevation View SEMI E15-0698E2 (Reapproved 1016) SEMI 1990, 2016 semr LOAD FACE PLANE FRONT SURFACE Of WAFER Figure 4 CASSETTE OPENING Wafer and Cassette Orientation, Wafers Horizontal LOAD FACE PLANE FRONT SURFACE OF WAFER Figure 5 CASSETTE OPENING Wafer and Cassette Orientation, Wafers Vertical 8 Related Documents 8.1 SEMI Standards and Safety Guidelines SEMI E47 - Specification for 150 mm/200 mm Pod Handles SEMI E48 - Specification for SMIF Indexer Volume Requirement I SEMI S8 - Safety Guideline for Ergonomics Engineering of Semiconductor Manufacturing Equipment SEMI T4 - Specification for 150 mm and 200 mm Pod Identification Dimensions 8.2 Other Documents SEMI International Standards: Compilation of Terms SEMI E15-0698E2 (Reapproved 1016) SEMI 1990, 2016 APPENDIX 1 APPLICATION NOTES semr OTICE: The material in this Appendix is an official part of SEMI E 15 and was approved by full letter ballot procedures. A 1-1 Discussion A 1-1.1 Material transport automation can come in a number of fonns, including automated guided vehicles (AGV's) and tracks (conveyers), which operate anywhere from tool loading level to ceiling level. Wafers may be transported in cassettes or in carriers (such as cassettes in pods). Automation provides flexibility with regard to the range",
+          "qas": [
+            {
+              "id": "8efb2065-05a6-4004-9f4a-b807533abe86",
+              "question": "What must the envelope be parallel to?",
+              "answers": [
+                {
+                  "text": "load face plane",
+                  "answer_start": 170
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "1c897f9c-7de4-48de-b4a9-f47548f269f0",
+              "question": "What types of systems can material transport automation include?",
+              "answers": [
+                {
+                  "text": "automated guided vehicles (AGV's) and tracks (conveyers)",
+                  "answer_start": 1363
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d00f6d4a-9b8a-4df3-a045-ad5bb3febcc4",
+              "question": "In what ways may wafers be transported?",
+              "answers": [
+                {
+                  "text": "in cassettes or in carriers",
+                  "answer_start": 1512
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "73ba4399-c669-48d7-b297-5cd4c1c8b0bc",
+              "question": "What does automation provide flexibility with regard to?",
+              "answers": [
+                {
+                  "text": "the range",
+                  "answer_start": 1616
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "9b2fff0c-4163-45ed-a9ba-a2fff2bcca42",
+              "question": "What are two examples of documents listed in the SEMI Standards and Safety Guidelines section?",
+              "answers": [
+                {
+                  "text": "SEMI E47 - Specification for 150 mm/200 mm Pod Handles",
+                  "answer_start": 702
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "Material transport automation can come in a number of fonns, including automated guided vehicles (AGV's) and tracks (conveyers), which operate anywhere from tool loading level to ceiling level. Wafers may be transported in cassettes or in carriers (such as cassettes in pods). Automation provides flexibility with regard to the range of interface coordinates it can accommodate. On the other hand, it is clear that humans will continue to load carriers on tools in many fabs. SEMI EIS is an attempt to satisfy all of these needs, including continued human compatibility. In fact, compatibility of automation and human ergonomics has been considered of primary importance in the rewrite of this Standard. A 1-1.2 The increased value for CI, of75 mm, over the previous value in this Standard is determined by the ergonomic requirement to accommodate a 95th percentile human male hand carrying a pod by its handles. Limitation of the load port height to 900 mm was, again, driven by ergonomic considerations, as the previously allowed value of up to 1300 mm was clearly 'user unfriendly.' A 1-1.3 Equipment suppliers must consider the dimension, S, in order to ensure that their tool will be compatible with automation systems and pods. This fact applies to tools with more than one load port per tool. In order to enable space for two pods on side-by-side load ports, the dimension, S, must be greater than or equal to 350 mm for tools processing 150 mm or smaller wafers, and 400 mm for 200 mm",
+          "qas": [
+            {
+              "id": "ae387ab8-26ee-446e-86b6-09d644874892",
+              "question": "What types of material transport automation are mentioned?",
+              "answers": [
+                {
+                  "text": "automated guided vehicles (AGV's) and tracks (conveyers)",
+                  "answer_start": 71
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "cf9bc6cf-396a-4f68-8d19-965030e4f0b6",
+              "question": "What is considered of primary importance in the rewrite of this Standard?",
+              "answers": [
+                {
+                  "text": "compatibility of automation and human ergonomics",
+                  "answer_start": 580
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "157b7fe9-0b82-4e93-8eb6-d3fc5fe30410",
+              "question": "What determined the increased value for CI of 75 mm?",
+              "answers": [
+                {
+                  "text": "the ergonomic requirement to accommodate a 95th percentile human male hand carrying a pod by its handles",
+                  "answer_start": 807
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "f13e79fb-8658-46f8-8594-bc4eb736f100",
+              "question": "What drove the limitation of the load port height to 900 mm?",
+              "answers": [
+                {
+                  "text": "ergonomic considerations",
+                  "answer_start": 980
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "db7026ee-4f45-4ff0-9143-55c836900b84",
+              "question": "What must equipment suppliers consider to ensure that their tool will be compatible with automation systems and pods?",
+              "answers": [
+                {
+                  "text": "the dimension, S",
+                  "answer_start": 1128
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d3cdb5a2-42b7-4a2e-9fca-a073d18aea8d",
+              "question": "What must the dimension, S, be greater than or equal to for tools processing 150 mm or smaller wafers?",
+              "answers": [
+                {
+                  "text": "350 mm",
+                  "answer_start": 1417
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "3921983d-2db8-416e-ba3e-872cdc369bc8",
+              "question": "What must the dimension, S, be greater than or equal to for tools processing 200 mm wafers?",
+              "answers": [
+                {
+                  "text": "400 mm",
+                  "answer_start": 1475
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "fact applies to tools with more than one load port per tool. In order to enable space for two pods on side-by-side load ports, the dimension, S, must be greater than or equal to 350 mm for tools processing 150 mm or smaller wafers, and 400 mm for 200 mm wafer tools. The dimension, S, is defined as the distance between wafer carrier centroids. Driving factors for S are that the size of a pod is larger than a cassette and that ergonomic guidelines suggest a clearance of at least 75 mm between the box and an adjacent object in order to provide space for the human hands to grasp and pick up the box by its handles. A 1-1.4 A global horizontal placement tolerance of 15 mm of the carrier centroid should be allowed by the alignment means of the load port. (That is, a misalignment by up to 7.5 mm in both the x and y directions of the carrier centroid will still allow the alignment means to guide the carrier to its correct final location on the load port). The misplacement dimension is made large to be consistent with the tactile/visual capabilities of humans and the placement accuracy of AGV's. This requires that the load port provide some alignment aid to bring the carrier centroid to within the final registration tolerance (generally 0.5 mm) required by the automated wafer handling of the tool. Standards for this registration tolerance will generally be found in the SMIF documents. I",
+          "qas": [
+            {
+              "id": "379f3db0-8675-44a6-9565-656dd1a43344",
+              "question": "What is the dimension S?",
+              "answers": [
+                {
+                  "text": "the distance between wafer carrier centroids",
+                  "answer_start": 299
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "8bc23658-7296-43cf-afe9-13c0f8bd3bc4",
+              "question": "What must the dimension S be for tools processing 150 mm or smaller wafers?",
+              "answers": [
+                {
+                  "text": "greater than or equal to 350 mm",
+                  "answer_start": 153
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "ded49e58-563e-4642-a752-9771d1408adf",
+              "question": "For 200 mm wafer tools, what must the dimension S be?",
+              "answers": [
+                {
+                  "text": "400 mm",
+                  "answer_start": 236
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "af6caf86-7c43-41d6-9ffb-0afc071c9c3a",
+              "question": "What are the driving factors for the dimension S?",
+              "answers": [
+                {
+                  "text": "that the size of a pod is larger than a cassette and that ergonomic guidelines suggest a clearance of at least 75 mm between the box and an adjacent object in order to provide space for the human hands to grasp and pick up the box by its handles",
+                  "answer_start": 371
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "092ee967-7d8c-4e74-84a4-dd10e311c77a",
+              "question": "What global horizontal placement tolerance should be allowed by the alignment means of the load port?",
+              "answers": [
+                {
+                  "text": "A 1-1.4 A global horizontal placement tolerance of 15 mm of the carrier centroid should be allowed by the alignment means of the load port",
+                  "answer_start": 618
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "2e55509e-0413-4c68-a102-f2f29806eda9",
+              "question": "What is the generally required registration tolerance for automated wafer handling?",
+              "answers": [
+                {
+                  "text": "0.5 mm",
+                  "answer_start": 1247
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "accuracy of AGV's. This requires that the load port provide some alignment aid to bring the carrier centroid to within the final registration tolerance (generally 0.5 mm) required by the automated wafer handling of the tool. Standards for this registration tolerance will generally be found in the SMIF documents. I A 1-1.5 This Standard purposely does not address vacuum load locks. Since minimization of volume is usually a design requirement for a vacuum load lock, the minimum clearances (Cl-C3) of this Standard are not compatible with optimum load lock design. It is not intended that vacuum load locks would be the load port of a tool in which vacuum processing is performed. Simple solutions exist today for transportation of a cassette, or of individual wafers, from a SEMI EIS-compatible load port to a vacuum load lock. Open load ports are intended to be specified for use with overhead transport systems for automation. A 1-1.6 It is not easy to formulate a standard which allows compatibility with such a wide range of requirements. Nor is it easy to design equipment compatible with a number of different standards affecting the same hardware. SEMI E 15 covers a wide range of applications without causing undue compromise in any particular implementation, while remembering that most of our fabs will continue to use human transport in the immediate future. We hope this short I discussion of key issues aids in your understanding of the intent and details of this Standard. SEMI E15-0698E2 (Reapproved 1016) SEMI",
+          "qas": [
+            {
+              "id": "4643c2a6-d365-46d2-b7d5-52174ea85ba0",
+              "question": "Where can standards for registration tolerance generally be found?",
+              "answers": [
+                {
+                  "text": "the SMIF documents",
+                  "answer_start": 294
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "31f125cb-c849-4d2b-ac93-3a8f53ec53eb",
+              "question": "Why are the minimum clearances (Cl-C3) of the Standard not compatible with optimum load lock design?",
+              "answers": [
+                {
+                  "text": "Since minimization of volume is usually a design requirement for a vacuum load lock",
+                  "answer_start": 384
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "9f01445c-8a1f-4378-8c66-1e98d54b959c",
+              "question": "What are open load ports intended to be specified for?",
+              "answers": [
+                {
+                  "text": "use with overhead transport systems for automation",
+                  "answer_start": 880
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "c2fbf88c-e41a-4fcd-8ce6-d408d0c940a2",
+              "question": "What does SEMI E 15 cover regarding applications?",
+              "answers": [
+                {
+                  "text": "a wide range of applications without causing undue compromise in any particular implementation",
+                  "answer_start": 1175
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a16469b8-97ce-4386-802e-68c8cede12f3",
+              "question": "What must the load port provide to ensure accurate AGV performance?",
+              "answers": [
+                {
+                  "text": "some alignment aid to bring the carrier centroid to within the final registration tolerance (generally 0.5 mm) required by the automated wafer handling of the tool",
+                  "answer_start": 60
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "causing undue compromise in any particular implementation, while remembering that most of our fabs will continue to use human transport in the immediate future. We hope this short I discussion of key issues aids in your understanding of the intent and details of this Standard. SEMI E15-0698E2 (Reapproved 1016) SEMI 1990, 2016 semr OTICE: SEMI makes no warranties or representations as to the suitability of the Standards and Safety Guidelines set forth herein for any particular application. The detennination of the suitability of the Standard or Safety Guideline is solely the responsibility of the user. Users are cautioned to refer to manufacturer's instructions, product labels, product data sheets, and other relevant literature, respecting any materials or equipment mentioned herein. Standards and Safety Guidelines are subject to change without notice. By publication of this Standard or Safety Guideline, SEMI takes no position respecting the validity of any patent rights or copyrights asserted in connection with any items mentioned in this Standard or Safety Guideline. Users of this Standard or Safety Guideline are expressly advised that determination of any such patent rights or copyrights and the risk of infringement of such rights are entirely their own responsibility. Copyright by EMI, 673 S. Milpitas Blvd., Milpitas, CA 95035. Reproduction of the contents in whole or in part ,s forbidden without express wrinen consent of SEMl SEMI E15-0698E2 (Reapproved 1016) SEMI 1990, 2016",
+          "qas": [
+            {
+              "id": "df64fd8f-f18c-43fb-8fba-7f3e2f2d2b17",
+              "question": "What does SEMI state regarding warranties for the Standards and Safety Guidelines?",
+              "answers": [
+                {
+                  "text": "SEMI makes no warranties or representations as to the suitability of the Standards and Safety Guidelines set forth herein for any particular application.",
+                  "answer_start": 340
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "8cd8894f-2ca8-4567-aecf-cfdc02c36cab",
+              "question": "Whose responsibility is the determination of the suitability of the Standard or Safety Guideline?",
+              "answers": [
+                {
+                  "text": "the suitability of the Standard or Safety Guideline is solely the responsibility of the user.",
+                  "answer_start": 515
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "cf218dd7-8b97-4a12-8fed-bbd970f79326",
+              "question": "What should users refer to when following the guidelines?",
+              "answers": [
+                {
+                  "text": "manufacturer's instructions, product labels, product data sheets, and other relevant literature",
+                  "answer_start": 641
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "8b98e839-cedf-4458-808a-aa6340c21dea",
+              "question": "What is required for reproducing the contents in whole or in part?",
+              "answers": [
+                {
+                  "text": "forbidden without express wrinen consent of SEMl",
+                  "answer_start": 1405
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "419e4a7d-270f-4c03-81a4-66e048c7ed79",
+              "question": "Where is the copyright held by EMI?",
+              "answers": [
+                {
+                  "text": "673 S. Milpitas Blvd., Milpitas, CA 95035.",
+                  "answer_start": 1310
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SEMI E15.1-0305",
+      "paragraphs": [
+        {
+          "context": "semr SEMI E15.1-0305 (Reapproved 1110) SPECIFICATION FOR 300 mm TOOL LOAD PORT This Standard was technica l ly approved by the Physica l Interfaces & Carr iers G loba l Technical Comm ittee. This edition was approved for pub lication by the g lobal Audits and Reviews Subcommittee on August 2 7 2 0 I 0. Available at www.semi .org in October 2 0 IO; origina lly publ ished in 1996; previously publ ished March 2 005. OTICE: This Standard or Safety Guideline has Inactive Status because the conditions to maintain Current Status have not been met. Inactive Standards or Safety Guidelines are available from SEMI and continue to be valid for use. 1 Purpose 1.1 This Specification defines dimensional requirements for the load ports of 300 mm wafer process and inspection equipment. It is intended to promote a uniform physical interface between equipment and the factory, to facilitate the use of automated wafer carrier transport systems, and/or to meet ergonomic requirements for manually loaded equipment. 2 Scope 2.1 This Standard covers 300 mm equipment only. Similar requirements covering equipment for 200 mm wafers and smaller are covered in SEMI E 15. OTICE: SEMI Standards and Safety Guidelines do not purport to address all safety issues associated with their use. It is the responsibility of the users of the Documents to establish appropriate safety and health practices, and determine the applicability of regulatory or other limitations prior to use. 3 Limitations 3.1 This Standard is not met by direct loading/unloading",
+          "qas": [
+            {
+              "id": "7db5c47f-504f-4c75-8830-be5e7225e6a2",
+              "question": "What does this Specification define dimensional requirements for?",
+              "answers": [
+                {
+                  "text": "the load ports of 300 mm wafer process and inspection equipment",
+                  "answer_start": 715
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "2262feff-d411-49ec-a5ae-97dfedeb0aad",
+              "question": "What is the current status of this Standard or Safety Guideline?",
+              "answers": [
+                {
+                  "text": "Inactive Status",
+                  "answer_start": 462
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "af5a1a8f-14cf-4538-8bf0-a5d6cab44255",
+              "question": "Which size of equipment does this Standard cover?",
+              "answers": [
+                {
+                  "text": "300 mm equipment only",
+                  "answer_start": 1040
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "41e8806c-b62d-47a8-bb8c-1df9efd50e1d",
+              "question": "What is one of the purposes of this Specification?",
+              "answers": [
+                {
+                  "text": "to facilitate the use of automated wafer carrier transport systems",
+                  "answer_start": 870
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "204ad851-040e-46bd-be14-184e731b696c",
+              "question": "Where are similar requirements covering equipment for 200 mm wafers and smaller?",
+              "answers": [
+                {
+                  "text": "SEMI E 15",
+                  "answer_start": 1148
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "purport to address all safety issues associated with their use. It is the responsibility of the users of the Documents to establish appropriate safety and health practices, and determine the applicability of regulatory or other limitations prior to use. 3 Limitations 3.1 This Standard is not met by direct loading/unloading of vacuum load locks. Requirements of such interfaces may differ from those in this Document. 4 Referenced Standards and Documents 4.1 SEMI Standards and Safety Guidelines SEMI El .9 - Mechanical Specification for Cassettes Used to Transport and Store 300 mm Wafers SEMI E 15 - Specification for Tool Load Port I SEMI E47.1 - Mechanical Specification for FOUPS Used to Transport and Store 300 mm Wafers SEMI E57 - Mechanical Specification for Kinematic Couplings Used to Align and Support 300 mm Wafer Carriers I SEMI E62 - Specification for 300 mm Front-Opening Interface Mechanical Standard (FIMS) SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/0 Interface OTICE: Unless otherwise indicated, all documents cited shall be the latest published versions. 5 Terminology 5.1 See SEMI EIS. 6 Ordering Information 6.1 Per 6 of SEMI El 5, except fort 6.1.3 and 6.1.4. Also, the user must specify which of the three options (defined in 7.5) is required for each load port, and whether a cover is needed over the exclusion volume for photo-coupled T/O interfaces (defined in 7.8). 7 Requirements 7. I The dimensional requirements for the load port of a tool are given in Table I with reference to",
+          "qas": [
+            {
+              "id": "89714403-6271-461e-8f09-14c8b83fcd55",
+              "question": "What standard specifies the mechanical specification for cassettes used to transport and store 300 mm wafers?",
+              "answers": [
+                {
+                  "text": "SEMI El .9 - Mechanical Specification for Cassettes Used to Transport and Store 300 mm Wafers",
+                  "answer_start": 497
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "48c70cf7-c6b7-4f81-91d3-d3ebd9a7fed6",
+              "question": "What standard covers the mechanical specification for FOUPS used to transport and store 300 mm wafers?",
+              "answers": [
+                {
+                  "text": "SEMI E47.1 - Mechanical Specification for FOUPS Used to Transport and Store 300 mm Wafers",
+                  "answer_start": 638
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "07ee427f-d882-4d0d-87eb-8115164281da",
+              "question": "What standard specifies the mechanical specification for kinematic couplings used to align and support 300 mm wafer carriers?",
+              "answers": [
+                {
+                  "text": "SEMI E57 - Mechanical Specification for Kinematic Couplings Used to Align and Support 300 mm Wafer Carriers",
+                  "answer_start": 728
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "9e0c8b7c-6577-4949-9be1-38e4fccc67eb",
+              "question": "What limitation is noted regarding direct loading/unloading of vacuum load locks?",
+              "answers": [
+                {
+                  "text": "This Standard is not met by direct loading/unloading of vacuum load locks.",
+                  "answer_start": 272
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "76c03e85-438a-4a74-8fb0-6c5aac4d8c98",
+              "question": "What must the user specify for each load port according to the ordering information?",
+              "answers": [
+                {
+                  "text": "which of the three options (defined in 7.5) is required for each load port, and whether a cover is needed over the exclusion volume for photo-coupled T/O interfaces (defined in 7.8).",
+                  "answer_start": 1233
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "13ca711e-cc54-42f5-8da9-3e7ad379f2b9",
+              "question": "Where are the dimensional requirements for the load port of a tool given?",
+              "answers": [
+                {
+                  "text": "in Table I",
+                  "answer_start": 1503
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "three options (defined in 7.5) is required for each load port, and whether a cover is needed over the exclusion volume for photo-coupled T/O interfaces (defined in 7.8). 7 Requirements 7. I The dimensional requirements for the load port of a tool are given in Table I with reference to the figures in this Document. Although the carrier transport systems shown in these figures appear similar to overhead monorails, they are intended to represent any type of transport system (AGV, PGV, conveyor, overhead track, etc.). SEMI E15.1-0305 (Reap proved 1110) SEMI 1996, 2010 semr 7.2 The dimensional requirements for the placement of a wafer carrier on the load port are given in Table I with reference to the figures of this Document. The carriers shown in these figures are intended to represent any type of carrier (cassette or box). 7.3 The wafers are to be oriented horizontally face up with zero nominal tilt at the time they are placed on the load port. The tolerance in the horizontal plane is determined by the registration and alignment feature between the carrier and the load port, as specified in SEMI E57. 7.3.l The carrier shall be loaded and unloaded with its front parallel to and away from the load face plane (see Figure I). 7.4 Dimension H is nominally 900 mm, fully adjustable at installation over the range of 890 to 910 mm. The precision with which the load port height must be maintained is dictated by the needs of the carrier",
+          "qas": [
+            {
+              "id": "8d3eb9e9-5cf2-46bf-b7f9-3603f1bcf8dc",
+              "question": "What types of transport systems do the carrier transport systems represent?",
+              "answers": [
+                {
+                  "text": "any type of transport system (AGV, PGV, conveyor, overhead track, etc.)",
+                  "answer_start": 447
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "bd632052-354e-4803-bc34-f74d43f453a2",
+              "question": "What orientation must wafers have when placed on the load port?",
+              "answers": [
+                {
+                  "text": "horizontally face up with zero nominal tilt",
+                  "answer_start": 867
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "440cbb4f-186b-4450-8c08-cb4a894106b2",
+              "question": "How must the carrier be loaded and unloaded?",
+              "answers": [
+                {
+                  "text": "with its front parallel to and away from the load face plane",
+                  "answer_start": 1163
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "9a63ad4f-cbb5-414c-8f73-255b25609a1c",
+              "question": "What is the nominal dimension of H?",
+              "answers": [
+                {
+                  "text": "900 mm",
+                  "answer_start": 1269
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "320ec4db-2f0d-45e9-8255-cf8bf13c3a2a",
+              "question": "Over what range can Dimension H be fully adjusted at installation?",
+              "answers": [
+                {
+                  "text": "890 to 910 mm",
+                  "answer_start": 1328
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "parallel to and away from the load face plane (see Figure I). 7.4 Dimension H is nominally 900 mm, fully adjustable at installation over the range of 890 to 910 mm. The precision with which the load port height must be maintained is dictated by the needs of the carrier delivery system. 7.5 As shown in Figures 3 and 4, the maximum allowable height of an obstruction on the load port over which the carrier must be lifted (before being set down on the kinematic couplings) is HI. Examples of such obstructions include alignment devices and identification tag readers as well as the kinematic couplings themselves. Below HI above the horizontal datum plane, clearances CI and C2 no longer apply. 7.5.l Two exclusion volumes on the left and right side of the load port must also be kept clear so that fork-lifts or conveyors may be used. Each exclusion volume extends from the load face plane to DO beyond the facial datum plane and extends HO below the horizontal datum plane between WI and W2 from the bilateral datum plane. Although the carrier shown in Figure 3 is an open cassette, these exclusion volumes are also required on load ports that are configured with a FIMS interface (conforming to SEMI E62) for front-opening boxes. 7.5.2 A load port that advances the carrier from the undocked position (where the carrier is initially delivered to the load port) to the docked position (where the carrier is ready for wafer extraction or insertion)",
+          "qas": [
+            {
+              "id": "16cc332c-1b1f-45d2-a7f9-57245d216ba8",
+              "question": "What is the nominal dimension H?",
+              "answers": [
+                {
+                  "text": "nominally 900 mm",
+                  "answer_start": 81
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d3232d26-9fa3-4a05-b1b6-c7e38885dee7",
+              "question": "Over what range can Dimension H be fully adjustable?",
+              "answers": [
+                {
+                  "text": "890 to 910 mm",
+                  "answer_start": 150
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "6a7d583f-a511-4c2b-ae0a-5d7fc38f5fb9",
+              "question": "Why must two exclusion volumes be kept clear on the left and right side of the load port?",
+              "answers": [
+                {
+                  "text": "so that fork-lifts or conveyors may be used",
+                  "answer_start": 791
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "0f96646f-80c1-48fe-93a4-3e4256cb6656",
+              "question": "What are the dimensions defining the exclusion volume?",
+              "answers": [
+                {
+                  "text": "extends from the load face plane to DO beyond the facial datum plane and extends HO below the horizontal datum plane between WI and W2 from the bilateral datum plane",
+                  "answer_start": 858
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "8496e41b-5bcc-45d0-87f3-3ed057fc12e4",
+              "question": "What type of load port requires exclusion volumes even if the carrier is an open cassette?",
+              "answers": [
+                {
+                  "text": "load ports that are configured with a FIMS interface (conforming to SEMI E62) for front-opening boxes",
+                  "answer_start": 1130
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "339609a3-0b40-4197-8947-cd8bfd6ccff8",
+              "question": "What is the docked position of the carrier?",
+              "answers": [
+                {
+                  "text": "where the carrier is ready for wafer extraction or insertion",
+                  "answer_start": 1388
+                }
+              ],
+              "type": "definition"
+            }
+          ]
+        },
+        {
+          "context": "that are configured with a FIMS interface (conforming to SEMI E62) for front-opening boxes. 7.5.2 A load port that advances the carrier from the undocked position (where the carrier is initially delivered to the load port) to the docked position (where the carrier is ready for wafer extraction or insertion) must reserve an exclusion volume that is intended for (but not limited to) containing automated units that read or write to an ID tag on the rear of a carrier in the wt-docked position (where the carrier is initially delivered to the load port). This exclusion volume extends W4 to either side of the bilateral datum plane and between D3 and D4 from the facial datum plane. When the load port is in the correct position to read or write to the ID tag, the exclusion volume must extend from the carrier down to H3 plus H4 below the horizontal datum plane. When the load port is in a different position, the volume from the carrier down to H3 below the horizontal datum plane may be occupied temporarily. The value of H3 is at the load port supplier's choice. As a result, reader/writer units (for this exclusion volume) must fit in a space no taller than H4, no wider than two times W4, and no deeper than D4 minus D3. If no reader/writer unit is installed, the exclusion volume may be covered by a panel. See Table 2 for dimensions of this exclusion volume. 7.5.3 Also, the load port must",
+          "qas": [
+            {
+              "id": "3b6560e0-ef24-448b-b2fb-276d302c9e58",
+              "question": "What is the exclusion volume intended for?",
+              "answers": [
+                {
+                  "text": "containing automated units that read or write to an ID tag on the rear of a carrier in the wt-docked position",
+                  "answer_start": 384
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "510554f5-c76f-4138-8cd6-c0f8d5ee8efe",
+              "question": "What are the lateral and depth boundaries of the exclusion volume?",
+              "answers": [
+                {
+                  "text": "extends W4 to either side of the bilateral datum plane and between D3 and D4 from the facial datum plane",
+                  "answer_start": 577
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "19f25fd4-c8ed-4bbd-b1a3-3cbf0f13066a",
+              "question": "What are the required vertical boundaries when the load port is in the correct position to read or write to the ID tag?",
+              "answers": [
+                {
+                  "text": "from the carrier down to H3 plus H4 below the horizontal datum plane",
+                  "answer_start": 794
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "5d997f6b-7e99-4c35-8db6-be37da21101f",
+              "question": "What are the maximum dimensions for reader/writer units that must fit in the exclusion volume?",
+              "answers": [
+                {
+                  "text": "no taller than H4, no wider than two times W4, and no deeper than D4 minus D3",
+                  "answer_start": 1148
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "17133d95-7fcb-42c8-84b5-6b5a1b0b79d1",
+              "question": "What occupies the exclusion volume if no reader/writer unit is installed?",
+              "answers": [
+                {
+                  "text": "a panel",
+                  "answer_start": 1305
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "82322c86-b48b-4e28-8a47-242354da39a3",
+              "question": "What volume may be temporarily occupied when the load port is in a different position?",
+              "answers": [
+                {
+                  "text": "the volume from the carrier down to H3 below the horizontal datum plane",
+                  "answer_start": 911
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "in a space no taller than H4, no wider than two times W4, and no deeper than D4 minus D3. If no reader/writer unit is installed, the exclusion volume may be covered by a panel. See Table 2 for dimensions of this exclusion volume. 7.5.3 Also, the load port must reserve another exclusion volume that is intended for (but not limited to) containing automated units that read or write to an ID tag on the rear of a carrier in the docked position (where the carrier is ready for wafer extraction or insertion). In this case, dimensions D3 ', D4', and W4 are measured with respect to the datum planes defined by the kinematic couplings in the docked position (unlike all other use of datum planes in this Standard). The distance between these two sets of datum planes (in the docked vs. undocked position) is not defined, and if the carrier is rotated during the advance motion, the two facial (or bilateral) datum planes will not be parallel. At the load port supplier's choice, the reader/writer unit in this exclusion volume may be mounted either on the advance mechanism of the load port (so it is very close to the carrier and it moves with the kinematic couplings) or below the advance mechanism (so it is farther from the carrier, is stationary, and may be covered temporarily by the advance mechanism). Again, this exclusion volume extends W4 to either side of the bilateral datum plane and between D3 and D4'",
+          "qas": [
+            {
+              "id": "c4cf6a89-572a-43ae-8960-749d3bd8ec09",
+              "question": "What is the maximum depth constraint for the exclusion volume?",
+              "answers": [
+                {
+                  "text": "D4 minus D3",
+                  "answer_start": 77
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "7cc3d904-781b-4c10-922a-d062d72d4dc7",
+              "question": "What is the load port exclusion volume intended for?",
+              "answers": [
+                {
+                  "text": "containing automated units that read or write to an ID tag on the rear of a carrier in the docked position",
+                  "answer_start": 336
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "c4236036-6a9f-43ac-8bf8-d50d92aaffab",
+              "question": "What happens to the two facial (or bilateral) datum planes if the carrier is rotated during the advance motion?",
+              "answers": [
+                {
+                  "text": "will not be parallel",
+                  "answer_start": 917
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "8fbf32a8-3ad9-4d98-8962-fe5e86eb6bb6",
+              "question": "Between which two dimensions does the load port exclusion volume extend W4 to either side of the bilateral datum plane?",
+              "answers": [
+                {
+                  "text": "between D3 and D4'",
+                  "answer_start": 1394
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "carrier and it moves with the kinematic couplings) or below the advance mechanism (so it is farther from the carrier, is stationary, and may be covered temporarily by the advance mechanism). Again, this exclusion volume extends W4 to either side of the bilateral datum plane and between D3 and D4' from the facial datum plane. When the load port is in the correct position to read or write to the ID tag, the exclusion volume must extend from the carrier down to H3 plus H4 below the horizontal datum plane. When the load port is in a different position, the volume from the carrier down to H3 below the horizontal datum plane may be occupied temporarily. The value of H3 is at the load port supplier's choice. As a result, reader/writer units (for this exclusion volume) must fit in a space no taller than H4, no wider than two times W4', and no deeper than D4' minus D3 . If no reader/writer unit is installed, the exclusion volume may be covered by a panel. See Table 2 for dimensions of this exclusion volume. 7.5.4 A load port that is configured for open cassettes (with bar-code ID tags on the bottom) or for FOUPs (with bar code ID tags on the rear) must provide the appropriate exclusion volume a bar-code reader defined in Table 2. SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 semr 7.6 As shown in Figure 2, tool load ports must conform to one of the following configuration options.",
+          "qas": [
+            {
+              "id": "5bd17f66-9b7d-4bb6-be11-08f8041b1d89",
+              "question": "What must the exclusion volume extend from the carrier down to when the load port is in the correct position to read or write to the ID tag?",
+              "answers": [
+                {
+                  "text": "the carrier down to H3 plus H4 below the horizontal datum plane",
+                  "answer_start": 443
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d4e6f42f-9698-4244-aa4d-27a804de4939",
+              "question": "What are the maximum dimensions required for reader/writer units for this exclusion volume?",
+              "answers": [
+                {
+                  "text": "no taller than H4, no wider than two times W4', and no deeper than D4' minus D3",
+                  "answer_start": 792
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "34cd9b53-9ec1-48b4-b41b-8052201c434e",
+              "question": "What must a load port configured for open cassettes or for FOUPs provide?",
+              "answers": [
+                {
+                  "text": "the appropriate exclusion volume a bar-code reader defined in Table 2",
+                  "answer_start": 1170
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "de325f69-925b-487e-b6e9-a52fef3cff85",
+              "question": "Whose choice determines the value of H3?",
+              "answers": [
+                {
+                  "text": "the load port supplier's choice",
+                  "answer_start": 678
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "f64c3cde-bc62-4cb8-8c77-0cc380f2970c",
+              "question": "What may cover the exclusion volume if no reader/writer unit is installed?",
+              "answers": [
+                {
+                  "text": "a panel",
+                  "answer_start": 952
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "or for FOUPs (with bar code ID tags on the rear) must provide the appropriate exclusion volume a bar-code reader defined in Table 2. SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 semr 7.6 As shown in Figure 2, tool load ports must conform to one of the following configuration options. If no option is specified, Option I is assumed. 7.6.1 In Option I, the load port must nominally be at 900 mm, and it must be open from above to facilitate automatic carrier delivery from an overhead transport system. The open volume required for vertical delivery is defined by a projection of the tool load port area, including the area required for CJ and C2 clearances, projected upward to the top of the tool. Note that this condition need only be met when the tool is being loaded. For example, the load port may be formed by a surface that extends outward during loading to provide overhead access. 7.6.2 In Option 2 (which allows faster automatic carrier delivery from an overhead transport system), the horizontal datum plane of the load port may be at any height above H that leaves the top of the carrier under H2, but it must be open from above. 7.6.3 In Option 3 (which allows bulkhead mounting of tools with fan/filter units at C3), the load port must nominally be at 900 mm, and it must have a clearance C3 above the maximum height of the carrier. 7.7 Clearances CJ, C2, and C3 are defined",
+          "qas": [
+            {
+              "id": "d64e7143-2241-4ea2-918d-03b33f6fce61",
+              "question": "What option is assumed if no load port option is specified?",
+              "answers": [
+                {
+                  "text": "Option I is assumed",
+                  "answer_start": 317
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "4d79c904-f8b2-4a19-a528-74427d484ede",
+              "question": "What is the nominal load port height required in Option I?",
+              "answers": [
+                {
+                  "text": "900 mm",
+                  "answer_start": 392
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "8ce14094-78b9-4d71-a655-435265762d6c",
+              "question": "What must the load port do in Option I to facilitate automatic carrier delivery?",
+              "answers": [
+                {
+                  "text": "it must be open from above to facilitate automatic carrier delivery from an overhead transport system",
+                  "answer_start": 404
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "b4d9a842-86f4-4088-8aa3-4bf2a8138811",
+              "question": "What is the primary benefit of Option 2?",
+              "answers": [
+                {
+                  "text": "which allows faster automatic carrier delivery from an overhead transport system",
+                  "answer_start": 914
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "ec1b5085-0d0d-417c-9181-3c54c4f7b2b7",
+              "question": "What must the load port have in Option 3?",
+              "answers": [
+                {
+                  "text": "it must have a clearance C3 above the maximum height of the carrier",
+                  "answer_start": 1283
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "be open from above. 7.6.3 In Option 3 (which allows bulkhead mounting of tools with fan/filter units at C3), the load port must nominally be at 900 mm, and it must have a clearance C3 above the maximum height of the carrier. 7.7 Clearances CJ, C2, and C3 are defined with respect to the maximum dimensions of the carrier (defined in SEMJ E47. I for a box or in SEMJ El .9 for an open cassette), not to the rectangular wafer carrier envelope (defined in SEMI E 15). To prevent interference between transport systems on the same or adjacent load ports, it is recommended that floor-based transport vehicles not exceed clearances C2 and C3 and over-head hoist vehicles not exceed clearance C2 when picking up or placing a carrier on the load port. 7.8 Dimension S specifies the recommended minimum spacing between cassette/wafer carrier centroids. In any case, if S violates CI, then CI prevails. As shown in Figure I, below each load port must be an exclusion volume ( defined by dimensions D7, D8, H7, H8, and W8) for photo-coupled 1/0 interfaces to floor-based transport vehicles. This exclusion volume is centered on the bilateral datum plane, but its distance behind the load face plane may vary between zero and the upper limit on D7. If no photo-coupled 1/0 interfaces unit is installed, the exclusion volume may be covered by a panel. If a photo-coupled 1/0 device is installed, the center of its horizontal beam line must be within W9",
+          "qas": [
+            {
+              "id": "c625f0bc-7d82-4dec-b9a9-65b19c105745",
+              "question": "What are the requirements for the load port in Option 3?",
+              "answers": [
+                {
+                  "text": "the load port must nominally be at 900 mm, and it must have a clearance C3 above the maximum height of the carrier",
+                  "answer_start": 109
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "eaca325c-af21-49d4-92cc-837057e07970",
+              "question": "What do the clearances CJ, C2, and C3 relate to?",
+              "answers": [
+                {
+                  "text": "the maximum dimensions of the carrier (defined in SEMJ E47. I for a box or in SEMJ El .9 for an open cassette)",
+                  "answer_start": 283
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "69e9ec8d-7fa1-461d-a468-66051ba4921c",
+              "question": "What are the recommended limitations for floor-based and over-head hoist transport vehicles?",
+              "answers": [
+                {
+                  "text": "floor-based transport vehicles not exceed clearances C2 and C3 and over-head hoist vehicles not exceed clearance C2 when picking up or placing a carrier on the load port",
+                  "answer_start": 574
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "af3ea085-7920-4159-b533-c17afd33ef69",
+              "question": "What does Dimension S specify?",
+              "answers": [
+                {
+                  "text": "the recommended minimum spacing between cassette/wafer carrier centroids",
+                  "answer_start": 771
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "c3a6508b-31e2-4cc1-8d05-e2d4b512f9cd",
+              "question": "What must be located below each load port?",
+              "answers": [
+                {
+                  "text": "an exclusion volume ( defined by dimensions D7, D8, H7, H8, and W8) for photo-coupled 1/0 interfaces to floor-based transport vehicles",
+                  "answer_start": 945
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "24bbdbc4-2d5b-4269-8d18-5f4764038841",
+              "question": "What covers the exclusion volume if no photo-coupled 1/0 interfaces unit is installed?",
+              "answers": [
+                {
+                  "text": "the exclusion volume may be covered by a panel",
+                  "answer_start": 1292
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "behind the load face plane may vary between zero and the upper limit on D7. If no photo-coupled 1/0 interfaces unit is installed, the exclusion volume may be covered by a panel. If a photo-coupled 1/0 device is installed, the center of its horizontal beam line must be within W9 of the bilateral datum plane and within H9 of a point H7 above the floor. On each tool, load ports are numbered in increasing order (beginning with I) from left to right (as seen by a person facing the load face plane) beginning with load ports that are nominally at 900 mm (Option I or Option 3) and then continuing (from left to right) with any load ports that are higher (Option 2). 7.9 To add clearance for overhead carrier transport, no part of the tool in front of the plane defined by C2 may be higher than H2 from the floor. The volume below H2 may contain carriers stored in an internal buffer by the tool. 7. IO If the tool occupies the space behind the load port and above any interface to the carrier, then the front of that upper part of the tool (shown as the equipment boundary in Figure I) must be at a distance DI from the facial datum plane. This equipment boundary is parallel to the load face plane, and carriers may be moved or rotated below this surface after loading. 7.11 If the load port provides the option to use roller conveyors for",
+          "qas": [
+            {
+              "id": "ed9b94e1-31d4-4c03-bf12-2249713346ba",
+              "question": "What must the center of a photo-coupled 1/0 device's horizontal beam line be within?",
+              "answers": [
+                {
+                  "text": "W9 of the bilateral datum plane and within H9 of a point H7 above the floor",
+                  "answer_start": 276
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "fa13c22e-4711-4f79-b919-dd6ac507c55d",
+              "question": "How are load ports numbered on each tool?",
+              "answers": [
+                {
+                  "text": "in increasing order (beginning with I) from left to right (as seen by a person facing the load face plane) beginning with load ports that are nominally at 900 mm (Option I or Option 3) and then continuing (from left to right) with any load ports that are higher (Option 2)",
+                  "answer_start": 391
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "1d84c589-dc45-40a6-bb4c-73dc9d7433d4",
+              "question": "What is the height restriction for the tool in front of the plane defined by C2?",
+              "answers": [
+                {
+                  "text": "no part of the tool in front of the plane defined by C2 may be higher than H2 from the floor",
+                  "answer_start": 718
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "5eb76b29-bdbf-4c87-8a4c-6dacc9bcd558",
+              "question": "What is the function of the equipment boundary shown in Figure I?",
+              "answers": [
+                {
+                  "text": "carriers may be moved or rotated below this surface after loading",
+                  "answer_start": 1203
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "fb396417-ecbe-4a2c-aa89-c44765588c8d",
+              "question": "What covers the exclusion volume if no photo-coupled 1/0 interfaces unit is installed?",
+              "answers": [
+                {
+                  "text": "a panel",
+                  "answer_start": 169
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "boundary in Figure I) must be at a distance DI from the facial datum plane. This equipment boundary is parallel to the load face plane, and carriers may be moved or rotated below this surface after loading. 7.11 If the load port provides the option to use roller conveyors for carrier loading, the conveying surface of the rollers must be HS above the horizontal datum plane (as shown in Figures 3 and 4) at the time of carrier loading or unloading. When not in use, the conveyors must be lowered below HO under the horizontal datum plane. 7.12 Dimension Definitions - See SEMI El 5 for applicable definitions. 8 Related Documents 8.1 SEMI Standards and Safety Guidelines SEMJ E63 - Mechanical Specification for 300 mm Box Opener/Loader to Tool Standard (BOL TS-M) Interface SEMJ E64 - Specification for 300 mm Cart to SEMJ E 15.1 Docking Interface Port SEMJ E72 - Specification and Guide for 300 mm Equipment Footprint, Height, and Weight I SEMJ M31 - Mechanical Specification for Front-Opening Shipping Box Used to Transport and Ship 300 mm Wafers SEMI E15.1-0305 (Reap proved 1110) SEMI 1996, 2010 semr Table 1 Dimensional Requirements for 300 mm Load Ports Dimension Application C l . . mm1mum C2 mm1mum C3 mm1mum D range DO mm1mum DI range maximum . . mm1mum H nomina l HO m1mmum HI maximum H2 maximum H5 range H7 nomina l H8 mm1mum H9 maxunum s . . mm1mum WI maxunum W2 m1mmum W8 . . rmmmum W9",
+          "qas": [
+            {
+              "id": "ba0e9cc1-bc0e-4f94-be35-258d248091bf",
+              "question": "What must the boundary in Figure I) be at a distance from the facial datum plane?",
+              "answers": [
+                {
+                  "text": "at a distance DI from the facial datum plane",
+                  "answer_start": 30
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "71da8594-75cc-4f61-a8e2-9b838af56820",
+              "question": "When the load port uses roller conveyors, what must the conveying surface be above the horizontal datum plane?",
+              "answers": [
+                {
+                  "text": "the horizontal datum plane",
+                  "answer_start": 348
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "5b82c406-8769-44fa-9724-85001a727878",
+              "question": "When are the conveyors required to be lowered below HO?",
+              "answers": [
+                {
+                  "text": "When not in use",
+                  "answer_start": 450
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "91ed4a8f-856a-4ba0-bdbf-6381e5a3d8c1",
+              "question": "Which SEMI standard covers the Mechanical Specification for 300 mm Box Opener/Loader to Tool Standard?",
+              "answers": [
+                {
+                  "text": "SEMJ E63 - Mechanical Specification for 300 mm Box Opener/Loader to Tool Standard (BOL TS-M) Interface",
+                  "answer_start": 672
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "68a6ddab-ac3c-4f4e-9f63-f306d0227415",
+              "question": "What specification covers the Specification and Guide for 300 mm Equipment Footprint, Height, and Weight?",
+              "answers": [
+                {
+                  "text": "SEMJ E72 - Specification and Guide for 300 mm Equipment Footprint, Height, and Weight",
+                  "answer_start": 854
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "80a3afe2-03c0-488a-b798-60cc7f90a657",
+              "question": "What is the maximum range for the DI dimension?",
+              "answers": [
+                {
+                  "text": "range DO mm1mum DI range maximum . . mm1mum",
+                  "answer_start": 1220
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "bd521178-f47b-4737-b1d8-9fcf4453b5f4",
+              "question": "What is the maximum dimension specified for the H9?",
+              "answers": [
+                {
+                  "text": "maxunum s . . mm1mum",
+                  "answer_start": 1341
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "C l . . mm1mum C2 mm1mum C3 mm1mum D range DO mm1mum DI range maximum . . mm1mum H nomina l HO m1mmum HI maximum H2 maximum H5 range H7 nomina l H8 mm1mum H9 maxunum s . . mm1mum WI maxunum W2 m1mmum W8 . . rmmmum W9 maxunum Value, mm (in.) 7 5 (3.0) 30 (1.2) 150(5.91) 250 +OHO (9.8 + 0- 0.4) 110(4.33) 166 (6.54) 200 + I O - 4 (7 .9 +0.4/-0.2) 450 (17 .7 2) 30 (1.18) 900 (35.4) 15 (0.59) 25 (1.0) 2600 (102.4) 33 I (1.30 0.04) 250 (9.84) 50 (1.97 ) 12 (0.47 ) 420 (16.5) 47 5 (18.7 ) 505 (19.9) 130 (5.12) 165 (6.50) 205 (8.07 ) 100 (3.94) 22 (0.87 ) Notes open cassette (SEMI E 1.9) only FOUP (y52 in SEMJ E47 . l) only #I height of ro ller conveyors center of optica l beam l ine tolerance on photo-coup led 1/0 device beam line open cassette (SEMI E 1.9) only box (SEMJ E47 .l ) without manua l s ide hand les box (SEMI E47 .l) with manua l side hand les open cassette (SEMI E 1.9) only FOUP (SEMJ E47 . l ) only tolerance on photo-coup led 1/0 device beam line #I This value is ergonomically compa1ible with the proposed 13 wafer carriers and may not be ergonomically compatible with the proposed 25 wafer carriers. Such carriers may require assisted loading. H to be fully adjustable at installation over the range of",
+          "qas": [
+            {
+              "id": "c2c91bae-aa9c-48bf-8cb5-d281434f7b99",
+              "question": "What is the maximum value specified for H2?",
+              "answers": [
+                {
+                  "text": "H2 maximum",
+                  "answer_start": 113
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "2be9e554-5802-4aeb-afe8-442f440ee271",
+              "question": "What is the maximum value specified for H9?",
+              "answers": [
+                {
+                  "text": "H9 maxunum",
+                  "answer_start": 155
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "153f1f65-15ac-4899-bd4c-256c26bde4d6",
+              "question": "What is the range for DO?",
+              "answers": [
+                {
+                  "text": "D range DO mm1mum",
+                  "answer_start": 35
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "265b2157-dc1f-4d5d-a1ca-be8a2798f9b3",
+              "question": "What is the tolerance on photo-coup led?",
+              "answers": [
+                {
+                  "text": "tolerance on photo-coup led",
+                  "answer_start": 685
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a25ffc0f-0565-45c2-b05c-bd2b676a375c",
+              "question": "What is the note regarding ergonomic compatibility with wafer carriers?",
+              "answers": [
+                {
+                  "text": "This value is ergonomically compa1ible with the proposed 13 wafer carriers and may not be ergonomically compatible with the proposed 25 wafer carriers.",
+                  "answer_start": 971
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "6002731e-fe4c-44ac-a7e8-b8267f044cf7",
+              "question": "What is the maximum value for W2?",
+              "answers": [
+                {
+                  "text": "W2 m1mmum",
+                  "answer_start": 190
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "dc09ae90-7d8b-44d9-b64c-f7c966be628f",
+              "question": "What is the nominal height specified for H nomina l?",
+              "answers": [
+                {
+                  "text": "H nomina l",
+                  "answer_start": 81
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "only tolerance on photo-coup led 1/0 device beam line #I This value is ergonomically compa1ible with the proposed 13 wafer carriers and may not be ergonomically compatible with the proposed 25 wafer carriers. Such carriers may require assisted loading. H to be fully adjustable at installation over the range of 890 to 910 mm (35 to 35.8 in.). Table 2 Required Exclusion Volume Dimensions for Carrier ID Reader/Writer Units Load Pon Type Carrier Type#I FOUP FOUP FOUP open cassette (SEMI E47 .l)only (SEMJ E47 . l) only (SEMJ E47 .l ) only (SEMI El .9) only Carrier ID Type#1 electronic (read/write ) electronic (read /write ) bar-code bar-code (read only) (read only) Carrier Position#1 docked undocked undocked not app l icab le Dimension mm (in.) mm (in.) mm (in.) mm (in.) 03 or 03' 03' = 165 (6.50) max. 03 = I 90 (7.48) max. 03 = 190 (7.48) max. 03 = 136 (5.35) max. 04 or 04' 04' = 205 (8.07 ) min. 04 = 235 (9.25) min. 04 = 240 (9.45) min. 04 = 230 (9.06) min. H3 0min. 15 (0.59) min. 0min. 0min. 7 5 (2.95) max. 36 (1.42) max. 0max. 0max. H4 H4 = 30 ( 1.18) min. H4 = 80 (3.15) min. H4 = 80 (3.15) m in. H4 = 150 (5.91) min. W4orW4' W4' = 35 (1.38) min. W4 = 7 5 (2.95) min. W4 = 7 5 (2.95) min. W4 = 7 5 (2.95) min. #I Automated units 10 read or write to",
+          "qas": [
+            {
+              "id": "6f03f78f-9132-473d-9d4a-840a3abf7880",
+              "question": "With how many wafer carriers is this value ergonomically compatible?",
+              "answers": [
+                {
+                  "text": "the proposed 13 wafer carriers",
+                  "answer_start": 101
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d6d7104f-241e-45d2-9e3d-837608098d79",
+              "question": "Over what range must H be fully adjustable at installation?",
+              "answers": [
+                {
+                  "text": "890 to 910 mm (35 to 35.8 in.)",
+                  "answer_start": 312
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "3685faa5-8d2b-4ec1-8cda-e90d5acaa80d",
+              "question": "What is the maximum dimension for the '03 or 03'' carrier ID reader/writer unit?",
+              "answers": [
+                {
+                  "text": "165 (6.50) max.",
+                  "answer_start": 793
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "df0a51e2-41b9-4299-b434-962792503827",
+              "question": "What is the minimum dimension for the '04 or 04'' carrier ID reader/writer unit?",
+              "answers": [
+                {
+                  "text": "205 (8.07 ) min.",
+                  "answer_start": 889
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "31678923-cc7f-42bf-9117-d71beb39bbed",
+              "question": "What is the minimum required dimension for H4 for the '04 or 04'' carrier ID reader/writer unit?",
+              "answers": [
+                {
+                  "text": "80 (3.15) min.",
+                  "answer_start": 1077
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "84bc53c9-4d0f-4bf4-90b6-785319fc1480",
+              "question": "What is the minimum dimension for W4 for the '04 or 04'' carrier ID reader/writer unit?",
+              "answers": [
+                {
+                  "text": "7 5 (2.95) min.",
+                  "answer_start": 1168
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "1.18) min. H4 = 80 (3.15) min. H4 = 80 (3.15) m in. H4 = 150 (5.91) min. W4orW4' W4' = 35 (1.38) min. W4 = 7 5 (2.95) min. W4 = 7 5 (2.95) min. W4 = 7 5 (2.95) min. #I Automated units 10 read or write to an ID tag, which are mounted in one of the exclusion volumes as defined by this Standard, are not limited lo be used on load ports in the Carrier Position, for the Carrier ID type or Carrier type indicated by this table. SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 semr overhead track clearance D1 = 200 ';. bilateral datum planes (wafer centroids) wafer carrier H2 S2600 horizontal datum plane\\ exclusion volume :?: 420 (open cassette) for parallel :;,: 475 (box without handles) H7 H8 1/0 device 505 (box with handles) 250:;,: 50 :'/ EMI . : ... fl .... , oor -X . ,_ _ ___,_ ___ ____, f .. T . Figure 1 H1 i Load Port Requirements t H =900 i Option 1 H2 S2600 (box only) Option 2 Figure 2 C3 1 150 + ; Load Port Options Option 3 : . equipment boundary facial datum plane (Carrier placement/ removal) afer BOLTS Diane (see SEMI E63) reserved soacefor overhead transport of boxes SEMI E15.1-0305 (Reap proved 1110) SEMI 1996, 2010 equipment boundary vertical obstruction above H 1 exclusion volume for fork-lilt semr bilateral datum plane ne DJs 136 04 230 W475 pen cassette vertical obstruction above H",
+          "qas": [
+            {
+              "id": "6e5ee99c-8962-46ef-bea1-c96657ea3e35",
+              "question": "What are the bilateral datum planes?",
+              "answers": [
+                {
+                  "text": "(wafer centroids) wafer carrier H2 S2600 horizontal datum plane",
+                  "answer_start": 541
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "493cc77f-4bb1-4e9b-a044-4ec825bd78c9",
+              "question": "What are automated units that read or write to an ID tag not limited to be used on load ports?",
+              "answers": [
+                {
+                  "text": "Automated units 10 read or write to an ID tag, which are mounted in one of the exclusion volumes as defined by this Standard, are not limited lo be used on load ports in the Carrier Position",
+                  "answer_start": 168
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d544d98a-9460-4faf-b048-cce00ec62486",
+              "question": "What is the exclusion volume for an open cassette?",
+              "answers": [
+                {
+                  "text": "420 (open cassette)",
+                  "answer_start": 627
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "5baed2ab-9f0a-47ef-997f-22a38772ddef",
+              "question": "What is the exclusion volume for a box without handles?",
+              "answers": [
+                {
+                  "text": "475 (box without handles)",
+                  "answer_start": 665
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "ff7d0a9d-7eef-4f4d-98ff-efef7a146a0d",
+              "question": "What is the purpose of the equipment boundary facial datum plane?",
+              "answers": [
+                {
+                  "text": "(Carrier placement/ removal)",
+                  "answer_start": 984
+                }
+              ],
+              "type": "definition"
+            }
+          ]
+        },
+        {
+          "context": "(Carrier placement/ removal) afer BOLTS Diane (see SEMI E63) reserved soacefor overhead transport of boxes SEMI E15.1-0305 (Reap proved 1110) SEMI 1996, 2010 equipment boundary vertical obstruction above H 1 exclusion volume for fork-lilt semr bilateral datum plane ne DJs 136 04 230 W475 pen cassette vertical obstruction above H 1 HS Ht _ _[_t __ r-t-\"111---HJ o -------fl so W475 I H4 150 W1 !130 bilateral datum plane W2 05 (wafercentroid):__ _____ -----.i Figure 3 VOlime that may bo temporatily by the advance modlanism exclusion volum for an 10 reador unrt that read a bar code label Exclusion Volumes on Load Port for Open Cassette SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 semr eq Li pma, I bol61dsry vertical obstruction above H 1 l)QlMa d.lun Pillot vertical obstruction above H 1 e,cclus ion vokme f fat -lilt vatical obstruction above H1 H1<2S '15-33:1: 1 HOoi:15 llonZO'UI dalJ'I\\ pbw -J D1=200+10/4 Nl>'J:o/5 i i r .... .. I i I i ,, r: :.:; ::.::: ;.-:-/.;.;.;.+.;0 . ;.;.;.;.;.:.:.-.-. .- . .-r.-.-.-:.1 1 .. .. l ........ ......... .. , ...... .. .. ......... r .... ; : i I i : : I : . . i I i i I : i I : j . . ' I H321SO)(q S '(0)(75} . . ---------I W2 1>rctu<o0n ;oi lfflf! lor 1n ID,, unc ltw reeds an tlec:voNc taO (Of Dar CDtle l.lbef ,n l!le - ell (or dooold) poo;,t.on Figure 4 Exclusion Volumes on Load Port for FOUP SEMI",
+          "qas": [
+            {
+              "id": "51e20396-011d-449c-a21a-0069a0362e80",
+              "question": "What standard governs the reserved space for overhead transport of boxes?",
+              "answers": [
+                {
+                  "text": "SEMI E15.1-0305 (Reap proved 1110) SEMI 1996, 2010",
+                  "answer_start": 107
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "c086789b-134c-403c-9bb1-ae0e6a47b774",
+              "question": "What are the Exclusion Volumes on Load Port for Open Cassette?",
+              "answers": [
+                {
+                  "text": "SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010",
+                  "answer_start": 640
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "d127c78c-3e1b-4c7c-b8a8-c7308108cd30",
+              "question": "What volume is associated with an 10 reador unrt that read a bar code label?",
+              "answers": [
+                {
+                  "text": "Figure 3 VOlime that may bo temporatily by the advance modlanism exclusion volum for an 10 reador unrt that read a bar code label",
+                  "answer_start": 461
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "76bb08f6-69ee-4f9a-90af-6fe51511d2e9",
+              "question": "What is the title of the section regarding FOUP exclusion volumes?",
+              "answers": [
+                {
+                  "text": "Exclusion Volumes on Load Port for FOUP SEMI",
+                  "answer_start": 1313
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "2a3c23b3-cee9-4975-a2c9-2884105ebd89",
+              "question": "What standard is referenced for carrier placement/removal?",
+              "answers": [
+                {
+                  "text": "(Carrier placement/ removal) afer BOLTS Diane (see SEMI E63)",
+                  "answer_start": 0
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "I : i I : j . . ' I H321SO)(q S '(0)(75} . . ---------I W2 1>rctu<o0n ;oi lfflf! lor 1n ID,, unc ltw reeds an tlec:voNc taO (Of Dar CDtle l.lbef ,n l!le - ell (or dooold) poo;,t.on Figure 4 Exclusion Volumes on Load Port for FOUP SEMI E15.1-0305 (Reap proved 1110) SEMI 1996, 2010 RELATED INFORMATION 1 APPLICATION NOTES semr OTICE: This Related Information is not an official part of SEMI EI 5.1 and was derived from the work of the Physical Interfaces & Carriers Global Technical Committee. This Related Information was approved for publication by full letter ballot procedures. R1-1 Introduction R 1 -I . I This Standard is meant to address both bottom-opening and front-opening boxes, as well as open cassettes. The C2 dimension applies to the initial placement of the carrier on the load port. Front-opening boxes, as defined in SEMI E47. l, and SEMI E62, would subsequently move forward to dock against a vertical surface. Consideration of reduction of C2 is deferred pending approval of the standards for wafer transport carriers. Rl-1.2 It is the device makers' expectation that process equipment suppliers are ultimately responsible for ensuring that their equipment (as installed in the device makers' facility) complies with SEMI EIS.I. This expectation is the same whether the equipment load port is developed internally by the process equipment supplier or is purchased from a third party source. In either case, the process equipment supplier is responsible for understanding aJI of the requirements contained",
+          "qas": [
+            {
+              "id": "dde5de8e-32b9-4252-831a-8d5daf75b5b8",
+              "question": "What types of boxes and cassettes does this Standard address?",
+              "answers": [
+                {
+                  "text": "both bottom-opening and front-opening boxes, as well as open cassettes",
+                  "answer_start": 644
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "49d638bf-7ff1-4019-8731-6538a6614bce",
+              "question": "To what does the C2 dimension apply?",
+              "answers": [
+                {
+                  "text": "the initial placement of the carrier on the load port",
+                  "answer_start": 744
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d70146ef-1317-4bc4-aa07-e0c8c5d4a365",
+              "question": "Where do front-opening boxes move after being defined in SEMI E47.1 and SEMI E62?",
+              "answers": [
+                {
+                  "text": "dock against a vertical surface",
+                  "answer_start": 896
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "b5c1303d-58fd-494d-b37c-b297541944ac",
+              "question": "Who is ultimately responsible for ensuring that the equipment complies with SEMI EIS.I?",
+              "answers": [
+                {
+                  "text": "process equipment suppliers are ultimately responsible for ensuring that their equipment (as installed in the device makers' facility) complies with SEMI EIS.I",
+                  "answer_start": 1087
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "95e4a8db-4910-495e-bea6-0a155c7ff6e5",
+              "question": "In what scenarios is the process equipment supplier responsible for understanding the requirements?",
+              "answers": [
+                {
+                  "text": "whether the equipment load port is developed internally by the process equipment supplier or is purchased from a third party source",
+                  "answer_start": 1277
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "the device makers' facility) complies with SEMI EIS.I. This expectation is the same whether the equipment load port is developed internally by the process equipment supplier or is purchased from a third party source. In either case, the process equipment supplier is responsible for understanding aJI of the requirements contained in this standard. Compliance with SEMI E l 5.1 can only be determined after the load port is integrated with the process equipment and is directly affected by process equipment design features (such as user interfaces and light towers). Rl-1.3 In the case of a front-opening-box, dimension C2 is a required clearance between the box and the tool's front opening interface when the box is placed on the load port. After the box is placed on the load port, the kinematic couplings will move the box forward to engage with the tool's front-opening interface. The possibility of human fingers being pinched between the box and the tool's front-opening interface may be a safety concern for tool designers. The possibility of human fingers being pinched between the carrier and a carrier ID reader/writer unit may also be a safety concern for tool designers. R 1-1 .4 There is some interest in roll-in transport of front-opening carriers to the load port. The implementation of such a scheme will require dealing with a number of issues related to registration mechanisms, tag readers and guide in. Resolution of these issues may make it desirable to reduce the minimum value of H I . Rl-1.S",
+          "qas": [
+            {
+              "id": "0aa7d63d-d937-4ae5-bbbb-bad72a15c168",
+              "question": "Who is responsible for understanding the requirements contained in the SEMI E1.1 standard?",
+              "answers": [
+                {
+                  "text": "the process equipment supplier",
+                  "answer_start": 143
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "580d72e6-fabf-4b87-96ae-dac63e851917",
+              "question": "What is dimension C2 in the case of a front-opening-box?",
+              "answers": [
+                {
+                  "text": "a required clearance between the box and the tool's front opening interface when the box is placed on the load port",
+                  "answer_start": 627
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "41248c85-c09f-49a4-bb9d-5190bcb537e5",
+              "question": "When can compliance with SEMI E1.5.1 be determined?",
+              "answers": [
+                {
+                  "text": "after the load port is integrated with the process equipment",
+                  "answer_start": 401
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "57c49090-36d2-4686-8a2a-5e93a7581737",
+              "question": "What safety concern may arise when the box is placed on the load port?",
+              "answers": [
+                {
+                  "text": "The possibility of human fingers being pinched between the box and the tool's front-opening interface",
+                  "answer_start": 887
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "6ecb70ff-ee17-4be5-ae88-aef6616ffbd8",
+              "question": "What may also be a safety concern for tool designers?",
+              "answers": [
+                {
+                  "text": "The possibility of human fingers being pinched between the carrier and a carrier ID reader/writer unit",
+                  "answer_start": 1033
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "2f5c0c5e-1bfe-420d-b51a-5c2620556419",
+              "question": "What issues must be dealt with for the implementation of roll-in transport of front-opening carriers to the load port?",
+              "answers": [
+                {
+                  "text": "a number of issues related to registration mechanisms, tag readers and guide in",
+                  "answer_start": 1344
+                }
+              ],
+              "type": "reasoning"
+            }
+          ]
+        },
+        {
+          "context": "roll-in transport of front-opening carriers to the load port. The implementation of such a scheme will require dealing with a number of issues related to registration mechanisms, tag readers and guide in. Resolution of these issues may make it desirable to reduce the minimum value of H I . Rl-1.S A tool load port may need to accommodate a device or system that is capable of automatically storing and retrieving additional carriers. Such a storage device is alternately referred to as a local buffer, a micro-stocker, tool based storage, and other names. When defining the load port as in SEMI EIS, the exact definition may become blurred. The transfer station or drop off location for a local buffer becomes the tool load port and must comply with SEMI EIS. In this case, it may not be essential that the tool-buffer port also comply. R 1 - 1 .6 Another case is in factories that employ overhead delivery of carriers onto tool load ports. In this case, it is possible that the transfer station or drop-off location where the intra-bay transport system delivers carriers may actually be located 8 or IO feet above the floor. We assume that in these cases there would also need to be a transfer station that would be suitable for human loading. The ergonomic-driven requirements of SEMI EIS (height, clearances) would apply to the human-based transfer station. Rl-1.7 To avoid interfering with the lead-in capability (misalignment correction) function of the kinematic couplings, it is recommended that",
+          "qas": [
+            {
+              "id": "3596bb9a-8955-45fc-8ab1-ef735b95fe06",
+              "question": "What are alternative names for a storage device that automatically stores and retrieves additional carriers?",
+              "answers": [
+                {
+                  "text": "local buffer, a micro-stocker, tool based storage, and other names",
+                  "answer_start": 489
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "05bef6fc-5388-47d6-8822-516caa9784db",
+              "question": "When defining the load port as in SEMI EIS, what must comply?",
+              "answers": [
+                {
+                  "text": "The transfer station or drop off location for a local buffer becomes the tool load port and must comply with SEMI EIS",
+                  "answer_start": 642
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "2eb31890-ec6e-409c-8884-2652a1ecdfce",
+              "question": "What requirements apply to the human-based transfer station in factories that employ overhead delivery of carriers?",
+              "answers": [
+                {
+                  "text": "The ergonomic-driven requirements of SEMI EIS (height, clearances) would apply to the human-based transfer station",
+                  "answer_start": 1246
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "af106c5d-a1e9-4136-80a3-cf1858d72343",
+              "question": "Why is it recommended to avoid interfering with the lead-in capability function of the kinematic couplings?",
+              "answers": [
+                {
+                  "text": "To avoid interfering with the lead-in capability (misalignment correction) function of the kinematic couplings",
+                  "answer_start": 1369
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "7a2aff21-8c75-4da1-b2f4-f79def480939",
+              "question": "What is the process that requires dealing with issues related to registration mechanisms, tag readers and guide in?",
+              "answers": [
+                {
+                  "text": "roll-in transport of front-opening carriers to the load port",
+                  "answer_start": 0
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "there would also need to be a transfer station that would be suitable for human loading. The ergonomic-driven requirements of SEMI EIS (height, clearances) would apply to the human-based transfer station. Rl-1.7 To avoid interfering with the lead-in capability (misalignment correction) function of the kinematic couplings, it is recommended that no part of the tool (other than the kinematic couplings) come horizontally closer than 10 mm (0.39 inch) to the carrier between the horizontal datum plane and H I above it. R 1 - 1 .8 It is recommended that the systems that deliver carriers to tool load ports have a mechanism to correct for misalignment of tools and load ports. Rl-1.9 A revision ballot will be submitted to allow projections in front of the OHT zone. R 1-1.10 Equipment can be configured with a variety of load ports chosen from the three options defined in 7 .6. Figure RI-I (a) shows a tool with two Option I load ports, which may work with any carrier. Although the tool is shown occupying the space on either side of the load ports, it is recommended that tool designers reserve this volume for installation of carrier buffers. Figure R 1-1 (b) shows a tool with one Option 2 load port and one Option 3 load port, which may work with boxes delivered by an overhead transport system with manual back up. Figure RI-I (c) shows SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 semr a tool with two Option 3 load ports, which",
+          "qas": [
+            {
+              "id": "731d5599-77e1-4c7f-b6a4-d4f23bfd6841",
+              "question": "What must the transfer station be suitable for?",
+              "answers": [
+                {
+                  "text": "human loading",
+                  "answer_start": 74
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "5898be69-e3ed-49f0-966f-b7eb648337d8",
+              "question": "To what requirements do the ergonomic-driven requirements of SEMI EIS apply?",
+              "answers": [
+                {
+                  "text": "the human-based transfer station",
+                  "answer_start": 171
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "28ed9f13-2ba9-48ce-ba9e-060b42d77bff",
+              "question": "What is the recommended minimum horizontal clearance for the tool relative to the carrier?",
+              "answers": [
+                {
+                  "text": "no part of the tool (other than the kinematic couplings) come horizontally closer than 10 mm (0.39 inch) to the carrier",
+                  "answer_start": 347
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d87483d6-a091-4c7f-916d-a0d10c4ba879",
+              "question": "What mechanism is recommended for systems that deliver carriers to tool load ports?",
+              "answers": [
+                {
+                  "text": "a mechanism to correct for misalignment of tools and load ports",
+                  "answer_start": 612
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "ca14e850-4508-45b1-bf6a-33c8fc80c460",
+              "question": "What volume should tool designers reserve for installation?",
+              "answers": [
+                {
+                  "text": "this volume for installation of carrier buffers",
+                  "answer_start": 1099
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "e4297514-66f2-4f33-aca2-354e7991e20d",
+              "question": "From where can equipment choose its load port options?",
+              "answers": [
+                {
+                  "text": "the three options defined in 7 .6",
+                  "answer_start": 845
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "a tool with one Option 2 load port and one Option 3 load port, which may work with boxes delivered by an overhead transport system with manual back up. Figure RI-I (c) shows SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 semr a tool with two Option 3 load ports, which may work with open cassettes and bulk head-mounted tools with AGV or manual delivery. (a) I see ' 'note : (b) Figure Rl-1 Example Combinations of Load Port Options (c) R 1-I. 11 Safety and process contamination issues can arise when using SEMI E 15.1-compliant load ports in conjunction with SEMI E47. I-compliant FOUPs, and the corresponding FIMS ports. An empty FOUP, when mounted to a load port and retained only by the mandatory front clamping/retaining feature described in 6.10 of SEMI E47. l , can potentially be removed with no more effort than an operator would exert in trying to remove a full FOUP (perhaps of 16 lbf lifting force can accomplish this). Therefore, the potential exists that an operator may mistake an empty FOUP for a full one, lift it off, and create both a mechanical safety hazard (an unguarded FIMS opening into the wafer handling robotics area) and a process contamination risk. R1-2 Mechanical Interference Lockout Pins for FEOL and BEOL Load Ports R 1-2.1 Background - Info Pads configuration should be assigned according to each user definition. Many device manufacturers are planning to use process options for 300 mm wafers that pose significant risk of cross-contamination",
+          "qas": [
+            {
+              "id": "764439ea-8c57-4f41-9009-0a60162fd69f",
+              "question": "What kind of tool uses one Option 2 load port and one Option 3 load port?",
+              "answers": [
+                {
+                  "text": "a tool with one Option 2 load port and one Option 3 load port, which may work with boxes delivered by an overhead transport system with manual back up",
+                  "answer_start": 0
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "1f951202-8866-4977-9f71-f67a263e586c",
+              "question": "When can safety and process contamination issues arise?",
+              "answers": [
+                {
+                  "text": "when using SEMI E 15.1-compliant load ports in conjunction with SEMI E47. I-compliant FOUPs, and the corresponding FIMS ports",
+                  "answer_start": 500
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "172585ea-35cc-4293-8005-91075baa183e",
+              "question": "What potential hazard exists if an operator mistakes an empty FOUP for a full one?",
+              "answers": [
+                {
+                  "text": "create both a mechanical safety hazard (an unguarded FIMS opening into the wafer handling robotics area) and a process contamination risk",
+                  "answer_start": 1044
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "c57792d3-b4db-4e74-ac1f-e6cc6edbe780",
+              "question": "According to the background section, how should the Info Pads configuration be assigned?",
+              "answers": [
+                {
+                  "text": "according to each user definition",
+                  "answer_start": 1318
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "8d4f3639-4ee2-41b6-a26b-0d2d53486e28",
+              "question": "What risk do process options for 300 mm wafers pose?",
+              "answers": [
+                {
+                  "text": "significant risk of cross-contamination",
+                  "answer_start": 1443
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "and a process contamination risk. R1-2 Mechanical Interference Lockout Pins for FEOL and BEOL Load Ports R 1-2.1 Background - Info Pads configuration should be assigned according to each user definition. Many device manufacturers are planning to use process options for 300 mm wafers that pose significant risk of cross-contamination of wafers and production (process and metrology) equipment. In such a case, equipment load ports and carriers may be dedicated to front-end-of-line (FEOL) processing or back-end-of-line (BEOL) processing only. To eliminate the possibility of cross-contamination, device manufacturers want to ensure that FEOL carriers cannot be processed on production equipment with BEOL load ports and vice versa. Rl-2.1.1 In addition to traditional lockout methods (software, electronic, and visual approaches) to eliminate misprocessing, device manufacturers also want a 'hard' mechanical lockout that makes it physically impossible for a carrier to register correctly on the kinematic coupling on a wrong load port. This application note describes one possible procedure for achieving a hard mechanical interference lockout (MIL) using pins located on FEOL and BEOL 300 mm load ports. Corresponding pads on FEOL and BEOL carriers are also discussed. SEMI E15.1-0305 (Reap proved 1110) SEMI 1996, 2010 semr Rl -2.2 Info Pads C and D on Carriers - FEOL carriers must have info pad C low and info pad D high. BEOL carriers must have info pad D low and info pad C high. Locations and dimensions for pads C and D are defined in SEMI E 1 .9 for 300 mm carriers and",
+          "qas": [
+            {
+              "id": "340a25dd-59c4-49cb-8654-d0c891886b08",
+              "question": "How should equipment load ports and carriers be dedicated when cross-contamination is a concern?",
+              "answers": [
+                {
+                  "text": "dedicated to front-end-of-line (FEOL) processing or back-end-of-line (BEOL) processing only",
+                  "answer_start": 451
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "24bd6e32-21f2-406b-b263-e6c76b1f8384",
+              "question": "What is the purpose of a hard mechanical interference lockout (MIL)?",
+              "answers": [
+                {
+                  "text": "makes it physically impossible for a carrier to register correctly on the kinematic coupling on a wrong load port",
+                  "answer_start": 923
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "7b353976-5867-44a8-8b8a-1ff4642c9f6a",
+              "question": "What are the required states for info pads C and D on FEOL carriers?",
+              "answers": [
+                {
+                  "text": "FEOL carriers must have info pad C low and info pad D high",
+                  "answer_start": 1368
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "18d8dc4f-6fe7-48de-8dfd-a473c4f1a883",
+              "question": "What are the required states for info pads C and D on BEOL carriers?",
+              "answers": [
+                {
+                  "text": "BEOL carriers must have info pad D low and info pad C high",
+                  "answer_start": 1428
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "D on Carriers - FEOL carriers must have info pad C low and info pad D high. BEOL carriers must have info pad D low and info pad C high. Locations and dimensions for pads C and D are defined in SEMI E 1 .9 for 300 mm carriers and shown in Figure R 1 -2 . . ... ----+ . I bilateral datum 1p1ane I I /-,---'--t-t--::.,,,-carrier facial datum _p@_ne I --i---+-..... J . . Figure Rl-2 Carrier Bottom View Showing Info Pads full-spherical radiusR2.5 pin-diameter Smm pinheightabove horizontaldatumplane 8.0 +0.1mm horizontaldatumplane sensing pads -S- ./\"\"' threadedholeforpinprovidedforboth _-::::-.,,,,,,,,,CandDlocationsonSEMlE15.1 loadports Figure Rl-3 Detail of Lockout Pin C or D on the Load Port Rl-2.3 Mechanical Interference Lockout Pins - FEOL load ports must have a lockout pin D centered under info pad D, and BEOL carriers load ports must have a lockout pin C centered under info pad C. The dimensions for pins C or D are shown in Figure R 1-3. When a carrier is placed on the wrong load port, the info pad and lockout pin will interfere with each other, preventing the carrier from being seated correctly on the kinematic coupling pins. As a result, the carrier placement OK sensor (or nested OK sensor) does not get triggered. Manual operator intervention may be required when this happens. Rl-2.4 Lockout Pin Installation in the Fab - Since it will be impossible for device manufacturers to specify in every case whether production equipment will be a FEOL equipment or",
+          "qas": [
+            {
+              "id": "39d5fe18-90b2-4f45-a3f3-85c454d2d620",
+              "question": "What are the required info pad states for FEOL carriers?",
+              "answers": [
+                {
+                  "text": "FEOL carriers must have info pad C low and info pad D high",
+                  "answer_start": 16
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "38d69719-deec-4d06-8f5f-72a6072ba2a4",
+              "question": "What are the required info pad states for BEOL carriers?",
+              "answers": [
+                {
+                  "text": "BEOL carriers must have info pad D low and info pad C high",
+                  "answer_start": 76
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "c8a51b61-804a-482c-bb69-ef4e757652be",
+              "question": "Where are the locations and dimensions for pads C and D defined for 300 mm carriers?",
+              "answers": [
+                {
+                  "text": "SEMI E 1 .9",
+                  "answer_start": 193
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "c410df94-105b-4532-9892-b014c53285d6",
+              "question": "What is the full-spherical radius specified for the pins?",
+              "answers": [
+                {
+                  "text": "full-spherical radiusR2.5",
+                  "answer_start": 418
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "590bc5d0-47a6-4795-b9c8-21b1076d2c43",
+              "question": "Why does the carrier placement OK sensor not get triggered when the carrier is placed incorrectly?",
+              "answers": [
+                {
+                  "text": "the info pad and lockout pin will interfere with each other, preventing the carrier from being seated correctly on the kinematic coupling pins",
+                  "answer_start": 1001
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "9589fa26-69ca-4e22-a75a-86dfb07d0669",
+              "question": "What must FEOL load ports have centered under info pad D?",
+              "answers": [
+                {
+                  "text": "a lockout pin D",
+                  "answer_start": 769
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "placement OK sensor (or nested OK sensor) does not get triggered. Manual operator intervention may be required when this happens. Rl-2.4 Lockout Pin Installation in the Fab - Since it will be impossible for device manufacturers to specify in every case whether production equipment will be a FEOL equipment or an BEOL equipment at the time of ordering (when placing a purchase order), it is their expectation that the production equipment is delivered to the fab with the lockout SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 1 0 semr pins, but without the pins installed on any load port. During tool install in the cleanroom, device manufacturers will decide whether the equipment is dedicated as an FEOL or BEOL equipment. At that time, equipment must be capable of having lockout pins C or D installed on the load ports in the fab. To meet this requirement, each load port must have pre-drilled holes at both C and D positions prior to shipment to the customer factory. The production equipment supplier must provide and install the lockout pins in the field. Table RI-I summarizes the lockout requirements and corresponding sensor actions when different types of carriers are placed on different types of load ports during fab processing. Note that the carrier Placement OK Sensor and the carrier Presence Sensors are identified as requirements in the 13001/1300 CIM Global Joint Guidance document published in December, 1997. Rl-2.5 Operation - During normal operation, the pins and pads don't interfere with each other as",
+          "qas": [
+            {
+              "id": "c71623bf-d7a5-4bcb-9179-8df1e7d1d11a",
+              "question": "What must production equipment be delivered with regarding lockout pins?",
+              "answers": [
+                {
+                  "text": "lockout SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 1 0 semr pins, but without the pins installed on any load port",
+                  "answer_start": 472
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "40fe9a81-88f1-478e-9435-9f36e365f549",
+              "question": "Why must each load port have pre-drilled holes at both C and D positions?",
+              "answers": [
+                {
+                  "text": "To meet this requirement, each load port must have pre-drilled holes at both C and D positions prior to shipment to the customer factory",
+                  "answer_start": 840
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "e7733d12-d630-4aee-864c-e569b2e250e4",
+              "question": "When do device manufacturers decide if the equipment is dedicated as an FEOL or BEOL equipment?",
+              "answers": [
+                {
+                  "text": "During tool install in the cleanroom",
+                  "answer_start": 594
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "67b05ab1-ff27-4798-9396-dd4366d8f832",
+              "question": "What action may be required if the placement OK sensor does not get triggered?",
+              "answers": [
+                {
+                  "text": "Manual operator intervention may be required when this happens",
+                  "answer_start": 66
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "8bc8aeef-a6a6-4bfa-8598-0d09e16b5a85",
+              "question": "Which document identified the Placement OK Sensor and the Presence Sensors as requirements?",
+              "answers": [
+                {
+                  "text": "13001/1300 CIM Global Joint Guidance document published in December, 1997",
+                  "answer_start": 1361
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "cefed84b-f0f1-4dcd-a564-c19cbb50217b",
+              "question": "Who is responsible for providing and installing the lockout pins in the field?",
+              "answers": [
+                {
+                  "text": "The production equipment supplier must provide and install the lockout pins in the field",
+                  "answer_start": 978
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "of load ports during fab processing. Note that the carrier Placement OK Sensor and the carrier Presence Sensors are identified as requirements in the 13001/1300 CIM Global Joint Guidance document published in December, 1997. Rl-2.5 Operation - During normal operation, the pins and pads don't interfere with each other as shown in Figure Rl-4. Normal operation is when a FEOL carrier is placed on a FEOL load port or when a BEOL carrier is placed on a BEOL load port, as shown below. Both the carrier placement OK sensor and the carrier presence sensors are triggered OK and wafer processing is allowed to continue. Rl-2.5. l When a FEOL carrier is placed on a BEOL load port or vice versa, the pads and pins interfere with each other as shown in Figure R 1-5, and the carrier does not nest correctly on the kinematic coupling of the load port. ote that the extent of interference is highly exaggerated in Figure R 1-5, and is so depicted only for clarity. When interference occurs, the carrier rests in a secure manner on the front two kinematic coupling pins and the mechanical interference pin. As a result, the Carrier Placement OK sensor is not triggered OK, although the Carrier Presence sensor detects the presence of the carrier. Wafer processing does not start, thereby eliminating any wafer and equipment cross-contamination opportunity. When such a condition occurs, a production operator may be required to correct the problem. R l-2.5.2 Some device manufacturers may identify certain",
+          "qas": [
+            {
+              "id": "7f95704a-6053-4836-b788-252165e337fe",
+              "question": "What sensors are identified as requirements in the 13001/1300 CIM Global Joint Guidance document?",
+              "answers": [
+                {
+                  "text": "the carrier Placement OK Sensor and the carrier Presence Sensors",
+                  "answer_start": 47
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "66be0d19-f881-4c98-9290-b5fe8630b903",
+              "question": "Under what conditions is normal operation defined?",
+              "answers": [
+                {
+                  "text": "when a FEOL carrier is placed on a FEOL load port or when a BEOL carrier is placed on a BEOL load port",
+                  "answer_start": 364
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "5f0480a8-f47a-4683-9563-7be9a64a1758",
+              "question": "What happens when a FEOL carrier is placed on a BEOL load port or vice versa?",
+              "answers": [
+                {
+                  "text": "the pads and pins interfere with each other as shown in Figure R 1-5, and the carrier does not nest correctly on the kinematic coupling of the load port.",
+                  "answer_start": 691
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "36d9a10c-60ea-45a2-be3a-d29aa497c015",
+              "question": "What is the result regarding the sensors when interference occurs?",
+              "answers": [
+                {
+                  "text": "the Carrier Placement OK sensor is not triggered OK, although the Carrier Presence sensor detects the presence of the carrier.",
+                  "answer_start": 1111
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "90765039-7d96-4c0d-96e3-3d91dd53e200",
+              "question": "What opportunity is eliminated when wafer processing does not start?",
+              "answers": [
+                {
+                  "text": "any wafer and equipment cross-contamination opportunity.",
+                  "answer_start": 1291
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "not triggered OK, although the Carrier Presence sensor detects the presence of the carrier. Wafer processing does not start, thereby eliminating any wafer and equipment cross-contamination opportunity. When such a condition occurs, a production operator may be required to correct the problem. R l-2.5.2 Some device manufacturers may identify certain type of fab equipment as not being sensitive to FEOL and BEOL contamination issues. In such a situation, the device manufacturer end user has the option to not install either FEOL or BEOL pin. In this case, FEOL and BEOL carriers will work on these load ports without any interference. Table 3 Operational Summary Carrier Type FEOL FEOL BEOL BEOL Load Port Pad and Pin lmerference Carrier Placement OK Carrier Presence Sensor Type Requirement Sensor State State FEOL INo interference. Sensor is triggered OK s ince carrier is Sensor detects carrier nested correct ly. presence. BEOL Pad C and pin D interfere with Sensor is not triggered since carrier Sensor detects carrier each other. does not nest correct ly. presence. BEOL INo interference. Sensor is triggered OK since carrier is Sensor detects carrier nested correct ly. presence . FEOL Pad D and pin C interfere w ith Sensor is not triggered since carrier Sensor detects carrier each other. does not nest correct ly. presence . FEOL carrier BEOL carrier Pin D Pin C FEOL load port BEOL load port Figure Rl-4 Example of Pad and Pin on-Interference with Each Other During ormal Operation 1 1 SEMI E15.1-0305 (Reap proved 1110)",
+          "qas": [
+            {
+              "id": "f23c23f8-7bd9-4dff-b4fe-f565ef864c6d",
+              "question": "What is the sensor state when BEOL pad C and pin D interfere with FEOL carrier placement?",
+              "answers": [
+                {
+                  "text": "Sensor is not triggered since carrier Sensor detects carrier each other. does not nest correct ly. presence.",
+                  "answer_start": 965
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "f1832d49-6993-4df4-a789-4c9ba6d95ca0",
+              "question": "What happens when the Carrier Presence sensor detects the presence of the carrier?",
+              "answers": [
+                {
+                  "text": "Wafer processing does not start, thereby eliminating any wafer and equipment cross-contamination opportunity.",
+                  "answer_start": 92
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "ff4ea602-e88f-4db8-b8aa-4675e9660975",
+              "question": "Under what circumstances can the device manufacturer end user opt not to install either FEOL or BEOL pin?",
+              "answers": [
+                {
+                  "text": "Some device manufacturers may identify certain type of fab equipment as not being sensitive to FEOL and BEOL contamination issues.",
+                  "answer_start": 304
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "triggered since carrier Sensor detects carrier each other. does not nest correct ly. presence . FEOL carrier BEOL carrier Pin D Pin C FEOL load port BEOL load port Figure Rl-4 Example of Pad and Pin on-Interference with Each Other During ormal Operation 1 1 SEMI E15.1-0305 (Reap proved 1110) SEMI 1996, 2010 semr FEOL carrier BEOL carrier Info Info pad C pad D Pin C Pin D BEOL load port FEOL load port # I Pads and pins interfere with each other . The carrier does not nest correct ly on the kinematic coup l ing . Figure Rl-S Example of Pin and Pad Interference when a Carrier Is Placed on a Wrong L-Oad Port OTICE: SEMI makes no warranties or representations as to the suitability of the Standards and Safety Guidelines set forth herein for any particular application. The detennination of the suitability of the Standard or Safety Guideline is solely the responsibility of the user. Users are cautioned to refer to manufacturer's instructions, product labels, product data sheets, and other relevant literature, respecting any materials or equipment mentioned herein. Standards and Safety Guidelines are subject to change without notice. By publication of this Standard or Safety Guideline, SEMI takes no position respecting the validity of any patent rights or copyrights asserted in connection with any items mentioned in this Standard or Safety Guideline. Users of this Standard or Safety Guideline are expressly advised that determination of any such patent rights or copyrights and the risk of infringement",
+          "qas": [
+            {
+              "id": "8db88d79-5edf-4e0d-9370-74a20a248c25",
+              "question": "What does Figure Rl-4 illustrate?",
+              "answers": [
+                {
+                  "text": "Example of Pad and Pin on-Interference with Each Other During ormal Operation",
+                  "answer_start": 176
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a7f3a129-cf09-47f6-af00-90fbf007e688",
+              "question": "What are the two types of load ports mentioned in the context?",
+              "answers": [
+                {
+                  "text": "FEOL load port BEOL load port",
+                  "answer_start": 134
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a4d79c01-34af-4af8-8722-8e2d0f25dcb4",
+              "question": "What does Figure Rl-S show?",
+              "answers": [
+                {
+                  "text": "Example of Pin and Pad Interference when a Carrier Is Placed on a Wrong L-Oad Port",
+                  "answer_start": 529
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "604fdd09-0ac4-42b2-87d0-4aa4ccbad6aa",
+              "question": "What does the context state regarding the determination of suitability for the Standard or Safety Guideline?",
+              "answers": [
+                {
+                  "text": "is solely the responsibility of the user",
+                  "answer_start": 846
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "63602421-2718-4a21-af21-5c9a3fb87ab6",
+              "question": "What does SEMI state it makes no warranties or representations about?",
+              "answers": [
+                {
+                  "text": "the suitability of the Standards and Safety Guidelines set forth herein for any particular application",
+                  "answer_start": 669
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "8033e8e1-d372-466b-bf12-33c10b65cd65",
+              "question": "What must users do when referencing materials or equipment mentioned in the standards?",
+              "answers": [
+                {
+                  "text": "respecting any materials or equipment mentioned herein",
+                  "answer_start": 1017
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "SEMI takes no position respecting the validity of any patent rights or copyrights asserted in connection with any items mentioned in this Standard or Safety Guideline. Users of this Standard or Safety Guideline are expressly advised that determination of any such patent rights or copyrights and the risk of infringement of such rights are entirely their own responsibility. SEMI E15.1-0305 (Reapproved 1110) SEMI 1996, 2010 Copyright by EMI, 673 S . Milpitas Blvd., Milpitas, CA 95035. Reproduction of the contents in whole or in part is forbidden without express written consent of SEMl.",
+          "qas": [
+            {
+              "id": "25d1e2f4-2595-491d-b726-a57f63a7abf6",
+              "question": "What does SEMI take no position respecting?",
+              "answers": [
+                {
+                  "text": "the validity of any patent rights or copyrights asserted in connection with any items mentioned in this Standard or Safety Guideline",
+                  "answer_start": 34
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a3159cfd-9408-4e28-8cf9-a26bfefe41db",
+              "question": "Who is responsible for determining the risk of infringement of patent rights?",
+              "answers": [
+                {
+                  "text": "entirely their own responsibility",
+                  "answer_start": 340
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "0c542eab-aa86-4887-b001-ee7f84ea58e7",
+              "question": "What is the document identifier listed in the context?",
+              "answers": [
+                {
+                  "text": "SEMI E15.1-0305 (Reapproved 1110)",
+                  "answer_start": 375
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "443c86d6-0184-4747-8660-25293b9f5ae5",
+              "question": "Who holds the copyright for the document?",
+              "answers": [
+                {
+                  "text": "Copyright by EMI",
+                  "answer_start": 425
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "e1a91f64-aa2c-4159-b69e-e9f5995b8048",
+              "question": "What is required to reproduce the contents of the document?",
+              "answers": [
+                {
+                  "text": "express written consent of SEMl",
+                  "answer_start": 557
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SEMI E19.1-0417",
+      "paragraphs": [
+        {
+          "context": "semr SEMI E19.1-0417 SPECIFICATION FOR 100 mm (4 in.) PORT FOR STANDARD MECHANICAL INTERFACE (SMIF) This Standard was technically approved by the Physical Interfaces & Carriers Global Technical Committee. This edition was approved for publication by the global Audits and Reviews Subcommittee on December 8, 2016. Available at www.semiviews.org and www.semi.org in April 2017; originally published in 1991; previously published March 2009. 1 Purpose 1.1 The purpose of this Document is to quantify the requirements for a I 00 mm (4 in.) cassette SMIF interface. 2 Scope 2.1 This Specification provides the 100 mm (4 in.) specific values of all alpha-numeric variables (e.g., Al) defined in SEMI E19. OTJCE: SEMI Standards and Safety Guidelines do not purport to address all safety issues associated with their use. It is the responsibility of the users of the Documents to establish appropriate safety and health practices, and determine the applicability of regulatory or other limitations prior to use. 3 Requirements 3.1 The complete specification of this interface includes all the general requirements of SEMI E l 9. Table 1 provides the specific values for 100 mm (4 in.) cassette SMIF ports. 4 Referenced Standards and Documents . SEMI Standards and Safety Guidelines I SEMI E 19 - Specification for Standard Mechanical Interface (SMIF) OTJCE: Unless otherwise indicated, all documents cited shall be the latest published versions. Table 1 Port Dimensions for 100 mm (4 in.) Wafer Cassette Port Door Al 73.02 mm0.13 mm (2.875 in. 0.005 in.) A2 73.02 mm 0.13 nun (2.875",
+          "qas": [
+            {
+              "id": "c8cbe67d-0cc4-4534-b9aa-dc826b0c1156",
+              "question": "When was this edition of the standard approved for publication?",
+              "answers": [
+                {
+                  "text": "December 8, 2016",
+                  "answer_start": 296
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d4eede56-17fd-4129-b397-001a239f491c",
+              "question": "What is the purpose of this Document?",
+              "answers": [
+                {
+                  "text": "to quantify the requirements for a I 00 mm (4 in.) cassette SMIF interface",
+                  "answer_start": 486
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "465606d8-c1e4-422d-a45f-72d69f70b84c",
+              "question": "What does this Specification provide specific values for?",
+              "answers": [
+                {
+                  "text": "all alpha-numeric variables (e.g., Al) defined in SEMI E19",
+                  "answer_start": 640
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d85264c3-ee7c-4a48-8078-2b0a27434690",
+              "question": "Who is responsible for establishing appropriate safety and health practices?",
+              "answers": [
+                {
+                  "text": "the users of the Documents",
+                  "answer_start": 843
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "7e6ab783-b258-47bf-8e8a-e2055bf40a1d",
+              "question": "What are the dimensions listed for the Port Door Al in Table 1?",
+              "answers": [
+                {
+                  "text": "73.02 mm0.13 mm (2.875 in. 0.005 in.)",
+                  "answer_start": 1510
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "91f8d5eb-0f4b-4b2d-a539-a2d416801c98",
+              "question": "What are the dimensions listed for the Port Door A2 in Table 1?",
+              "answers": [
+                {
+                  "text": "73.02 mm 0.13 nun (2.875",
+                  "answer_start": 1551
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "SEMI E 19 - Specification for Standard Mechanical Interface (SMIF) OTJCE: Unless otherwise indicated, all documents cited shall be the latest published versions. Table 1 Port Dimensions for 100 mm (4 in.) Wafer Cassette Port Door Al 73.02 mm0.13 mm (2.875 in. 0.005 in.) A2 73.02 mm 0.13 nun (2.875 in. 0.005 in.) A3 9.53 mm 0.25 mm (0.3 75 in. 0.0 IO in.) Guide Rails Bl 90.17 mm0.13 mm (3.550 in. 0.005 in.) B2 82.55 mm 0.13 mm (3.250 in. 0.005 in.) B3 6.35 mm 0.25 mm (0.250 in. 0.0 IO in.) B4 6.35 mm 0.25 mm (0.250 in. 0.010 in.) B5 17.78 mm (0.700 in.) maximum B6 12.70 mm (0.500 in.) . . mm1mum B7 B8 3.18 mm 0.25 mm mmunum B9 6.35 mm (0.250 in.) maximum radius Latch Pins Cl 81.25 mm 0.13 mm (3.200 in. 0.005 in.) C2 6.35 mm 0.13 mm (0.250 in. 0.005 in.) C3 C4 cs 3.18 mm 0.05 mm (0.125 in. 0.002 in.) C6 6.35 mm 0.25 mm (0.250 in. 0.0 IO in.) SEMI E19.1-0417 SEMI 1991, 2017 semr C7 Full spherical rad ius C8 4.44 mm (0.175 in.) mmnnum Registration Pins DI 101.60 mm 0.13 mm (4.000 in. 0.005 in.) D2 50.80 mm 0.13 mm (2.000 in. 0.005 in.) D3 I 14.30 mm 0.13 mm (4.500 in. 0.005 in.) D4 57.l5mm0.l 3mm (2.250 in. 0.005 in.) OS 6.35 mm 0.08 mm (0.250 in. 0.003 in.) D6 I 0.16 mm 0.25 mm (0.400 in. 0.010 in.) D7 Full spherical radius Latch Pin",
+          "qas": [
+            {
+              "id": "537e3bfa-c73d-4a72-a562-424642fb6822",
+              "question": "What is the dimension listed for the B2 guide rail?",
+              "answers": [
+                {
+                  "text": "82.55 mm 0.13 mm (3.250 in. 0.005 in.)",
+                  "answer_start": 413
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "174c2bab-87d8-4967-bd88-4e89ce540f8b",
+              "question": "What are the dimensions for the C2 port?",
+              "answers": [
+                {
+                  "text": "6.35 mm 0.13 mm (0.250 in. 0.005 in.)",
+                  "answer_start": 725
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "e1aaef3a-32c5-4e30-bcad-d2268be280d2",
+              "question": "What is the dimension of the D2 registration pin?",
+              "answers": [
+                {
+                  "text": "50.80 mm 0.13 mm (2.000 in. 0.005 in.)",
+                  "answer_start": 1009
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "9cb660c7-9fca-4904-83b4-aa3f3890f0ac",
+              "question": "What is the maximum dimension allowed for B5?",
+              "answers": [
+                {
+                  "text": "17.78 mm (0.700 in.) maximum",
+                  "answer_start": 538
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "4c12ef5b-1bcc-424c-9722-c6ae9af0feec",
+              "question": "What is the dimension listed for the D4 port?",
+              "answers": [
+                {
+                  "text": "57.l5mm0.l 3mm (2.250 in. 0.005 in.)",
+                  "answer_start": 1095
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "50.80 mm 0.13 mm (2.000 in. 0.005 in.) D3 I 14.30 mm 0.13 mm (4.500 in. 0.005 in.) D4 57.l5mm0.l 3mm (2.250 in. 0.005 in.) OS 6.35 mm 0.08 mm (0.250 in. 0.003 in.) D6 I 0.16 mm 0.25 mm (0.400 in. 0.010 in.) D7 Full spherical radius Latch Pin Force each Fl 1.36 kg (3 lb.) mmnnum F 2 1.36 kg (3 lb.) . . mmnnum Position of Cassette GI 12.70 mm 0.25 mm (0.500 in. 0.010 in.) G2 0.50 mm (0.020 in.) m aximum OTICE: SEMI makes no warranties or representations as to the suitability of the Standards and Safety Guidelines set forth herein for any particular application. The detennination of the suitability of the Standard or Safety Guideline is solely the responsibility of the user. Users are cautioned to refer to manufacturer's instructions, product labels, product data sheets, and other relevant literature, respecting any materials or equipment mentioned herein. Standards and Safety Guidelines are subject to change without notice. By publication of this Standard or Safety Guideline, SEMI takes no position respecting the validity of any patent rights or copyrights asserted in connection with any items mentioned in this Standard or Safety Guideline. Users of this Standard or Safety Guideline are expressly advised that detennination of any such patent rights or copyrights and the risk of infringement of such rights are entirely their own responsibility. SEMI E19.1-0417 SEMI 1991, 2017 Copyright by EMI, 673 S. Milpilas Blvd., Milpitas, CA 95035. Reproduction of the contents in whole or",
+          "qas": [
+            {
+              "id": "53d2a896-e5b5-449c-a676-cf05fc7aabff",
+              "question": "What are the dimensions associated with D3?",
+              "answers": [
+                {
+                  "text": "50.80 mm 0.13 mm (2.000 in. 0.005 in.)",
+                  "answer_start": 0
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "260f424f-ccd3-4610-9df9-fe135d7f01e8",
+              "question": "What are the dimensions specified for D4?",
+              "answers": [
+                {
+                  "text": "14.30 mm 0.13 mm (4.500 in. 0.005 in.)",
+                  "answer_start": 44
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "bf4c7290-6e2b-4675-a57c-9a28554e3138",
+              "question": "What are the dimensions listed for D6?",
+              "answers": [
+                {
+                  "text": "6.35 mm 0.08 mm (0.250 in. 0.003 in.)",
+                  "answer_start": 126
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "328e44c0-e40c-4f36-9047-ee86b374ce71",
+              "question": "What is the Latch Pin Force for F 2?",
+              "answers": [
+                {
+                  "text": "1.36 kg (3 lb.)",
+                  "answer_start": 256
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "860c75d4-07f4-4f40-955d-5ab71f3e3ece",
+              "question": "Who is solely responsible for determining the suitability of the Standard or Safety Guideline?",
+              "answers": [
+                {
+                  "text": "the user",
+                  "answer_start": 671
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "2d650c13-e084-408a-ab96-99814fff183c",
+              "question": "What materials and documents are users cautioned to refer to?",
+              "answers": [
+                {
+                  "text": "manufacturer's instructions, product labels, product data sheets, and other relevant literature",
+                  "answer_start": 713
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "584ebcf7-fdc6-473e-b34d-4bebb9c0c40d",
+              "question": "What is the copyright information provided at the end of the document?",
+              "answers": [
+                {
+                  "text": "Copyright by EMI, 673 S. Milpilas Blvd., Milpitas, CA 95035.",
+                  "answer_start": 1396
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SEMI E19.2-0417",
+      "paragraphs": [
+        {
+          "context": "semr SEMI E19.2-0417 SPECIFICATION FOR 125 mm (5 in.) PORT FOR STANDARD MECHANICAL INTERFACE (SMIF) This Standard was technically approved by the Physical Interfaces & Carriers Global Technical Committee. This edition was approved for publication by the global Audits and Reviews Subcommittee on December 8, 2017. Available at www.semiviews.org and www.semi.org in April 2017; originally published in 1991; previously published March 2009. 1 Purpose 1.1 The purpose of this Document is to quantify the requirements for a 125 mm (5 in.) cassette SMIF interface. 2 Scope 2.1 This Specification provides the 125 mm (5 in.) specific values of all alpha-numeric variables (e.g., A I) defined in SEMI E19. OTJCE: SEMI Standards and Safety Guidelines do not purport to address all safety issues associated with their use. It is the responsibility of the users of the Documents to establish appropriate safety and health practices, and determine the applicability of regulatory or other limitations prior to use. 3 Requirements 3.1 The complete specification of this interface includes all the general requirements of SEMI E l 9. Table 1 provides the specific values for 125 mm (5 in.) cassette SMIF ports. 4 Referenced Standards and Documents . SEMI Standards and Safety Guidelines I SEMI E 19 - Specification for Standard Mechanical Interface (SMIF) OTJCE: Unless otherwise indicated, all documents cited shall be the latest published versions. Table 1 Port Dimensions for 125 mm (5 in.) Wafer Cassette Port Door Al 85.72 mm 0.13 mm (3.375 in. 0.005 in.) A2 85.72 mm 0.13 mm",
+          "qas": [
+            {
+              "id": "6d7a398c-c737-45a1-8e5b-ac5847f9f1c3",
+              "question": "What is the purpose of this Document?",
+              "answers": [
+                {
+                  "text": "to quantify the requirements for a 125 mm (5 in.) cassette SMIF interface",
+                  "answer_start": 486
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "00dd0820-53eb-45de-baeb-ba1d8448f1ef",
+              "question": "What does this Specification provide regarding SEMI E19?",
+              "answers": [
+                {
+                  "text": "the 125 mm (5 in.) specific values of all alpha-numeric variables (e.g., A I) defined in SEMI E19",
+                  "answer_start": 601
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "2e6b0091-3b61-4d5a-9c7c-7ce6f9ea8a84",
+              "question": "Who is responsible for establishing appropriate safety and health practices?",
+              "answers": [
+                {
+                  "text": "the users of the Documents",
+                  "answer_start": 843
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a128fe31-ddc0-40bb-b890-7c976941daf8",
+              "question": "What is the dimension listed for the Port Door?",
+              "answers": [
+                {
+                  "text": "85.72 mm",
+                  "answer_start": 1510
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "SEMI E 19 - Specification for Standard Mechanical Interface (SMIF) OTJCE: Unless otherwise indicated, all documents cited shall be the latest published versions. Table 1 Port Dimensions for 125 mm (5 in.) Wafer Cassette Port Door Al 85.72 mm 0.13 mm (3.375 in. 0.005 in.) A2 85.72 mm 0.13 mm (3.375 in. 0.005 in.) A3 9.53 mm 0.25 mm (0.375 in. 0.0 IO in.) Guide Rails Bl 102.87 mm0.13 mm (4.050 in. 0.005 in.) 95.25 mm 0.13 mm (3.750 in. 0.005 in.) 6.35 mm 0.25 mm (0.250 in. 0.0 IO in.) 6.35 mm 0.25 mm (0.250 in. 0.0 IO in.) 17.78 mm (0.700 in.) max.1mum 87 12.70 mm (0.500 in.) . . mmunum 3.18 mm 0.25 mm (0.125 in. 0.0 IO in.) 6.35 mm (0.250 in.) maximum radius Latch Pins Cl 93.98 mm 0.13 mm (3.700 in. 0.005 in.) C2 6.35 mm0.13 mm (0.250 in. 0.005 in.) CJ 63.50 mm 0.13 mm (2.500 in. 0.005 in.) C4 3.18 mm 0.05 mm (0.125 in. 0.002 in.) diameter cs C6 6.35 mm 0.25 mm (0.250 in. 0.0 IO in.) SEMI E19.2-0417 SEMI 1991, 2017 semr C7 Full spherical radius C8 4.44 mm (0.175 in.) mmunum Registration Pins DI 127.20 mm 0.13 mm (5.000 in. 0.005 in.) D2 63.50 mm 0.13 mm (2.500 in. 0.005 in.) D3 139.70 mm 0.13 mm (5.500 in. 0.005 in.) D4 69.85 mm 0.13 mm (2.750 in. 0.005 in.) D5 6.35 mm 0.08 mm (0.250 in. 0.003 in.) D6 10.16 mm0.25 mm (0.400 in. 0.010 in.) D7 Full",
+          "qas": [
+            {
+              "id": "1e7575ff-ffcb-4894-a5e7-50d54df0fa35",
+              "question": "What are the dimensions specified for the A1 and A2 ports?",
+              "answers": [
+                {
+                  "text": "85.72 mm 0.13 mm (3.375 in. 0.005 in.)",
+                  "answer_start": 233
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "758dfe9a-74d1-4060-8bd8-59c37714f4af",
+              "question": "What are the dimensions listed for the Guide Rails (Bl)?",
+              "answers": [
+                {
+                  "text": "102.87 mm0.13 mm (4.050 in. 0.005 in.)",
+                  "answer_start": 371
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "05389328-b7c6-4c8d-b6c8-fdae8eca0cfd",
+              "question": "What is the dimension for the A3 port?",
+              "answers": [
+                {
+                  "text": "9.53 mm 0.25 mm (0.375 in. 0.0 IO in.)",
+                  "answer_start": 317
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "0a6fa9f2-0eee-44e8-a8be-bf499108096c",
+              "question": "What are the dimensions for the Registration Pins (DI)?",
+              "answers": [
+                {
+                  "text": "127.20 mm 0.13 mm (5.000 in. 0.005 in.)",
+                  "answer_start": 1009
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "e0010e92-77d9-412f-a54d-645b9946e16e",
+              "question": "What is the dimension listed for D3?",
+              "answers": [
+                {
+                  "text": "139.70 mm 0.13 mm (5.500 in. 0.005 in.)",
+                  "answer_start": 1094
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "(5.000 in. 0.005 in.) D2 63.50 mm 0.13 mm (2.500 in. 0.005 in.) D3 139.70 mm 0.13 mm (5.500 in. 0.005 in.) D4 69.85 mm 0.13 mm (2.750 in. 0.005 in.) D5 6.35 mm 0.08 mm (0.250 in. 0.003 in.) D6 10.16 mm0.25 mm (0.400 in. 0.010 in.) D7 Full spherical radius Latch Pin Force Fl 1.36 kg (3 lb.) mmunum each F2 1.36 kg (3 lb.) . . mmunum Position of Cassette GI 12.70 mm 0.25 mm (0.500 in. 0.010 in.) G2 0.50 mm (0.020 in.) maximum OTICE: SEMI makes no warranties or representations as to the suitability of the Standards and Safety Guidelines set forth herein for any particular application. The detennination of the suitability of the Standard or Safety Guideline is solely the responsibility of the user. Users are cautioned to refer to manufacturer's instructions, product labels, product data sheets, and other relevant literature, respecting any materials or equipment mentioned herein. Standards and Safety Guidelines are subject to change without notice. By publication of this Standard or Safety Guideline, SEMI takes no position respecting the validity of any patent rights or copyrights asserted in connection with any items mentioned in this Standard or Safety Guideline. Users of this Standard or Safety Guideline are expressly advised that detennination of any such patent rights or copyrights and the risk of infringement of such rights are entirely their own responsibility. SEMI E19.2-0417 SEMI 1991, 2017 Copyright by [Ml, 673 S. Milpitas Blvd., Milpitas, CA 95035. Reproduction of the contents in",
+          "qas": [
+            {
+              "id": "6685666b-4fda-4f3f-a779-bbb7e72da4ae",
+              "question": "What is the dimension specified for D2?",
+              "answers": [
+                {
+                  "text": "63.50 mm 0.13 mm",
+                  "answer_start": 25
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "86cd7be0-a23d-4bf0-a606-2abca99060eb",
+              "question": "What is the dimension associated with D3?",
+              "answers": [
+                {
+                  "text": "139.70 mm 0.13 mm",
+                  "answer_start": 67
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a9f7fbfe-c200-411c-ae4a-277c512ba2cd",
+              "question": "What is the Latch Pin Force?",
+              "answers": [
+                {
+                  "text": "1.36 kg (3 lb.)",
+                  "answer_start": 275
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "74f0e60e-d489-40b9-9c85-8155d63e87f6",
+              "question": "What are the dimensions listed for D5?",
+              "answers": [
+                {
+                  "text": "6.35 mm 0.08 mm (0.250 in. 0.003 in.)",
+                  "answer_start": 152
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "905fdfcd-6474-4598-b892-786b86bd764a",
+              "question": "Who is solely responsible for determining the suitability of the Standard or Safety Guideline?",
+              "answers": [
+                {
+                  "text": "the user",
+                  "answer_start": 693
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "d2ff346a-fdb8-4e00-9bfd-35b2ba194505",
+              "question": "What is the position of the Cassette GI?",
+              "answers": [
+                {
+                  "text": "12.70 mm 0.25 mm (0.500 in. 0.010 in.)",
+                  "answer_start": 357
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SEMI E19.3-0417",
+      "paragraphs": [
+        {
+          "context": "semr SEMI E19.3-0417 SPECIFICATION FOR 150 mm (6 in.) PORT FOR STANDARD MECHANICAL INTERFACE (SMIF) This Standard was technically approved by the Physical Interfaces & Carriers Global Technical Committee. This edition was approved for publication by the global Audits and Reviews Subcommittee on December 8, 2016. Available at www.semiviews.org and www.semi.org in April 2017; originally published in 1991; previously published December 2013. 1 Purpose 1.1 The purpose of this Document is to quantify the requirements for a 150 mm (6 in.) cassette SMIF interface. 2 Scope 2.1 This Specification provides the 150 mm (6 in.) specific values of all alpha-numeric variables (e.g., A I) defined in SEMI E19. OTJCE: SEMI Standards and Safety Guidelines do not purport to address all safety issues associated with their use. It is the responsibility of the users of the Documents to establish appropriate safety and health practices, and determine the applicability of regulatory or other limitations prior to use. 3 Requirements 3.1 The complete specification of this interface includes all the general requirements of SEMI E l 9. Table 1 provides the specific values for 150 mm (6 in.) cassette SMIF ports. 4 Referenced Standards and Documents . SEMI Standards and Safety Guidelines I SEMI E 19 - Specification for Standard Mechanical Interface (SMIF) OTJCE: Unless otherwise indicated, all documents cited shall be the latest published versions. Table 1 Port Dimensions for 150 mm (6 in.) Wafer Cassette Port Door A l 98.48 mm 0.13 mm (3.875 in. 0.005 in.) A2 98.48 mm0.13 mm",
+          "qas": [
+            {
+              "id": "d3ba562a-9357-41f4-9a67-0fa10eb4b804",
+              "question": "What is the purpose of this Document?",
+              "answers": [
+                {
+                  "text": "to quantify the requirements for a 150 mm (6 in.) cassette SMIF interface",
+                  "answer_start": 489
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "19f3bae7-51a2-41a1-a609-81e9543b3771",
+              "question": "When was this specification originally published?",
+              "answers": [
+                {
+                  "text": "originally published in 1991",
+                  "answer_start": 377
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "b23960ce-ff29-4e62-853f-6640133f1ae8",
+              "question": "Who is responsible for establishing appropriate safety and health practices?",
+              "answers": [
+                {
+                  "text": "the users of the Documents",
+                  "answer_start": 846
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "ee7b2d46-2d99-419b-8077-56a309599c9c",
+              "question": "What is the dimension 'l' for the 150 mm (6 in.) Wafer Cassette Port Door A?",
+              "answers": [
+                {
+                  "text": "98.48 mm",
+                  "answer_start": 1514
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "983cc702-a7c3-4d72-8d83-f60709be1523",
+              "question": "What does the specification SEMI E19.3-0417 cover?",
+              "answers": [
+                {
+                  "text": "SPECIFICATION FOR 150 mm (6 in.) PORT FOR STANDARD MECHANICAL INTERFACE (SMIF)",
+                  "answer_start": 21
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "SEMI E 19 - Specification for Standard Mechanical Interface (SMIF) OTJCE: Unless otherwise indicated, all documents cited shall be the latest published versions. Table 1 Port Dimensions for 150 mm (6 in.) Wafer Cassette Port Door A l 98.48 mm 0.13 mm (3.875 in. 0.005 in.) A2 98.48 mm0.13 mm (3.875 in. 0.005 in.) A3 9.53 mm 0.25 mm (0.375 in. 0.010 in.) Guide Rails Bl 115.57 mm 0.13 mm (4.550 in. 0.005 in.) 107.95 mm0.13 mm (4.250 in. 0.005 in.) 6.35 mm 0.25 mm (0.250 in. 0.0 IO in.) 6.35 mm 0.25 mm (0.250 in. 0.010 in.) 17.78 mm (0.700 in.) maximum 87 12.70 mm (0.500 in.) . . mm1mum 3.18 mm 0.25 mm (0.125 in. 0.0 IO in.) 6.35 mm (0.250 in.) maximum radius Latch Pins Cl 106.68 mm 0.13 mm (4.200 in. 0.005 in.) C2 6.35 mm0.13 mm (0.250 in. 0.005 in.) C3 63.50 mm 0.13 mm (2.500 in. 0.005 in.) C4 3.18 mm 0.05 mm (0.125 in. 0.002 in.) diameter cs C6 6.35 mm 0.25 mm (0.250 in. 0.010 in.) SEMI E19.3-0417 SEMI 1991, 2017 semr C7 Full spherical radius C8 4.44 mm (0.175 in.) mmtmum Registration DI 152.40 mm 0.13 mm (6.000 in. 0.005 in.) D2 76.20 mm 0.13 mm (3.000 in. 0.005 in.) D3 165.IOmm0.13 mm (6.500 in. 0.005 in.) D4 82.55 mm0.13 mm (3.250 in. 0.005 in.) D5 6.35 mm 0.08 mm (0.250 in. 0.003 in.) D6 I 0.16 mm 0.25 mm (0.400 in. 0.0 IO in.) D7 Full spherical radius Latch Pin",
+          "qas": [
+            {
+              "id": "36fc1a46-bfeb-4c20-b015-ac403e093fea",
+              "question": "What are the dimensions listed for Port A?",
+              "answers": [
+                {
+                  "text": "l 98.48 mm 0.13 mm (3.875 in. 0.005 in.)",
+                  "answer_start": 232
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a43330be-e4e3-47f1-ba02-0237a46f389a",
+              "question": "What are the two dimensions provided for Port B?",
+              "answers": [
+                {
+                  "text": "115.57 mm 0.13 mm (4.550 in. 0.005 in.) 107.95 mm0.13 mm (4.250 in. 0.005 in.)",
+                  "answer_start": 370
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d11718fb-1856-4fd3-b46e-27391448933c",
+              "question": "What are the dimensions for Port D3?",
+              "answers": [
+                {
+                  "text": "165.IOmm0.13 mm (6.500 in. 0.005 in.)",
+                  "answer_start": 1087
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "d29d5ee9-8a3b-4e02-8db7-8887325128af",
+              "question": "What does the designation C7 represent?",
+              "answers": [
+                {
+                  "text": "Full spherical radius",
+                  "answer_start": 934
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "54bc8f00-0828-4567-b6d5-904f0ad10f15",
+              "question": "What are the dimensions for Port A3?",
+              "answers": [
+                {
+                  "text": "9.53 mm 0.25 mm (0.375 in. 0.010 in.)",
+                  "answer_start": 317
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "D2 76.20 mm 0.13 mm (3.000 in. 0.005 in.) D3 165.IOmm0.13 mm (6.500 in. 0.005 in.) D4 82.55 mm0.13 mm (3.250 in. 0.005 in.) D5 6.35 mm 0.08 mm (0.250 in. 0.003 in.) D6 I 0.16 mm 0.25 mm (0.400 in. 0.0 IO in.) D7 Full spherical radius Latch Pin Force each Fl 1.36 kg (3 lb.) mm1mum F2 1.36 kg (3 lb.) . . minimum Position of Cassette GI 12.70 mm 0.25 mm (0.500 in. 0.010 in.) G2 0.50 mm (O.D20 in.) maximum SEMI E19.3-0417 SEMI 1991, 2017 semr RELATED INFORMATION 1 SENSORS FOR RETICLE SMIF POD (RSP150) DETECTION OTICE: This Related Information is not an official part of SEMI E 19.3 and was derived from the work of the Physical Interfaces & Carriers Global Technical Committee. This Related Information was approved for publication by full letter ballot procedures on August 22, 2013. NOTE I: The material contained in this Related Information is not intended to modify or supersede the Standard SEMI El 9.3 in any way. These notes are provided as a source of information to aid in the application of the Standard, and are to be considered reference material. Determination of the suitability of the material is solely the responsibility of the user. R1-1 Related Information in SEMI E19 R l-l . l A Related Information to SEMI E 19 provides the position of existing reticle SMIF pod (RSP 150) sensors and implementation advice. The users of this Standard are recommended to consult this Related Infonnation for",
+          "qas": [
+            {
+              "id": "127e4520-e034-463d-ab63-ac3bc5e69ca2",
+              "question": "What are the dimensions listed for D2?",
+              "answers": [
+                {
+                  "text": "76.20 mm 0.13 mm (3.000 in. 0.005 in.)",
+                  "answer_start": 3
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "e5e0d220-19c4-4193-97b5-f5ae39a6e69c",
+              "question": "What is the specified force for the Latch Pin Force?",
+              "answers": [
+                {
+                  "text": "each Fl 1.36 kg (3 lb.)",
+                  "answer_start": 250
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "63eea399-b4a5-439d-9623-27f1f3db21bb",
+              "question": "What are the dimensions specified for D5?",
+              "answers": [
+                {
+                  "text": "6.35 mm 0.08 mm (0.250 in. 0.003 in.)",
+                  "answer_start": 127
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "02941732-f41a-4878-8a68-6e6ae3999b64",
+              "question": "What does the Related Information to SEMI E19 provide?",
+              "answers": [
+                {
+                  "text": "the position of existing reticle SMIF pod (RSP 150) sensors and implementation advice.",
+                  "answer_start": 1244
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "83d3a03d-bc7a-4d88-9ae7-06fa5075ca57",
+              "question": "Who derived the Related Information mentioned in the context?",
+              "answers": [
+                {
+                  "text": "the Physical Interfaces & Carriers Global Technical Committee.",
+                  "answer_start": 617
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "de0697f2-392c-4bf7-ba53-5fc55b42e432",
+              "question": "According to Note I, what is the material contained in this Related Information not intended to modify or supersede?",
+              "answers": [
+                {
+                  "text": "the Standard SEMI El 9.3 in any way.",
+                  "answer_start": 885
+                }
+              ],
+              "type": "reasoning"
+            },
+            {
+              "id": "9ed5dbf6-3332-4c50-bd0b-cb5dac41680f",
+              "question": "What was the Related Information approved for publication by?",
+              "answers": [
+                {
+                  "text": "full letter ballot procedures on August 22, 2013.",
+                  "answer_start": 737
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        },
+        {
+          "context": "solely the responsibility of the user. R1-1 Related Information in SEMI E19 R l-l . l A Related Information to SEMI E 19 provides the position of existing reticle SMIF pod (RSP 150) sensors and implementation advice. The users of this Standard are recommended to consult this Related Infonnation for reticle SMIF pod detection. OTICE: SEMI makes no warranties or representations as to the suitability of the Standards and Safety Guidelines set forth herein for any particular application. The detennination of the suitability of the Standard or Safety Guideline is solely the responsibility of the user. Users are cautioned to refer to manufacturer's instructions, product labels, product data sheets, and other relevant literature, respecting any materials or equipment mentioned herein. Standards and Safety Guidelines are subject to change without notice. By publication of this Standard or Safety Guideline, SEMI takes no position respecting the validity of any patent rights or copyrights asserted in connection with any items mentioned in this Standard or Safety Guideline. Users of this Standard or Safety Guideline are expressly advised that determination of any such patent rights or copyrights, and the risk of infringement of such rights are entirely their own responsibility. Copyright by EMI, 673 S. Milpitas Blvd., Milpitas, CA 95035. Reproduction of the contents in whole or in part is forbidden without express written consent of SEMl SEMI E19.3-0417 SEMI 1991, 2017",
+          "qas": [
+            {
+              "id": "f8b802a7-6f97-4efb-9cfd-a8476e4da23b",
+              "question": "What information does the Related Information to SEMI E 19 provide?",
+              "answers": [
+                {
+                  "text": "the position of existing reticle SMIF pod (RSP 150) sensors and implementation advice",
+                  "answer_start": 130
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "692749c0-134c-4c7f-b045-013d6999d319",
+              "question": "What does SEMI state regarding warranties for the Standards and Safety Guidelines?",
+              "answers": [
+                {
+                  "text": "SEMI makes no warranties or representations as to the suitability of the Standards and Safety Guidelines set forth herein for any particular application",
+                  "answer_start": 335
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "3970bcb4-8979-4e02-aed0-6d04ecd8b185",
+              "question": "What materials should users refer to when using the Standard or Safety Guidelines?",
+              "answers": [
+                {
+                  "text": "manufacturer's instructions, product labels, product data sheets, and other relevant literature",
+                  "answer_start": 636
+                }
+              ],
+              "type": "fact"
+            },
+            {
+              "id": "a6d0be89-e1cc-4de4-b8a1-2859d32346e6",
+              "question": "Whose responsibility is the determination of the suitability of the Standard or Safety Guideline?",
+              "answers": [
+                {
+                  "text": "solely the responsibility of the user",
+                  "answer_start": 0
+                }
+              ],
+              "type": "definition"
+            },
+            {
+              "id": "ba6af6aa-682b-4e14-8380-e0753d76db42",
+              "question": "What is forbidden without express written consent of SEMI?",
+              "answers": [
+                {
+                  "text": "Reproduction of the contents in whole or in part",
+                  "answer_start": 1349
+                }
+              ],
+              "type": "fact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
