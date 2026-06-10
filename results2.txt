@@ -1,0 +1,906 @@
+Query: What is diameter specification?
+Top Results:
+  - [Score: 0.5741] eneralized to include JDS-IC terms, but this is not being done at the present time. 5.2.1 diameter- the diameter of the minimum circle that encloses the wafer. 5.2.2 back swface - the surface of a waf
+  - [Score: 0.5517] diameter: 0.1 to 6 m; circular symmetry. Specification Characteristics Used for Wafer Qualification umber per wafer, mound height, height to diameter. NOTE 2: Scattering event size reported by an SSIS
+  - [Score: 0.5288] distance into the FQA depending on the context. 5.212 nominal diameter, of a semiconductor wafer - the specified target diameter (e.g., 150 mm, 200 mm, or 300 mm) of the wafer around which there is an
+
+Query: What is ACK code?
+Top Results:
+  - [Score: 0.7122] l documents cited shall be the latest published versions. 4 Terminology 4.1 Definitions 4.1.1 ACK - 'Correct Reception' handshake code. 4.1.2 applicarion software -the software performing the specific
+  - [Score: 0.6141] yComplctc: FailcdRccovcry aboncd ErrorTcxt Text in support of the error code. Text EX.Ack Indicates whether the request was successful or the Boolean: activity completed normally. TRUE - Successful FA
+  - [Score: 0.5766] L, 2 1 . <HANDLE> 2 . <ACKC13> The possible ACKC 13 codes for this message are: 0 . K . 6 = ERROR: No op
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv sync
+Resolved 104 packages in 2.47s
+Checked 101 packages in 0.80ms
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run download_qa_model.py 
+📥 Downloading bert-base-uncased to hf_cache/...
+Downloading (incomplete total...): 0.00B [00:00, ?B/s]                                                                     Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 16 files: 100%|████████████████████████████████████████████████████████████████████| 16/16 [04:46<00:00, 17.92s/it]
+Download complete: : 3.45GB [04:46, 9.38MB/s]              ✅ Model downloaded to: hf_cache/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594
+You can now run all scripts offline.
+Download complete: : 3.45GB [04:46, 12.0MB/s]
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 09_prepare_qa_data.py 
+🔄 Loading cleaned dataset...
+📊 Total records: 49603
+🔧 Converting to QA format...
+Converting: 100%|█████████████████████████████████████████████████████████████████| 49603/49603 [00:00<00:00, 141587.96it/s]
+✅ Valid QA records: 49603
+❌ Skipped (bad spans): 0
+
+📊 Split sizes:
+  Train: 39682
+  Val:   4960
+  Test:  4961
+💾 Saved train → qa_train.json
+💾 Saved val → qa_val.json
+💾 Saved test → qa_test.json
+
+🧪 Sanity check (first 3 train records):
+  Q: If data is applicable to the equipment and not available, what action should be taken?
+  A: leave the cell blank
+  Span check: ✅ (extracted: 'leave the cell blank')
+
+  Q: What is the unit description for 'V'?
+  A: Volts
+  Span check: ✅ (extracted: 'Volts')
+
+  Q: Whose responsibility is it to manage the manufacturing context data?
+  A: the operational message recipient's responsibility
+  Span check: ✅ (extracted: 'the operational message recipient's responsibility')
+
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 10_train_qa.py 
+📥 Loading bert-base-uncased from local cache...
+🖥️ Using device: cuda
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 197/197 [00:00<00:00, 7377.68it/s]
+BertForQuestionAnswering LOAD REPORT from: /home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/hf_cache/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+qa_outputs.weight                          | MISSING    | 
+qa_outputs.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+✅ Model loaded: 108,893,186 parameters
+
+🔄 Loading training data...
+  Train: 39682 records
+  Val:   4960 records
+
+🔧 Tokenizing training data...
+Tokenizing train: 100%|██████████████████████████████████████████████████████| 39682/39682 [00:14<00:00, 2781.95 examples/s]
+🔧 Tokenizing validation data...
+Tokenizing val: 100%|██████████████████████████████████████████████████████████| 4960/4960 [00:01<00:00, 2765.78 examples/s]
+  Tokenized train: 61474 examples
+  Tokenized val:   7630 examples
+
+🚀 Starting training...
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Traceback (most recent call last):
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/10_train_qa.py", line 216, in <module>
+    trainer = Trainer(
+              ^^^^^^^^
+TypeError: Trainer.__init__() got an unexpected keyword argument 'tokenizer'
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 10_train_qa.py 
+📥 Loading bert-base-uncased from local cache...
+🖥️ Using device: cuda
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 197/197 [00:00<00:00, 7744.30it/s]
+BertForQuestionAnswering LOAD REPORT from: /home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/hf_cache/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+qa_outputs.weight                          | MISSING    | 
+qa_outputs.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+✅ Model loaded: 108,893,186 parameters
+
+🔄 Loading training data...
+  Train: 39682 records
+  Val:   4960 records
+
+🔧 Tokenizing training data...
+Tokenizing train: 100%|██████████████████████████████████████████████████████| 39682/39682 [00:14<00:00, 2783.86 examples/s]
+🔧 Tokenizing validation data...
+Tokenizing val: 100%|██████████████████████████████████████████████████████████| 4960/4960 [00:01<00:00, 2806.29 examples/s]
+  Tokenized train: 61474 examples
+  Tokenized val:   7630 examples
+
+🚀 Starting training...
+{'loss': '5.869', 'grad_norm': '6.761', 'learning_rate': '2.578e-06', 'epoch': '0.02602'}                                   
+{'loss': '4.796', 'grad_norm': '7.837', 'learning_rate': '5.182e-06', 'epoch': '0.05204'}                                   
+{'loss': '3.684', 'grad_norm': '22.24', 'learning_rate': '7.786e-06', 'epoch': '0.07806'}                                   
+{'loss': '2.86', 'grad_norm': '19.68', 'learning_rate': '1.039e-05', 'epoch': '0.1041'}                                     
+{'loss': '2.468', 'grad_norm': '20.51', 'learning_rate': '1.299e-05', 'epoch': '0.1301'}                                    
+{'eval_loss': '2.161', 'eval_runtime': '45.46', 'eval_samples_per_second': '167.8', 'eval_steps_per_second': '10.49', 'epoch': '0.1301'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.21it/s]
+{'loss': '2.262', 'grad_norm': '19.12', 'learning_rate': '1.56e-05', 'epoch': '0.1561'}                                     
+{'loss': '2.029', 'grad_norm': '17.11', 'learning_rate': '1.82e-05', 'epoch': '0.1821'}                                     
+{'loss': '1.98', 'grad_norm': '15.73', 'learning_rate': '2.081e-05', 'epoch': '0.2082'}                                     
+{'loss': '1.951', 'grad_norm': '15.57', 'learning_rate': '2.341e-05', 'epoch': '0.2342'}                                    
+{'loss': '1.872', 'grad_norm': '32.29', 'learning_rate': '2.602e-05', 'epoch': '0.2602'}                                    
+{'eval_loss': '1.725', 'eval_runtime': '43.09', 'eval_samples_per_second': '177.1', 'eval_steps_per_second': '11.07', 'epoch': '0.2602'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.32it/s]
+{'loss': '1.695', 'grad_norm': '18.84', 'learning_rate': '2.862e-05', 'epoch': '0.2862'}                                    
+{'loss': '1.775', 'grad_norm': '22.66', 'learning_rate': '2.986e-05', 'epoch': '0.3123'}                                    
+{'loss': '1.725', 'grad_norm': '13.99', 'learning_rate': '2.958e-05', 'epoch': '0.3383'}                                    
+{'loss': '1.655', 'grad_norm': '21.2', 'learning_rate': '2.929e-05', 'epoch': '0.3643'}                                     
+{'loss': '1.659', 'grad_norm': '15.89', 'learning_rate': '2.9e-05', 'epoch': '0.3903'}                                      
+{'eval_loss': '1.593', 'eval_runtime': '42.72', 'eval_samples_per_second': '178.6', 'eval_steps_per_second': '11.16', 'epoch': '0.3903'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.28it/s]
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.28it/s]
+❌ Training failed: [enforce fail at inline_container.cc:672] . unexpected pos 589478208 vs 589478096
+Traceback (most recent call last):
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/torch/serialization.py", line 1004, in save
+    _save(
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/torch/serialization.py", line 1313, in _save
+    zip_file.write_record(name, storage, num_bytes)
+RuntimeError: basic_ios::clear: iostream error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/10_train_qa.py", line 230, in <module>
+    trainer.train()
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/trainer.py", line 1424, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/trainer.py", line 1506, in _inner_training_loop
+    self._run_epoch(
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/trainer.py", line 1775, in _run_epoch
+    self._maybe_log_save_evaluate(
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/trainer.py", line 2088, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial)
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/trainer.py", line 3069, in _save_checkpoint
+    self._save_optimizer_and_scheduler(output_dir)
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/trainer.py", line 3241, in _save_optimizer_and_scheduler
+    torch.save(self.optimizer.state_dict(), os.path.join(output_dir, OPTIMIZER_NAME))
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/torch/serialization.py", line 1003, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/torch/serialization.py", line 835, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:672] . unexpected pos 589478208 vs 589478096
+ 13%|█▎        | 1500/11529 [10:39<1:11:15,  2.35it/s]                                                                      
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 10_train_qa.py 
+📥 Loading bert-base-uncased from local cache...
+🖥️ Using device: cuda
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 197/197 [00:00<00:00, 8166.90it/s]
+BertForQuestionAnswering LOAD REPORT from: /home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/hf_cache/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+qa_outputs.bias                            | MISSING    | 
+qa_outputs.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+✅ Model loaded: 108,893,186 parameters
+
+🔄 Loading training data...
+  Train: 39682 records
+  Val:   4960 records
+
+🔧 Tokenizing training data...
+Tokenizing train: 100%|██████████████████████████████████████████████████████| 39682/39682 [00:14<00:00, 2799.80 examples/s]
+🔧 Tokenizing validation data...
+Tokenizing val: 100%|██████████████████████████████████████████████████████████| 4960/4960 [00:01<00:00, 2779.29 examples/s]
+  Tokenized train: 61474 examples
+  Tokenized val:   7630 examples
+
+🚀 Starting training...
+{'loss': '5.798', 'grad_norm': '6.777', 'learning_rate': '2.578e-06', 'epoch': '0.02602'}                                   
+{'loss': '4.737', 'grad_norm': '9.079', 'learning_rate': '5.182e-06', 'epoch': '0.05204'}                                   
+{'loss': '3.605', 'grad_norm': '18.48', 'learning_rate': '7.786e-06', 'epoch': '0.07806'}                                   
+{'loss': '2.758', 'grad_norm': '20.4', 'learning_rate': '1.039e-05', 'epoch': '0.1041'}                                     
+{'loss': '2.473', 'grad_norm': '22.25', 'learning_rate': '1.299e-05', 'epoch': '0.1301'}                                    
+{'eval_loss': '2.166', 'eval_runtime': '45.26', 'eval_samples_per_second': '168.6', 'eval_steps_per_second': '10.54', 'epoch': '0.1301'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.91it/s]
+{'loss': '2.262', 'grad_norm': '16.25', 'learning_rate': '1.56e-05', 'epoch': '0.1561'}                                     
+{'loss': '2.06', 'grad_norm': '15.73', 'learning_rate': '1.82e-05', 'epoch': '0.1821'}                                      
+{'loss': '1.942', 'grad_norm': '15.58', 'learning_rate': '2.081e-05', 'epoch': '0.2082'}                                    
+{'loss': '1.956', 'grad_norm': '15.21', 'learning_rate': '2.341e-05', 'epoch': '0.2342'}                                    
+{'loss': '1.853', 'grad_norm': '26.01', 'learning_rate': '2.602e-05', 'epoch': '0.2602'}                                    
+{'eval_loss': '1.733', 'eval_runtime': '42.77', 'eval_samples_per_second': '178.4', 'eval_steps_per_second': '11.15', 'epoch': '0.2602'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.92it/s]
+{'loss': '1.684', 'grad_norm': '21.04', 'learning_rate': '2.862e-05', 'epoch': '0.2862'}                                    
+{'loss': '1.765', 'grad_norm': '22.56', 'learning_rate': '2.986e-05', 'epoch': '0.3123'}                                    
+{'loss': '1.724', 'grad_norm': '12.56', 'learning_rate': '2.958e-05', 'epoch': '0.3383'}                                    
+{'loss': '1.678', 'grad_norm': '22.8', 'learning_rate': '2.929e-05', 'epoch': '0.3643'}                                     
+{'loss': '1.656', 'grad_norm': '15.87', 'learning_rate': '2.9e-05', 'epoch': '0.3903'}                                      
+{'eval_loss': '1.577', 'eval_runtime': '42.3', 'eval_samples_per_second': '180.4', 'eval_steps_per_second': '11.28', 'epoch': '0.3903'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.93it/s]
+{'loss': '1.677', 'grad_norm': '17.8', 'learning_rate': '2.871e-05', 'epoch': '0.4163'}                                     
+{'loss': '1.596', 'grad_norm': '14.58', 'learning_rate': '2.842e-05', 'epoch': '0.4424'}                                    
+{'loss': '1.437', 'grad_norm': '13.47', 'learning_rate': '2.813e-05', 'epoch': '0.4684'}                                    
+{'loss': '1.501', 'grad_norm': '16.83', 'learning_rate': '2.784e-05', 'epoch': '0.4944'}                                    
+{'loss': '1.512', 'grad_norm': '13.85', 'learning_rate': '2.755e-05', 'epoch': '0.5204'}                                    
+{'eval_loss': '1.432', 'eval_runtime': '42.36', 'eval_samples_per_second': '180.1', 'eval_steps_per_second': '11.26', 'epoch': '0.5204'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.27it/s]
+{'loss': '1.467', 'grad_norm': '14.54', 'learning_rate': '2.726e-05', 'epoch': '0.5464'}                                    
+{'loss': '1.415', 'grad_norm': '27.53', 'learning_rate': '2.697e-05', 'epoch': '0.5725'}                                    
+{'loss': '1.482', 'grad_norm': '19.68', 'learning_rate': '2.668e-05', 'epoch': '0.5985'}                                    
+{'loss': '1.408', 'grad_norm': '13.21', 'learning_rate': '2.639e-05', 'epoch': '0.6245'}                                    
+{'loss': '1.371', 'grad_norm': '19.5', 'learning_rate': '2.611e-05', 'epoch': '0.6505'}                                     
+{'eval_loss': '1.319', 'eval_runtime': '42.41', 'eval_samples_per_second': '179.9', 'eval_steps_per_second': '11.25', 'epoch': '0.6505'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.28it/s]
+{'loss': '1.294', 'grad_norm': '15.81', 'learning_rate': '2.582e-05', 'epoch': '0.6766'}                                    
+{'loss': '1.42', 'grad_norm': '17.55', 'learning_rate': '2.553e-05', 'epoch': '0.7026'}                                     
+{'loss': '1.342', 'grad_norm': '17', 'learning_rate': '2.524e-05', 'epoch': '0.7286'}                                       
+{'loss': '1.293', 'grad_norm': '22.97', 'learning_rate': '2.495e-05', 'epoch': '0.7546'}                                    
+{'loss': '1.283', 'grad_norm': '16.89', 'learning_rate': '2.466e-05', 'epoch': '0.7806'}                                    
+{'eval_loss': '1.295', 'eval_runtime': '42.34', 'eval_samples_per_second': '180.2', 'eval_steps_per_second': '11.27', 'epoch': '0.7806'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.26it/s]
+{'loss': '1.358', 'grad_norm': '14.43', 'learning_rate': '2.437e-05', 'epoch': '0.8067'}                                    
+{'loss': '1.246', 'grad_norm': '11.4', 'learning_rate': '2.408e-05', 'epoch': '0.8327'}                                     
+{'loss': '1.214', 'grad_norm': '12.65', 'learning_rate': '2.379e-05', 'epoch': '0.8587'}                                    
+{'loss': '1.325', 'grad_norm': '11.21', 'learning_rate': '2.35e-05', 'epoch': '0.8847'}                                     
+{'loss': '1.252', 'grad_norm': '10.73', 'learning_rate': '2.321e-05', 'epoch': '0.9107'}                                    
+{'eval_loss': '1.236', 'eval_runtime': '42.29', 'eval_samples_per_second': '180.4', 'eval_steps_per_second': '11.28', 'epoch': '0.9107'}                                                                                                                
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.31it/s]
+{'loss': '1.286', 'grad_norm': '29.96', 'learning_rate': '2.293e-05', 'epoch': '0.9368'}                                    
+{'loss': '1.278', 'grad_norm': '16.85', 'learning_rate': '2.264e-05', 'epoch': '0.9628'}                                    
+{'loss': '1.223', 'grad_norm': '11.66', 'learning_rate': '2.235e-05', 'epoch': '0.9888'}                                    
+{'loss': '1.17', 'grad_norm': '15.29', 'learning_rate': '2.206e-05', 'epoch': '1.015'}                                      
+{'loss': '1.046', 'grad_norm': '9.946', 'learning_rate': '2.177e-05', 'epoch': '1.041'}                                     
+{'eval_loss': '1.22', 'eval_runtime': '41.94', 'eval_samples_per_second': '181.9', 'eval_steps_per_second': '11.37', 'epoch': '1.041'}                                                                                                                  
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.31it/s]
+{'loss': '1.021', 'grad_norm': '18.37', 'learning_rate': '2.148e-05', 'epoch': '1.067'}                                     
+{'loss': '0.9522', 'grad_norm': '18.18', 'learning_rate': '2.119e-05', 'epoch': '1.093'}                                    
+{'loss': '0.9898', 'grad_norm': '6.61', 'learning_rate': '2.09e-05', 'epoch': '1.119'}                                      
+{'loss': '1.033', 'grad_norm': '19.79', 'learning_rate': '2.061e-05', 'epoch': '1.145'}                                     
+{'loss': '1.01', 'grad_norm': '10.12', 'learning_rate': '2.032e-05', 'epoch': '1.171'}                                      
+{'eval_loss': '1.224', 'eval_runtime': '42.13', 'eval_samples_per_second': '181.1', 'eval_steps_per_second': '11.32', 'epoch': '1.171'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.03it/s]
+{'loss': '0.9628', 'grad_norm': '13.38', 'learning_rate': '2.003e-05', 'epoch': '1.197'}                                    
+{'loss': '0.9687', 'grad_norm': '14.94', 'learning_rate': '1.975e-05', 'epoch': '1.223'}                                    
+{'loss': '1.02', 'grad_norm': '22.96', 'learning_rate': '1.946e-05', 'epoch': '1.249'}                                      
+{'loss': '1.039', 'grad_norm': '11.79', 'learning_rate': '1.917e-05', 'epoch': '1.275'}                                     
+{'loss': '0.9938', 'grad_norm': '22.16', 'learning_rate': '1.888e-05', 'epoch': '1.301'}                                    
+{'eval_loss': '1.181', 'eval_runtime': '42.33', 'eval_samples_per_second': '180.3', 'eval_steps_per_second': '11.27', 'epoch': '1.301'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.32it/s]
+{'loss': '1.01', 'grad_norm': '14.42', 'learning_rate': '1.859e-05', 'epoch': '1.327'}                                      
+{'loss': '0.9607', 'grad_norm': '18.26', 'learning_rate': '1.83e-05', 'epoch': '1.353'}                                     
+{'loss': '0.933', 'grad_norm': '15.64', 'learning_rate': '1.801e-05', 'epoch': '1.379'}                                     
+{'loss': '1.006', 'grad_norm': '16.03', 'learning_rate': '1.772e-05', 'epoch': '1.405'}                                     
+{'loss': '0.9694', 'grad_norm': '9.016', 'learning_rate': '1.743e-05', 'epoch': '1.431'}                                    
+{'eval_loss': '1.176', 'eval_runtime': '42.29', 'eval_samples_per_second': '180.4', 'eval_steps_per_second': '11.28', 'epoch': '1.431'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.31it/s]
+{'loss': '0.9417', 'grad_norm': '18.89', 'learning_rate': '1.714e-05', 'epoch': '1.457'}                                    
+{'loss': '0.9909', 'grad_norm': '13.25', 'learning_rate': '1.685e-05', 'epoch': '1.483'}                                    
+{'loss': '0.9547', 'grad_norm': '16.22', 'learning_rate': '1.657e-05', 'epoch': '1.509'}                                    
+{'loss': '1.014', 'grad_norm': '20.53', 'learning_rate': '1.628e-05', 'epoch': '1.535'}                                     
+{'loss': '0.9938', 'grad_norm': '14.16', 'learning_rate': '1.599e-05', 'epoch': '1.561'}                                    
+{'eval_loss': '1.147', 'eval_runtime': '42.15', 'eval_samples_per_second': '181', 'eval_steps_per_second': '11.32', 'epoch': '1.561'}                                                                                                                   
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.23it/s]
+{'loss': '0.8747', 'grad_norm': '13.5', 'learning_rate': '1.57e-05', 'epoch': '1.587'}                                      
+{'loss': '0.9432', 'grad_norm': '16.12', 'learning_rate': '1.541e-05', 'epoch': '1.613'}                                    
+{'loss': '0.952', 'grad_norm': '14.23', 'learning_rate': '1.512e-05', 'epoch': '1.639'}                                     
+{'loss': '0.9371', 'grad_norm': '19.87', 'learning_rate': '1.483e-05', 'epoch': '1.665'}                                    
+{'loss': '0.9779', 'grad_norm': '9.273', 'learning_rate': '1.454e-05', 'epoch': '1.691'}                                    
+{'eval_loss': '1.123', 'eval_runtime': '42.14', 'eval_samples_per_second': '181', 'eval_steps_per_second': '11.32', 'epoch': '1.691'}                                                                                                                   
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.31it/s]
+{'loss': '0.8838', 'grad_norm': '14.64', 'learning_rate': '1.425e-05', 'epoch': '1.717'}                                    
+{'loss': '0.9635', 'grad_norm': '9.268', 'learning_rate': '1.396e-05', 'epoch': '1.743'}                                    
+{'loss': '0.9113', 'grad_norm': '15.95', 'learning_rate': '1.367e-05', 'epoch': '1.769'}                                    
+{'loss': '0.9522', 'grad_norm': '15.93', 'learning_rate': '1.339e-05', 'epoch': '1.795'}                                    
+{'loss': '0.9061', 'grad_norm': '12.24', 'learning_rate': '1.31e-05', 'epoch': '1.821'}                                     
+{'eval_loss': '1.12', 'eval_runtime': '42.23', 'eval_samples_per_second': '180.7', 'eval_steps_per_second': '11.3', 'epoch': '1.821'}                                                                                                                   
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.31it/s]
+{'loss': '0.9186', 'grad_norm': '17.82', 'learning_rate': '1.281e-05', 'epoch': '1.848'}                                    
+{'loss': '0.9679', 'grad_norm': '20.52', 'learning_rate': '1.252e-05', 'epoch': '1.874'}                                    
+{'loss': '0.9426', 'grad_norm': '17.36', 'learning_rate': '1.223e-05', 'epoch': '1.9'}                                      
+{'loss': '1.004', 'grad_norm': '10.55', 'learning_rate': '1.194e-05', 'epoch': '1.926'}                                     
+{'loss': '0.9415', 'grad_norm': '15.35', 'learning_rate': '1.165e-05', 'epoch': '1.952'}                                    
+{'eval_loss': '1.097', 'eval_runtime': '42.23', 'eval_samples_per_second': '180.7', 'eval_steps_per_second': '11.29', 'epoch': '1.952'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.18it/s]
+{'loss': '0.9109', 'grad_norm': '12.54', 'learning_rate': '1.136e-05', 'epoch': '1.978'}                                    
+{'loss': '0.8295', 'grad_norm': '15.31', 'learning_rate': '1.107e-05', 'epoch': '2.004'}                                    
+{'loss': '0.7162', 'grad_norm': '7.667', 'learning_rate': '1.078e-05', 'epoch': '2.03'}                                     
+{'loss': '0.6971', 'grad_norm': '11.61', 'learning_rate': '1.049e-05', 'epoch': '2.056'}                                    
+{'loss': '0.6472', 'grad_norm': '16.61', 'learning_rate': '1.021e-05', 'epoch': '2.082'}                                    
+{'eval_loss': '1.19', 'eval_runtime': '42.32', 'eval_samples_per_second': '180.3', 'eval_steps_per_second': '11.27', 'epoch': '2.082'}                                                                                                                  
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.27it/s]
+{'loss': '0.6481', 'grad_norm': '13.91', 'learning_rate': '9.916e-06', 'epoch': '2.108'}                                    
+{'loss': '0.6883', 'grad_norm': '13.64', 'learning_rate': '9.627e-06', 'epoch': '2.134'}                                    
+{'loss': '0.6484', 'grad_norm': '14.9', 'learning_rate': '9.338e-06', 'epoch': '2.16'}                                      
+{'loss': '0.6654', 'grad_norm': '14.13', 'learning_rate': '9.049e-06', 'epoch': '2.186'}                                    
+{'loss': '0.6593', 'grad_norm': '14.33', 'learning_rate': '8.76e-06', 'epoch': '2.212'}                                     
+{'eval_loss': '1.19', 'eval_runtime': '42.25', 'eval_samples_per_second': '180.6', 'eval_steps_per_second': '11.29', 'epoch': '2.212'}                                                                                                                  
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.20it/s]
+{'loss': '0.6784', 'grad_norm': '15.78', 'learning_rate': '8.471e-06', 'epoch': '2.238'}                                    
+{'loss': '0.6096', 'grad_norm': '9.347', 'learning_rate': '8.182e-06', 'epoch': '2.264'}                                    
+{'loss': '0.6575', 'grad_norm': '11.02', 'learning_rate': '7.892e-06', 'epoch': '2.29'}                                     
+{'loss': '0.679', 'grad_norm': '17.41', 'learning_rate': '7.603e-06', 'epoch': '2.316'}                                     
+{'loss': '0.7279', 'grad_norm': '34.23', 'learning_rate': '7.314e-06', 'epoch': '2.342'}                                    
+{'eval_loss': '1.188', 'eval_runtime': '42.32', 'eval_samples_per_second': '180.3', 'eval_steps_per_second': '11.27', 'epoch': '2.342'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.25it/s]
+{'loss': '0.678', 'grad_norm': '14.36', 'learning_rate': '7.025e-06', 'epoch': '2.368'}                                     
+{'loss': '0.6507', 'grad_norm': '20.86', 'learning_rate': '6.736e-06', 'epoch': '2.394'}                                    
+{'loss': '0.6478', 'grad_norm': '20.11', 'learning_rate': '6.447e-06', 'epoch': '2.42'}                                     
+{'loss': '0.671', 'grad_norm': '16.5', 'learning_rate': '6.158e-06', 'epoch': '2.446'}                                      
+{'loss': '0.5935', 'grad_norm': '11.93', 'learning_rate': '5.869e-06', 'epoch': '2.472'}                                    
+{'eval_loss': '1.223', 'eval_runtime': '42.38', 'eval_samples_per_second': '180', 'eval_steps_per_second': '11.26', 'epoch': '2.472'}                                                                                                                   
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.22it/s]
+{'loss': '0.6577', 'grad_norm': '11.37', 'learning_rate': '5.58e-06', 'epoch': '2.498'}                                     
+{'loss': '0.6598', 'grad_norm': '13.39', 'learning_rate': '5.291e-06', 'epoch': '2.524'}                                    
+{'loss': '0.6825', 'grad_norm': '17.83', 'learning_rate': '5.001e-06', 'epoch': '2.55'}                                     
+{'loss': '0.6825', 'grad_norm': '9.507', 'learning_rate': '4.712e-06', 'epoch': '2.576'}                                    
+{'loss': '0.6708', 'grad_norm': '20.39', 'learning_rate': '4.423e-06', 'epoch': '2.602'}                                    
+{'eval_loss': '1.171', 'eval_runtime': '42.34', 'eval_samples_per_second': '180.2', 'eval_steps_per_second': '11.27', 'epoch': '2.602'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.24it/s]
+{'loss': '0.6453', 'grad_norm': '16.81', 'learning_rate': '4.134e-06', 'epoch': '2.628'}                                    
+{'loss': '0.6637', 'grad_norm': '15.86', 'learning_rate': '3.845e-06', 'epoch': '2.654'}                                    
+{'loss': '0.6047', 'grad_norm': '13.89', 'learning_rate': '3.556e-06', 'epoch': '2.68'}                                     
+{'loss': '0.6401', 'grad_norm': '16.16', 'learning_rate': '3.267e-06', 'epoch': '2.706'}                                    
+{'loss': '0.6383', 'grad_norm': '17.54', 'learning_rate': '2.978e-06', 'epoch': '2.732'}                                    
+{'eval_loss': '1.174', 'eval_runtime': '42.29', 'eval_samples_per_second': '180.4', 'eval_steps_per_second': '11.28', 'epoch': '2.732'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.05it/s]
+{'loss': '0.7301', 'grad_norm': '35.41', 'learning_rate': '2.689e-06', 'epoch': '2.758'}                                    
+{'loss': '0.6202', 'grad_norm': '13.14', 'learning_rate': '2.4e-06', 'epoch': '2.784'}                                      
+{'loss': '0.6323', 'grad_norm': '17.79', 'learning_rate': '2.11e-06', 'epoch': '2.81'}                                      
+{'loss': '0.6325', 'grad_norm': '13.49', 'learning_rate': '1.821e-06', 'epoch': '2.836'}                                    
+{'loss': '0.6228', 'grad_norm': '16.16', 'learning_rate': '1.532e-06', 'epoch': '2.862'}                                    
+{'eval_loss': '1.178', 'eval_runtime': '42.07', 'eval_samples_per_second': '181.4', 'eval_steps_per_second': '11.34', 'epoch': '2.862'}                                                                                                                 
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.30it/s]
+{'loss': '0.6675', 'grad_norm': '8.041', 'learning_rate': '1.243e-06', 'epoch': '2.888'}                                    
+{'loss': '0.64', 'grad_norm': '11.34', 'learning_rate': '9.54e-07', 'epoch': '2.914'}                                       
+{'loss': '0.6558', 'grad_norm': '12.22', 'learning_rate': '6.649e-07', 'epoch': '2.94'}                                     
+{'loss': '0.6544', 'grad_norm': '11.39', 'learning_rate': '3.758e-07', 'epoch': '2.966'}                                    
+{'loss': '0.6547', 'grad_norm': '19.1', 'learning_rate': '8.673e-08', 'epoch': '2.992'}                                     
+{'eval_loss': '1.162', 'eval_runtime': '42.15', 'eval_samples_per_second': '181', 'eval_steps_per_second': '11.32', 'epoch': '2.992'}                                                                                                                   
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.25it/s]
+{'eval_loss': '1.162', 'eval_runtime': '42.17', 'eval_samples_per_second': '181', 'eval_steps_per_second': '11.31', 'epoch': '3'}                                                                                                                       
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.23it/s]
+{'train_runtime': '4933', 'train_samples_per_second': '37.38', 'train_steps_per_second': '2.337', 'train_loss': '1.15', 'epoch': '3'}
+100%|███████████████████████████████████████████████████████████████████████████████| 11529/11529 [1:22:13<00:00,  3.72it/s]There were missing keys in the checkpoint model loaded: ['bert.embeddings.LayerNorm.weight', 'bert.embeddings.LayerNorm.bias', 'bert.encoder.layer.0.attention.output.LayerNorm.weight', 'bert.encoder.layer.0.attention.output.LayerNorm.bias', 'bert.encoder.layer.0.output.LayerNorm.weight', 'bert.encoder.layer.0.output.LayerNorm.bias', 'bert.encoder.layer.1.attention.output.LayerNorm.weight', 'bert.encoder.layer.1.attention.output.LayerNorm.bias', 'bert.encoder.layer.1.output.LayerNorm.weight', 'bert.encoder.layer.1.output.LayerNorm.bias', 'bert.encoder.layer.2.attention.output.LayerNorm.weight', 'bert.encoder.layer.2.attention.output.LayerNorm.bias', 'bert.encoder.layer.2.output.LayerNorm.weight', 'bert.encoder.layer.2.output.LayerNorm.bias', 'bert.encoder.layer.3.attention.output.LayerNorm.weight', 'bert.encoder.layer.3.attention.output.LayerNorm.bias', 'bert.encoder.layer.3.output.LayerNorm.weight', 'bert.encoder.layer.3.output.LayerNorm.bias', 'bert.encoder.layer.4.attention.output.LayerNorm.weight', 'bert.encoder.layer.4.attention.output.LayerNorm.bias', 'bert.encoder.layer.4.output.LayerNorm.weight', 'bert.encoder.layer.4.output.LayerNorm.bias', 'bert.encoder.layer.5.attention.output.LayerNorm.weight', 'bert.encoder.layer.5.attention.output.LayerNorm.bias', 'bert.encoder.layer.5.output.LayerNorm.weight', 'bert.encoder.layer.5.output.LayerNorm.bias', 'bert.encoder.layer.6.attention.output.LayerNorm.weight', 'bert.encoder.layer.6.attention.output.LayerNorm.bias', 'bert.encoder.layer.6.output.LayerNorm.weight', 'bert.encoder.layer.6.output.LayerNorm.bias', 'bert.encoder.layer.7.attention.output.LayerNorm.weight', 'bert.encoder.layer.7.attention.output.LayerNorm.bias', 'bert.encoder.layer.7.output.LayerNorm.weight', 'bert.encoder.layer.7.output.LayerNorm.bias', 'bert.encoder.layer.8.attention.output.LayerNorm.weight', 'bert.encoder.layer.8.attention.output.LayerNorm.bias', 'bert.encoder.layer.8.output.LayerNorm.weight', 'bert.encoder.layer.8.output.LayerNorm.bias', 'bert.encoder.layer.9.attention.output.LayerNorm.weight', 'bert.encoder.layer.9.attention.output.LayerNorm.bias', 'bert.encoder.layer.9.output.LayerNorm.weight', 'bert.encoder.layer.9.output.LayerNorm.bias', 'bert.encoder.layer.10.attention.output.LayerNorm.weight', 'bert.encoder.layer.10.attention.output.LayerNorm.bias', 'bert.encoder.layer.10.output.LayerNorm.weight', 'bert.encoder.layer.10.output.LayerNorm.bias', 'bert.encoder.layer.11.attention.output.LayerNorm.weight', 'bert.encoder.layer.11.attention.output.LayerNorm.bias', 'bert.encoder.layer.11.output.LayerNorm.weight', 'bert.encoder.layer.11.output.LayerNorm.bias'].
+There were unexpected keys in the checkpoint model loaded: ['bert.embeddings.LayerNorm.beta', 'bert.embeddings.LayerNorm.gamma', 'bert.encoder.layer.0.attention.output.LayerNorm.beta', 'bert.encoder.layer.0.attention.output.LayerNorm.gamma', 'bert.encoder.layer.0.output.LayerNorm.beta', 'bert.encoder.layer.0.output.LayerNorm.gamma', 'bert.encoder.layer.1.attention.output.LayerNorm.beta', 'bert.encoder.layer.1.attention.output.LayerNorm.gamma', 'bert.encoder.layer.1.output.LayerNorm.beta', 'bert.encoder.layer.1.output.LayerNorm.gamma', 'bert.encoder.layer.2.attention.output.LayerNorm.beta', 'bert.encoder.layer.2.attention.output.LayerNorm.gamma', 'bert.encoder.layer.2.output.LayerNorm.beta', 'bert.encoder.layer.2.output.LayerNorm.gamma', 'bert.encoder.layer.3.attention.output.LayerNorm.beta', 'bert.encoder.layer.3.attention.output.LayerNorm.gamma', 'bert.encoder.layer.3.output.LayerNorm.beta', 'bert.encoder.layer.3.output.LayerNorm.gamma', 'bert.encoder.layer.4.attention.output.LayerNorm.beta', 'bert.encoder.layer.4.attention.output.LayerNorm.gamma', 'bert.encoder.layer.4.output.LayerNorm.beta', 'bert.encoder.layer.4.output.LayerNorm.gamma', 'bert.encoder.layer.5.attention.output.LayerNorm.beta', 'bert.encoder.layer.5.attention.output.LayerNorm.gamma', 'bert.encoder.layer.5.output.LayerNorm.beta', 'bert.encoder.layer.5.output.LayerNorm.gamma', 'bert.encoder.layer.6.attention.output.LayerNorm.beta', 'bert.encoder.layer.6.attention.output.LayerNorm.gamma', 'bert.encoder.layer.6.output.LayerNorm.beta', 'bert.encoder.layer.6.output.LayerNorm.gamma', 'bert.encoder.layer.7.attention.output.LayerNorm.beta', 'bert.encoder.layer.7.attention.output.LayerNorm.gamma', 'bert.encoder.layer.7.output.LayerNorm.beta', 'bert.encoder.layer.7.output.LayerNorm.gamma', 'bert.encoder.layer.8.attention.output.LayerNorm.beta', 'bert.encoder.layer.8.attention.output.LayerNorm.gamma', 'bert.encoder.layer.8.output.LayerNorm.beta', 'bert.encoder.layer.8.output.LayerNorm.gamma', 'bert.encoder.layer.9.attention.output.LayerNorm.beta', 'bert.encoder.layer.9.attention.output.LayerNorm.gamma', 'bert.encoder.layer.9.output.LayerNorm.beta', 'bert.encoder.layer.9.output.LayerNorm.gamma', 'bert.encoder.layer.10.attention.output.LayerNorm.beta', 'bert.encoder.layer.10.attention.output.LayerNorm.gamma', 'bert.encoder.layer.10.output.LayerNorm.beta', 'bert.encoder.layer.10.output.LayerNorm.gamma', 'bert.encoder.layer.11.attention.output.LayerNorm.beta', 'bert.encoder.layer.11.attention.output.LayerNorm.gamma', 'bert.encoder.layer.11.output.LayerNorm.beta', 'bert.encoder.layer.11.output.LayerNorm.gamma'].
+100%|███████████████████████████████████████████████████████████████████████████████| 11529/11529 [1:22:13<00:00,  2.34it/s]
+
+✅ Training completed!
+Writing model shards: 100%|███████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.19it/s]
+💾 Model saved to qa_model_finetuned/
+
+⏱ Total time: 82.52 minutes
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 11_evaluate_qa.py 
+📥 Loading QA model...
+🖥️ Using device: cuda
+Traceback (most recent call last):
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/11_evaluate_qa.py", line 42, in <module>
+    qa_pipeline = pipeline(
+                  ^^^^^^^^^
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 747, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ^^^^^^^^^^^^^^^^
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 355, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0/.venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1338, in check_task
+    raise KeyError(f"Unknown task {task}, available tasks are {self.get_supported_tasks()}")
+KeyError: "Unknown task question-answering, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection']"
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 11_evaluate_qa.py 
+📥 Loading QA model...
+🖥️ Using device: cuda
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 7941.79it/s]
+✅ Model loaded
+📊 Test records: 4961
+
+🔍 Evaluating...
+
+100%|███████████████████████████████████████████████████████████████████████████████████| 4961/4961 [01:58<00:00, 41.76it/s]
+
+📊 QA Evaluation Results (Standalone - Correct Context):
+
+  Exact Match (EM): 0.5342
+  F1 Score:         0.7160
+  Avg Confidence:   0.5288
+  Total samples:    4961
+
+🧪 Sample Predictions:
+
+✅ Good predictions (EM=1):
+  Q: What kind of equipment should this Standard not be applied to?
+  A: nonproductioo equipment, such as, material transport systems or facilities (environmental) controllers
+  P: nonproductioo equipment, such as, material transport systems or facilities (environmental) controllers (conf: 0.3045)
+
+  Q: How are setup attributes for the DM object written?
+  A: by setting configuration data
+  P: by setting configuration data (conf: 0.7192)
+
+  Q: What happens to the SOURCEPORT in the resulting TRANSFER command(s) after cancellation?
+  A: will be the same as when the original TRANSFER was issued since the carriers have not moved
+  P: will be the same as when the original TRANSFER was issued since the carriers have not moved (conf: 0.3639)
+
+❌ Difficult cases (EM=0, F1<0.5):
+  Q: What is the column title describing following actions?
+  A: Following Acttons.
+  P: the ProceedPonlD, PropcrtiesList defined following With Carrier the Carrier!D read service. fail and is described in column titled following actions. (conf: 0.1916, F1: 0.1000)
+
+  Q: What is the function associated with the GctPRCAttributes message?
+  A: Sl4FI. F2 GctAttr
+  P:  (conf: 0.9945, F1: 0.0000)
+
+  Q: What is the schema element name corresponding to the xms:SyncHcadcr message in Table 37?
+  A: DclclcACLEntryRcqucstMcssagc
+  P: xms:SyncHcadcr (conf: 0.3113, F1: 0.0000)
+
+💾 Full predictions saved to qa_predictions.json
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 12_pipeline.py 
+📥 Loading retriever (BGE)...
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 7462.04it/s]
+📥 Loading QA reader (BERT)...
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 7257.59it/s]
+📥 Loading FAISS index...
+✅ Pipeline ready! (48969 passages indexed)
+
+🔍 SemiSage QA Pipeline - Interactive Mode
+   Type your question and press Enter.
+   Type 'quit' or 'exit' to stop.
+
+❓ Question: What salience is displayed when there are no alarms and only cautions?
+
+============================================================
+  Query: What salience is displayed when there are no alarms and only cautions?
+============================================================
+
+  📌 Answer #1: the caution salience shall be displayed
+     QA Confidence:    0.5100
+     Retrieval Score:  0.7963
+     Combined Score:   0.4061
+     Context: ... alarm salience shall be displayed. When there are no alarms and only cautions, >>>the caution salience shall be displayed<<<. The figures below show the same situation as Figure 1 4, with Figure 1 5 showi...
+
+  📌 Answer #2: The caution and alarm saliences are displayed on the Alarms navigation button only
+     QA Confidence:    0.3077
+     Retrieval Score:  0.7398
+     Combined Score:   0.2277
+     Context: ...d yellow or saturated red salience, respectively). >>>The caution and alarm saliences are displayed on the Alarms navigation button only<<<. As an example, if the user has opened a dialog box in the Jobs functional area...
+
+  📌 Answer #3: 
+     QA Confidence:    0.1669
+     Retrieval Score:  0.6970
+     Combined Score:   0.1163
+     Context: ...>>><<<s Figure 1 4, with Figure 1 5 showing a caution salience, and Figure 1 6 showing...
+
+============================================================
+
+❓ Question: exit
+👋 Bye!
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 13_evaluate_pipeline.py 
+📥 Loading retriever (BGE)...
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 7474.27it/s]
+📥 Loading QA reader (BERT)...
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 7332.31it/s]
+📥 Building retrieval corpus...
+📦 Corpus size: 48969 unique passages
+🔄 Encoding corpus...
+Batches: 100%|████████████████████████████████████████████████████████████████████████████| 766/766 [06:20<00:00,  2.02it/s]
+📊 Test records: 4961
+
+🔍 Evaluating end-to-end pipeline...
+
+100%|███████████████████████████████████████████████████████████████████████████████████| 4961/4961 [07:17<00:00, 11.33it/s]
+
+============================================================
+📊 END-TO-END EVALUATION RESULTS
+============================================================
+
+--- Retrieval Metrics ---
+  Recall@1: 0.0002
+  Recall@3: 0.0004
+  Recall@5: 0.0004
+  MRR:       0.0003
+
+--- End-to-End QA Metrics ---
+
+  Top-1 Retrieval + QA:
+    Exact Match: 0.4481
+    F1 Score:    0.6260
+    Avg Combined Confidence: 0.3038
+
+  Top-3 Retrieval + QA:
+    Exact Match: 0.2770
+    F1 Score:    0.3792
+    Avg Combined Confidence: 0.2343
+
+  Top-5 Retrieval + QA:
+    Exact Match: 0.2080
+    F1 Score:    0.2764
+    Avg Combined Confidence: 0.1899
+
+============================================================
+
+🧪 Sample End-to-End Predictions:
+
+  Query: What is wafer?
+    [Ret: 0.6062] [QA: 0.5303] → wafer intended for use in evaluating metal contamination in thermal process
+    [Ret: 0.6025] [QA: 0.7276] → 
+    [Ret: 0.5937] [QA: 0.8980] → 
+  ✅ Best Answer:  (score: 0.5331)
+
+  Query: What is diameter specification?
+    [Ret: 0.5741] [QA: 0.4793] → the diameter of the minimum circle that encloses the wafer
+    [Ret: 0.5517] [QA: 0.2099] → diameter: 0.1 to 6 m; circular symmetry
+    [Ret: 0.5288] [QA: 0.6267] → 
+  ✅ Best Answer:  (score: 0.3314)
+
+  Query: What is ACK code?
+    [Ret: 0.7122] [QA: 0.6710] → 'Correct Reception' handshake code
+    [Ret: 0.6141] [QA: 0.9199] → 
+    [Ret: 0.5766] [QA: 0.9700] → 
+  ✅ Best Answer:  (score: 0.5649)
+
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 11_evaluate_qa.py 
+📥 Loading QA model...
+🖥️ Using device: cuda
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 7661.01it/s]
+✅ Model loaded
+📊 Test records: 4961
+
+🔍 Evaluating...
+
+100%|███████████████████████████████████████████████████████████████████████████████████| 4961/4961 [02:13<00:00, 37.14it/s]
+
+📊 QA Evaluation Results (Standalone - Correct Context):
+
+  Exact Match (EM): 0.5479
+  F1 Score:         0.7509
+  Avg Confidence:   0.4627
+  Total samples:    4961
+
+🧪 Sample Predictions:
+
+✅ Good predictions (EM=1):
+  Q: What kind of equipment should this Standard not be applied to?
+  A: nonproductioo equipment, such as, material transport systems or facilities (environmental) controllers
+  P: nonproductioo equipment, such as, material transport systems or facilities (environmental) controllers (conf: 0.3045)
+
+  Q: How are setup attributes for the DM object written?
+  A: by setting configuration data
+  P: by setting configuration data (conf: 0.7192)
+
+  Q: What happens to the SOURCEPORT in the resulting TRANSFER command(s) after cancellation?
+  A: will be the same as when the original TRANSFER was issued since the carriers have not moved
+  P: will be the same as when the original TRANSFER was issued since the carriers have not moved (conf: 0.3639)
+
+❌ Difficult cases (EM=0, F1<0.5):
+  Q: What is the column title describing following actions?
+  A: Following Acttons.
+  P: the ProceedPonlD, PropcrtiesList defined following With Carrier the Carrier!D read service. fail and is described in column titled following actions. (conf: 0.1916, F1: 0.1000)
+
+  Q: What is the function associated with the GctPRCAttributes message?
+  A: Sl4FI. F2 GctAttr
+  P: GOILACK O=Done, I =Error ClcarOperationRcsp (conf: 0.0000, F1: 0.0000)
+
+  Q: What is the schema element name corresponding to the xms:SyncHcadcr message in Table 37?
+  A: DclclcACLEntryRcqucstMcssagc
+  P: xms:SyncHcadcr (conf: 0.3113, F1: 0.0000)
+
+💾 Full predictions saved to qa_predictions.json
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ uv run 13_evaluate_pipeline.py 
+📥 Loading retriever (BGE)...
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 8312.09it/s]
+📥 Loading QA reader (BERT)...
+Loading weights: 100%|██████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 7620.37it/s]
+📥 Building retrieval corpus...
+📦 Corpus size: 48969 unique passages
+🔄 Encoding corpus...
+Batches: 100%|████████████████████████████████████████████████████████████████████████████| 766/766 [06:32<00:00,  1.95it/s]
+📊 Test records: 4961
+
+🔍 Evaluating end-to-end pipeline...
+
+100%|███████████████████████████████████████████████████████████████████████████████████| 4961/4961 [10:18<00:00,  8.03it/s]
+
+============================================================
+📊 END-TO-END EVALUATION RESULTS
+============================================================
+
+--- Retrieval Metrics ---
+  Recall@1: 0.0002
+  Recall@3: 0.0004
+  Recall@5: 0.0004
+  MRR:       0.0003
+
+--- End-to-End QA Metrics ---
+
+  Top-1 Retrieval + QA:
+    Exact Match: 0.4743
+    F1 Score:    0.6915
+    Avg Combined Confidence: 0.3089
+
+  Top-3 Retrieval + QA:
+    Exact Match: 0.4693
+    F1 Score:    0.6907
+    Avg Combined Confidence: 0.3441
+
+  Top-5 Retrieval + QA:
+    Exact Match: 0.4660
+    F1 Score:    0.6852
+    Avg Combined Confidence: 0.3525
+
+============================================================
+
+🧪 Sample End-to-End Predictions:
+
+  Query: What is wafer?
+    [Ret: 0.6062] [QA: 0.5303] → wafer intended for use in evaluating metal contamination in thermal process
+    [Ret: 0.6025] [QA: 0.0146] → a silicon wafer suitable for monitoring area or process cleanliness, used only in a cleanroom environment
+    [Ret: 0.5937] [QA: 0.0005] → the possible unparallel position of the wafer in relation to the bar end of th
+  ✅ Best Answer: wafer intended for use in evaluating metal contamination in thermal process (score: 0.3215)
+
+  Query: What is diameter specification?
+    [Ret: 0.5741] [QA: 0.4793] → the diameter of the minimum circle that encloses the wafer
+    [Ret: 0.5517] [QA: 0.0974] → 0.1 to 6 m; circular symmetry
+    [Ret: 0.5288] [QA: 0.0248] → the specified target diameter (e.g., 150 mm, 200 mm, or 300 mm) of the wafer around which there is an allowed tolerance
+  ✅ Best Answer: the diameter of the minimum circle that encloses the wafer (score: 0.2752)
+
+  Query: What is ACK code?
+    [Ret: 0.7122] [QA: 0.6710] → 'Correct Reception' handshake code
+    [Ret: 0.6141] [QA: 0.0001] → Ack Indicates whether the request was successful or the Boolean: activity completed normally.
+    [Ret: 0.5766] [QA: 0.0000] → 0 . K . 6 = ERROR: No open Data Set .
+  ✅ Best Answer: 'Correct Reception' handshake code (score: 0.4778)
+
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        .python-version
+        01_build_dataset.py
+        02_clean_dataset_pipeline.py
+        03_prepare_training_data.py
+        04_train_bge.py
+        05_build_faiss.py
+        06_search.py
+        07_evaluate.py
+        08_build_dataset_llm.py
+        09_prepare_qa_data.py
+        10_train_qa.py
+        11_evaluate_qa.py
+        12_pipeline.py
+        13_evaluate_pipeline.py
+        Plans/
+        README.md
+        Squad2.0/
+        output2/
+        pyproject.toml
+        utils/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git add .
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   .python-version
+        new file:   01_build_dataset.py
+        new file:   02_clean_dataset_pipeline.py
+        new file:   03_prepare_training_data.py
+        new file:   04_train_bge.py
+        new file:   05_build_faiss.py
+        new file:   06_search.py
+        new file:   07_evaluate.py
+        new file:   08_build_dataset_llm.py
+        new file:   09_prepare_qa_data.py
+        new file:   10_train_qa.py
+        new file:   11_evaluate_qa.py
+        new file:   12_pipeline.py
+        new file:   13_evaluate_pipeline.py
+        new file:   Plans/Plan1.md
+        new file:   Plans/Walkthrough1.md
+        new file:   Plans/walkthrough2.md
+        new file:   README.md
+        new file:   Squad2.0/01_prepare_train_data.py
+        new file:   Squad2.0/02_train_bge.py
+        new file:   Squad2.0/03_build_faiss.py
+        new file:   Squad2.0/04_search.py
+        new file:   Squad2.0/05_evaluate.py
+        new file:   output2/check_short.py
+        new file:   output2/final_dataset.json
+        new file:   output2/final_dataset10.json
+        new file:   output2/final_dataset11.json
+        new file:   output2/final_dataset12.json
+        new file:   output2/final_dataset13.json
+        new file:   output2/final_dataset14.json
+        new file:   output2/final_dataset15.json
+        new file:   output2/final_dataset16.json
+        new file:   output2/final_dataset17.json
+        new file:   output2/final_dataset18.json
+        new file:   output2/final_dataset19.json
+        new file:   output2/final_dataset2.json
+        new file:   output2/final_dataset20.json
+        new file:   output2/final_dataset21.json
+        new file:   output2/final_dataset22.json
+        new file:   output2/final_dataset23.json
+        new file:   output2/final_dataset24.json
+        new file:   output2/final_dataset25.json
+        new file:   output2/final_dataset26.json
+        new file:   output2/final_dataset27.json
+        new file:   output2/final_dataset28.json
+        new file:   output2/final_dataset29.json
+        new file:   output2/final_dataset3.json
+        new file:   output2/final_dataset30.json
+        new file:   output2/final_dataset31.json
+        new file:   output2/final_dataset32.json
+        new file:   output2/final_dataset33.json
+        new file:   output2/final_dataset34.json
+        new file:   output2/final_dataset35.json
+        new file:   output2/final_dataset36.json
+        new file:   output2/final_dataset37.json
+        new file:   output2/final_dataset38.json
+        new file:   output2/final_dataset39.json
+        new file:   output2/final_dataset4.json
+        new file:   output2/final_dataset40.json
+        new file:   output2/final_dataset41.json
+        new file:   output2/final_dataset42.json
+        new file:   output2/final_dataset43.json
+        new file:   output2/final_dataset5.json
+        new file:   output2/final_dataset6.json
+        new file:   output2/final_dataset7.json
+        new file:   output2/final_dataset8.json
+        new file:   output2/final_dataset9.json
+        new file:   output2/validate_dataset.py
+        new file:   pyproject.toml
+        new file:   utils/download_qa_model.py
+        new file:   utils/gpu_test.py
+        new file:   utils/hf_model_download.py
+
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git commit -m "Update final working pipeline."
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'administrator@BRTSW01073.(none)')
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git config ^C
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git config user.email "burele
+kartik2000@gmail.com"
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git config user.name "Kartik B"
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git commit -m "Update final working pipeline."
+[master (root-commit) 6bb0a41] Update final working pipeline.
+ 73 files changed, 686244 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .python-version
+ create mode 100644 01_build_dataset.py
+ create mode 100644 02_clean_dataset_pipeline.py
+ create mode 100644 03_prepare_training_data.py
+ create mode 100644 04_train_bge.py
+ create mode 100644 05_build_faiss.py
+ create mode 100644 06_search.py
+ create mode 100644 07_evaluate.py
+ create mode 100644 08_build_dataset_llm.py
+ create mode 100644 09_prepare_qa_data.py
+ create mode 100644 10_train_qa.py
+ create mode 100644 11_evaluate_qa.py
+ create mode 100644 12_pipeline.py
+ create mode 100644 13_evaluate_pipeline.py
+ create mode 100644 Plans/Plan1.md
+ create mode 100644 Plans/Walkthrough1.md
+ create mode 100644 Plans/walkthrough2.md
+ create mode 100644 README.md
+ create mode 100644 Squad2.0/01_prepare_train_data.py
+ create mode 100644 Squad2.0/02_train_bge.py
+ create mode 100644 Squad2.0/03_build_faiss.py
+ create mode 100644 Squad2.0/04_search.py
+ create mode 100644 Squad2.0/05_evaluate.py
+ create mode 100644 output2/check_short.py
+ create mode 100644 output2/final_dataset.json
+ create mode 100644 output2/final_dataset10.json
+ create mode 100644 output2/final_dataset11.json
+ create mode 100644 output2/final_dataset12.json
+ create mode 100644 output2/final_dataset13.json
+ create mode 100644 output2/final_dataset14.json
+ create mode 100644 output2/final_dataset15.json
+ create mode 100644 output2/final_dataset16.json
+ create mode 100644 output2/final_dataset17.json
+ create mode 100644 output2/final_dataset18.json
+ create mode 100644 output2/final_dataset19.json
+ create mode 100644 output2/final_dataset2.json
+ create mode 100644 output2/final_dataset20.json
+ create mode 100644 output2/final_dataset21.json
+ create mode 100644 output2/final_dataset22.json
+ create mode 100644 output2/final_dataset23.json
+ create mode 100644 output2/final_dataset24.json
+ create mode 100644 output2/final_dataset25.json
+ create mode 100644 output2/final_dataset26.json
+ create mode 100644 output2/final_dataset27.json
+ create mode 100644 output2/final_dataset28.json
+ create mode 100644 output2/final_dataset29.json
+ create mode 100644 output2/final_dataset3.json
+ create mode 100644 output2/final_dataset30.json
+ create mode 100644 output2/final_dataset31.json
+ create mode 100644 output2/final_dataset32.json
+ create mode 100644 output2/final_dataset33.json
+ create mode 100644 output2/final_dataset34.json
+ create mode 100644 output2/final_dataset35.json
+ create mode 100644 output2/final_dataset36.json
+ create mode 100644 output2/final_dataset37.json
+ create mode 100644 output2/final_dataset38.json
+ create mode 100644 output2/final_dataset39.json
+ create mode 100644 output2/final_dataset4.json
+ create mode 100644 output2/final_dataset40.json
+ create mode 100644 output2/final_dataset41.json
+ create mode 100644 output2/final_dataset42.json
+ create mode 100644 output2/final_dataset43.json
+ create mode 100644 output2/final_dataset5.json
+ create mode 100644 output2/final_dataset6.json
+ create mode 100644 output2/final_dataset7.json
+ create mode 100644 output2/final_dataset8.json
+ create mode 100644 output2/final_dataset9.json
+ create mode 100644 output2/validate_dataset.py
+ create mode 100644 pyproject.toml
+ create mode 100644 utils/download_qa_model.py
+ create mode 100644 utils/gpu_test.py
+ create mode 100644 utils/hf_model_download.py
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git remote add origin https://github.com/Kartik-Burele/nlp_mini_project.git
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Kartik-Burele/nlp_mini_project.git'
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ git push -u origin master
+Enumerating objects: 79, done.
+Counting objects: 100% (79/79), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (78/78), done.
+Writing objects: 100% (79/79), 6.89 MiB | 1.63 MiB/s, done.
+Total 79 (delta 12), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (12/12), done.
+To https://github.com/Kartik-Burele/nlp_mini_project.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+(semisagev2-0) administrator@BRTSW01073:~/Desktop/Kartik/Kartik/SemiSagev2.0 (2)/SemiSagev2.0$ 
